@@ -1,11 +1,15 @@
 /* RESET CSS
   1. Use a more-intuitive box-sizing model.
 */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
 
 /* 2. Remove default margin*/
 * {
    margin: 0;
-   box-sizing: border-box
 }
 
 /* Typographic tweaks!
@@ -97,6 +101,7 @@ header {
 .sidebar a:hover {
    color: aliceblue;
    background-color: #2B4B58;
+   border: solid 2px white;
    border-radius: 25px;
 
 }
