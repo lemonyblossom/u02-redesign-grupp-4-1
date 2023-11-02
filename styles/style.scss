@@ -23,7 +23,7 @@ body {
   font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: row;
-  background-color: #2b4b58;
+  background-color: #2B4B58;
 }
 
 /* 5. Improve media defaults */
@@ -65,7 +65,7 @@ h6 {
 header {
   display: flex;
   background-repeat: no-repeat;
-  background-image: url(Img/header.png);
+  background-image: url(header.png);
   background-size: 100%;
   height: 25vw;
   width: 100vw;
@@ -73,6 +73,7 @@ header {
 
 /*-----SIDE NAVBAR------*/
 .sidebar {
+  align-items: center;
   height: 100vh;
   width: 150px;
   position: fixed;
@@ -86,6 +87,16 @@ header {
   padding: 8px;
   font-size: 20px;
   display: block;
+}
+
+.sidebar a {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar a:hover {
+  background-color: #2B4B58;
+  color: #fcf7ef;
 }
 
 .body-text {
