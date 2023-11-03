@@ -74,9 +74,6 @@ h6 {
 
 /*-----SIDE NAVBAR------*/
 .sidebar {
-  display: inline-flex;
-  flex-direction: column;
-  text-align: center;
   height: 100vh;
   width: 150px;
   position: fixed;
@@ -87,11 +84,22 @@ h6 {
 
 }
 
+.sidebar-content {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
 .sidebar a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 10px;
-  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
 }
 
 .sidebar a:hover {
