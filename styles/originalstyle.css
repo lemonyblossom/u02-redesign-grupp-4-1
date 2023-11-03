@@ -21,7 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Quicksand", sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #2B4B58;
 }
 
@@ -61,48 +61,45 @@ h6 {
 }
 
 /* End reset*/
-/*Logo*/
-.logo {
-  width: 150px;
-  position: fixed;
-  background-color: #2B4B58;
-  margin: 0;
+header {
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url(header.png);
+  background-size: 100%;
+  height: 25vw;
+  width: 100vw;
 }
 
 /*-----SIDE NAVBAR------*/
 .sidebar {
-  display: inline-flex;
-  flex-direction: column;
   text-align: center;
   height: 100vh;
   width: 150px;
   position: fixed;
-  top: 137px;
+  top: 0;
   left: 0;
-  padding-top: 0px;
+  padding-top: 40px;
   background-color: #fcf7ef;
+}
+
+.sidebar div {
+  padding: 8px;
+  font-size: 20px;
+  display: block;
 }
 
 .sidebar a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 10px;
-  font-size: 20px;
+  margin-top: 30px;
 }
 
 .sidebar a:hover {
   background-color: #2B4B58;
   color: #fcf7ef;
   border-radius: 25px;
-}
-
-header {
-  display: flex;
-  background-repeat: no-repeat;
-  background-image: url(header.png);
-  background-size: 100%;
-  height: 25vh;
-  margin-left: 150px;
+  margin-top: 20px;
 }
 
 .body-text {

@@ -22,7 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Quicksand", sans-serif;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #2B4B58;
 }
 
@@ -62,41 +62,52 @@ h6 {
 }
 
 /* End reset*/
-header {
-  display: flex;
-  background-repeat: no-repeat;
-  background-image: url(header.png);
-  background-size: 100%;
-  height: 25vw;
-  width: 100vw;
+
+/*Logo*/
+
+.logo {
+  width: 150px;
+  position: fixed;
+  background-color: #2B4B58;
+  margin: 0;
 }
 
 /*-----SIDE NAVBAR------*/
 .sidebar {
-  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
   height: 100vh;
   width: 150px;
   position: fixed;
-  top: 0;
+  top: 137px;
   left: 0;
-  padding-top: 40px;
+  padding-top: 0px;
   background-color: #fcf7ef;
-}
 
-.sidebar div {
-  padding: 8px;
-  font-size: 20px;
-  display: block;
 }
 
 .sidebar a {
-  text-align: center;
+  text-decoration: none;
   color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 20px;
 }
 
 .sidebar a:hover {
   background-color: #2B4B58;
   color: #fcf7ef;
+  border-radius: 25px;
+}
+
+
+header {
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url(header.png);
+  background-size: 100%;
+  height: 25vh;
+  margin-left: 150px;
 }
 
 .body-text {
