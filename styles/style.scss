@@ -131,18 +131,30 @@ header {
 
 /* -----------------Mobile menu ---------------*/
 @media screen and (max-width: 767px) {
+
+  .logo {
+    display: flex;
+    align-self: center;
+    width: 60px;
+    margin-top: 5px;
+  }
+
+  header {
+    display: none;
+  }
+
   .menu-icon {
     content: "\2630";
     /* Hamburger */
-    font-size: 24px;
+    font-size: 30px;
     display: block;
     color: #fcf7ef;
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 20px;
     z-index: 1;
     cursor: pointer;
-    transition: transform 500ms;
+
   }
 
   /* Your other CSS styles... */
@@ -151,36 +163,42 @@ header {
     display: none;
   }
 
-  .menu-icon {
-    display: block;
-    color: #ffffff;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
-    cursor: pointer;
-    transition: transform 500ms;
-  }
-
   .menu-icon:hover,
   .menu-icon:active {
+    color: #EFAD1F;
     transform: scale(1.5);
-    transform: rotate(90deg);
-  }
-
-  .menu-icon:after {
-    color: #2B4B58;
-    transform: scale(1.5);
+    transition: 800ms;
   }
 
   .sidebar {
     position: fixed;
     top: 0;
-    left: -150px;
-    width: 150px;
+    left: -100px;
+    width: 100px;
     height: 100%;
     background-color: #fcf7ef;
-    transition: left 0.5s;
+    transition: left 1s;
+  }
+
+  .sidebar-content {
+    margin-top: 30px;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+    transition: 800ms;
+  }
+
+  .sidebar a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 25px;
+    box-shadow: -2px 3px 5px 1px #888888;
   }
 
   #menu-toggle:checked+.sidebar {
