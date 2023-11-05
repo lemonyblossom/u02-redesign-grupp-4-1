@@ -113,7 +113,7 @@ h6 {
   display: none;
 }
 
-/* Header style */
+/* Header styles */
 header {
   display: flex;
   align-items: center;
@@ -131,15 +131,16 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
-  font-size: 1em;
+  font-size: 1rem;
   padding-top: 10px;
   padding-bottom: 10px;
   text-shadow: 2px 2px 1px #012601;
   align-items: center;
 }
 
-.body-text {
-  margin-left: 150px;
+.container {
+  background-color: #fcf7ef;
+  margin-left: 80px 50px 150px 200px;
   font-size: 18px;
 }
 
@@ -147,12 +148,15 @@ header {
 @media screen and (max-width: 767px) {
 
   .logo {
-    width: 50px;
+    display: flex;
+    align-self: center;
     margin-top: 5px;
+    width: 50px;
     display: block;
     position: fixed;
     cursor: pointer;
   }
+
 
   header {
     display: flex;
@@ -167,7 +171,7 @@ header {
 
   .nav {
     display: flex;
-    height: 40px;
+    height: fit-content;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-around;
@@ -188,15 +192,17 @@ header {
     color: #EFAD1F;
     transition: 800ms;
 
+
   }
 
   .menu-icon {
     content: "\2630";
     /* Hamburger */
-    font-size: 35px;
+    font-size: 30px;
     display: block;
     color: #fcf7ef;
     position: fixed;
+    top: 5px;
     left: 20px;
     z-index: 1;
     cursor: pointer;
@@ -227,6 +233,7 @@ header {
   .sidebar-content {
     margin-top: 30px;
     height: 70vh;
+
   }
 
   .sidebar a {
