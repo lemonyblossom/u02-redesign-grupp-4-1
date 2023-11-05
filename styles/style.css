@@ -58,6 +58,7 @@ h6 {
 .nav {
   display: block;
   align-items: center;
+  height: 0;
 }
 
 /* Logo */
