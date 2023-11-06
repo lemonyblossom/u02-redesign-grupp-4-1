@@ -15,9 +15,8 @@ body {
   font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #2B4B58;
-  height: 3000px;
-
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Improve media defaults */
@@ -55,6 +54,18 @@ h6 {
   isolation: isolate;
 }
 
+.main {
+  background: url(top-view-vegetables-red-tablecloth-tomatoes-spices-pepper-plate-roasted-vegetables.jpg);
+  min-height: 2000px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
 /*nav*/
 .nav {
   display: block;
@@ -67,10 +78,10 @@ h6 {
 .logo {
   width: 150px;
   position: fixed;
-  background-color: #2B4B58;
+  background-color: #575757;
   margin: 0;
-  border-right: solid 3px #EFAD1F;
-  border-bottom: solid 1.5px #EFAD1F;
+  border-right: solid 3px #000000;
+  border-bottom: solid 1.5px #000000;
 }
 
 /* Sidebar */
@@ -84,9 +95,9 @@ h6 {
   top: 127px;
   left: 0;
   padding-top: 0px;
-  background-color: #fcf7ef;
-  border-right: solid 3px #EFAD1F;
-  border-top: solid 1.5px #EFAD1F;
+  background-color: #141515e5;
+  border-right: solid 3px #000000;
+  border-top: solid 1.5px #000000;
 }
 
 .sidebar-content {
@@ -99,19 +110,20 @@ h6 {
 
 .sidebar a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1em;
   transition: 1000ms;
+  border-radius: 10px;
 }
 
 .sidebar a:hover {
-  background-color: #ffffff;
+  background-color: #ffffffb8;
   color: #000000;
   border-radius: 25px;
-  box-shadow: -2px 3px 5px 1px #888888;
+  box-shadow: -2px 3px 5px 1px #000000;
   transform: scale(1.1);
 }
 
@@ -123,26 +135,38 @@ h6 {
 /* Header style */
 header {
   display: flex;
-  align-items: center;
-  background: url(header.png) no-repeat;
+  align-items: flex-end;
+  /*background: url(header.png) no-repeat;*/
   background-size: 100%;
-  height: 25vh;
+  height: 20vh;
   margin-left: 150px;
   margin-top: 0;
 
 }
 
 .headline {
-  background-color: rgba(255, 255, 255, 0.2352941176);
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
-  font-size: 1em;
   padding-top: 10px;
   padding-bottom: 10px;
   text-shadow: 2px 2px 1px #012601;
   align-items: center;
+  line-height: 1.1;
+}
+
+.headline h1 {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.headline p {
+  letter-spacing: 15px;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 
@@ -151,11 +175,13 @@ header {
   flex-direction: column;
   align-self: center;
   align-items: center;
-  background-color: #fcf7ef;
+  background-color: #fcf7ef93;
   height: 100%;
   width: 75%;
   border-radius: 10px;
   margin: 30px 50px 100px 200px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 
 }
 
@@ -179,6 +205,7 @@ header {
     border: none;
   }
 
+
   .logo img {
     width: 50px;
     background-color: #00000000;
@@ -186,13 +213,10 @@ header {
 
   .nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
     height: 50px;
-    background-color: #2B4B58;
-    /* Add a background color to the nav container */
-    padding: 0 10px;
-    /* Add padding to the nav container */
+    background-color: #000000;
+    flex-direction: row;
   }
 
   .nav-icon {
@@ -202,11 +226,24 @@ header {
   }
 
   /* #icon-1, #icon-2, #icon-3 */
-  #icon-1,
-  #icon-2,
-  #icon-3 {
+  #icon-1 {
+    text-align: left;
+    flex: 1;
+  }
+
+  #icon-2 {
     text-align: center;
     flex: 1;
+  }
+
+  #icon-3 {
+    text-align: right;
+    flex: 1;
+  }
+
+  .fa-user::before {
+    content: "\f007";
+    margin-right: -50px;
   }
 
   .fa-user {
@@ -214,8 +251,6 @@ header {
     font-size: 30px;
     cursor: pointer;
   }
-
-  /*--------------till hit/hjälp från sosa----------*/
 
   .fa-user:hover {
     color: #EFAD1F;
@@ -230,13 +265,15 @@ header {
     display: block;
     color: #fcf7ef;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
+    margin-left: -50px;
 
   }
 
   #menu-toggle {
     display: none;
+    z-index: 2;
   }
 
   .menu-icon:hover,
@@ -252,42 +289,42 @@ header {
     left: -120px;
     width: 120px;
     height: 100vh;
-    background-color: #fcf7ef;
     transition: left 1s;
     border-right: solid 3px #EFAD1F;
+    z-index: 1;
   }
 
   .sidebar-content {
-    margin-top: 30px;
+    margin-top: 50px;
     height: 70vh;
   }
+}
 
-  .sidebar a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 1px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 0.8rem;
-    transition: 400ms;
-  }
+.sidebar a {
+  text-decoration: none;
+  padding: 1px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  transition: 400ms;
+}
 
-  .sidebar a:hover {
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 25px;
-    box-shadow: -2px 3px 5px 1px #888888;
-  }
+.sidebar a:hover {
+  background-color: #020101;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: -2px 3px 5px 1px #888888;
+}
 
-  #menu-toggle:checked+.sidebar {
-    left: 0;
-    transition: left 0.5s;
-  }
+#menu-toggle:checked+.sidebar {
+  left: 0;
+  transition: left 0.5s;
+}
 
-  .container {
-    margin: 0;
-    width: 100vw;
-    border-radius: 2px;
-    align-self: center;
-  }
+.container {
+  margin: 0;
+  width: 95%;
+  border-radius: 2px;
+  align-self: center;
+}
 }
