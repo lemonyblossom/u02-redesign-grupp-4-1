@@ -68,6 +68,8 @@ h6 {
   position: fixed;
   background-color: #2B4B58;
   margin: 0;
+  border-right: solid 3px #EFAD1F;
+  border-bottom: solid 1.5px #EFAD1F;
 }
 
 /* Sidebar */
@@ -78,10 +80,12 @@ h6 {
   height: 100vh;
   width: 150px;
   position: fixed;
-  top: 137px;
+  top: 127px;
   left: 0;
   padding-top: 0px;
   background-color: #fcf7ef;
+  border-right: solid 3px #EFAD1F;
+  border-top: solid 1.5px #EFAD1F;
 }
 
 .sidebar-content {
@@ -151,48 +155,46 @@ header {
   margin: 30px 50px 100px 200px;
 }
 
-/* -----------------Mobile menu ----------------------------------------------*/
+/* --------------------------Mobile menu ----------------------------------------------*/
 @media screen and (max-width: 767px) {
-  .logo {
-    position: absolute;
-    width: 50px;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-  }
   header {
     display: none;
   }
   .headline {
     font-size: 0.5rem;
   }
-  /*
-    .nav-one {
-      display: none;
-      height: 40px;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-  */
   /*----------hjälp från sosa---------*/
-  .nav {
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex: auto auto auto;
+  .logo {
+    width: 50px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
     margin: 0;
-    width: 100%;
-    height: 30px;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
   }
-  #icon-1 {
-    margin-right: auto;
+  .logo img {
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0);
   }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #2B4B58;
+    /* Add a background color to the nav container */
+    padding: 0 10px;
+    /* Add padding to the nav container */
+  }
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* #icon-1, #icon-2, #icon-3 */
+  #icon-1,
+  #icon-2,
   #icon-3 {
-    margin-left: auto;
+    text-align: center;
+    flex: 1;
   }
   .fa-user {
     color: #fcf7ef;
@@ -211,7 +213,6 @@ header {
     display: block;
     color: #fcf7ef;
     position: fixed;
-    left: 20px;
     z-index: 1;
     cursor: pointer;
   }
@@ -227,11 +228,12 @@ header {
   .sidebar {
     position: fixed;
     top: 0;
-    left: -100px;
-    width: 100px;
-    height: 100%;
+    left: -120px;
+    width: 120px;
+    height: 100vh;
     background-color: #fcf7ef;
     transition: left 1s;
+    border-right: solid 3px #EFAD1F;
   }
   .sidebar-content {
     margin-top: 30px;
@@ -257,8 +259,9 @@ header {
     transition: left 0.5s;
   }
   .container {
-    margin: 10px 0;
-    width: 100%;
+    margin: 0;
+    width: 100vw;
     border-radius: 2px;
+    align-self: center;
   }
 }/*# sourceMappingURL=style.css.map */
