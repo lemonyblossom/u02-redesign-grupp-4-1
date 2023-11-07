@@ -16,7 +16,8 @@ body {
   font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #2B4B58;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Improve media defaults */
@@ -46,12 +47,27 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  width: 80%;
+  text-align: center;
+  align-content: center;
 }
 
 /* Create a root stacking context */
 #root,
 #__next {
   isolation: isolate;
+}
+
+.main {
+  background: url(top-view-vegetables-red-tablecloth-tomatoes-spices-pepper-plate-roasted-vegetables.jpg);
+  min-height: 2000px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 /*nav*/
@@ -65,8 +81,35 @@ h6 {
 .logo {
   width: 150px;
   position: fixed;
-  background-color: #2B4B58;
+  background-color: #575757;
   margin: 0;
+  border-right: solid 3px #000000;
+  border-bottom: solid 1.5px #000000;
+}
+
+.user {
+  display: flex;
+  text-align: center;
+}
+
+.user a {
+  text-align: center;
+}
+
+.fa-user::before {
+  content: "\f007";
+  margin-right: -50px;
+}
+
+.fa-user {
+  color: #fcf7ef;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fa-user:hover {
+  color: #EFAD1F;
+  transition: 800ms;
 }
 
 /* Sidebar */
@@ -77,10 +120,12 @@ h6 {
   height: 100vh;
   width: 150px;
   position: fixed;
-  top: 137px;
+  top: 127px;
   left: 0;
   padding-top: 0px;
-  background-color: #fcf7ef;
+  background-color: rgba(20, 21, 21, 0.8980392157);
+  border-right: solid 3px #000000;
+  border-top: solid 1.5px #000000;
 }
 
 .sidebar-content {
@@ -93,19 +138,20 @@ h6 {
 
 .sidebar a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1em;
   transition: 1000ms;
+  border-radius: 10px;
 }
 
 .sidebar a:hover {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7215686275);
   color: #000000;
   border-radius: 25px;
-  box-shadow: -2px 3px 5px 1px #888888;
+  box-shadow: -2px 3px 5px 1px #000000;
   transform: scale(1.1);
 }
 
@@ -117,66 +163,124 @@ h6 {
 /* Header style */
 header {
   display: flex;
-  align-items: center;
-  background: url(header.png) no-repeat;
+  align-items: flex-end;
+  /*background: url(header.png) no-repeat;*/
   background-size: 100%;
-  height: 25vh;
+  height: 20vh;
   margin-left: 150px;
   margin-top: 0;
 }
 
 .headline {
-  background-color: rgba(255, 255, 255, 0.2352941176);
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
-  font-size: 1em;
   padding-top: 10px;
   padding-bottom: 10px;
   text-shadow: 2px 2px 1px #012601;
   align-items: center;
+  line-height: 1.1;
 }
 
-.body-text {
-  margin-left: 150px;
-  font-size: 18px;
+.headline h1 {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-size: 2em;
 }
 
-/* -----------------Mobile menu ---------------*/
+.headline p {
+  letter-spacing: 15px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(252, 247, 239, 0.5764705882);
+  height: 100%;
+  width: 75%;
+  border-radius: 10px;
+  margin: 30px 50px 50px 200px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: #000000;
+}
+
+/* --------------------------Mobile menu ----------------------------------------------*/
 @media screen and (max-width: 767px) {
-  .logo {
-    width: 50px;
-    margin-top: 5px;
-    display: block;
-    position: fixed;
-    cursor: pointer;
-  }
   header {
-    display: flex;
-    margin: 0;
-    margin-top: 10px;
-    height: -moz-fit-content;
-    height: fit-content;
+    display: none;
   }
   .headline {
     font-size: 0.5rem;
   }
+  .logo {
+    width: 50px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    border: none;
+  }
+  .logo img {
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0);
+  }
   .nav {
     display: flex;
-    height: 40px;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    flex-direction: row;
+  }
+  .nav-icon {
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+  }
+  /* #icon-1, #icon-2, #icon-3 */
+  #icon-1 {
+    text-align: left;
+    flex: 1;
+  }
+  #icon-2 {
+    text-align: center;
+    flex: 1;
+  }
+  #icon-3 {
+    text-align: right;
+    flex: 1;
+  }
+  .user {
+    display: none;
+  }
+  .fa-user::before {
+    content: "\f007";
+    margin-right: -50px;
   }
   .fa-user {
     color: #fcf7ef;
     font-size: 30px;
-    z-index: 1;
-    align-self: flex-end;
-    margin-right: 20px;
-    margin-top: 8px;
     cursor: pointer;
   }
   .fa-user:hover {
@@ -190,12 +294,13 @@ header {
     display: block;
     color: #fcf7ef;
     position: fixed;
-    left: 20px;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
+    margin-left: -50px;
   }
   #menu-toggle {
     display: none;
+    z-index: 2;
   }
   .menu-icon:hover,
   .menu-icon:active {
@@ -206,19 +311,19 @@ header {
   .sidebar {
     position: fixed;
     top: 0;
-    left: -100px;
-    width: 100px;
-    height: 100%;
-    background-color: #fcf7ef;
+    left: -120px;
+    width: 120px;
+    height: 100vh;
     transition: left 1s;
+    border-right: solid 3px #EFAD1F;
+    z-index: 1;
   }
   .sidebar-content {
-    margin-top: 30px;
+    margin-top: 50px;
     height: 70vh;
   }
   .sidebar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
     padding: 1px;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -226,8 +331,8 @@ header {
     transition: 400ms;
   }
   .sidebar a:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #020101;
+    color: #ffffff;
     border-radius: 25px;
     box-shadow: -2px 3px 5px 1px #888888;
   }
@@ -235,5 +340,13 @@ header {
     left: 0;
     transition: left 0.5s;
   }
-}
-/* Your other CSS styles... *//*# sourceMappingURL=style.css.map */
+  .container {
+    margin: 0;
+    width: 95%;
+    border-radius: 2px;
+    align-self: center;
+  }
+  section {
+    padding: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
