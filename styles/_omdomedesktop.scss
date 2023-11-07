@@ -1,0 +1,79 @@
+@import "variables";
+@import "reset";
+
+
+@media screen and (min-width: 1920px){
+
+    #omdome{
+        padding-bottom: 40px;
+        .main{
+
+            h1{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1.4rem;
+                max-width: 600px;
+            }
+
+        }
+
+        form{
+
+            #form-container{
+                width: fit-content;
+                
+                .form-group {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 20px;
+        
+                    label{
+                        text-align: right;
+                        padding-bottom: 0;
+                        margin: 0;
+                        font-size: 1.4rem;
+                    }
+            
+                    input{
+                        width: 450px;
+                        font-size: 1.5rem;
+                    }
+        
+                    textarea{
+                        width: 450px;
+                        resize: none;
+                        font-size: 1.4rem;
+                    }
+                    #meddelande::placeholder{
+                        font-size: 1.3rem;
+                        line-height: 1.5;
+                    }
+                }
+                
+            }
+        }
+
+        .skicka{
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            background-color: $third-color;
+            border: 5px solid $secondary-color;
+            color: #fff;
+            font-size: 1.5rem;
+            width: 25%;
+            text-align: center;
+            padding: 7px 40px;
+            cursor: pointer;
+        }
+
+        .skicka:active{
+            border: 5px solid #fccd67;
+        }
+        
+
+    }
+}

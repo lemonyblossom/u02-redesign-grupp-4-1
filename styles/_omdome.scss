@@ -1,0 +1,141 @@
+@import "variables";
+@import "reset";
+
+
+#omdome{
+
+    // background-color: $primary-color;
+    border: 3px solid $secondary-color;
+    border-radius: 10px;
+    padding-top: 0;
+
+    .main{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        h1{
+            font-size: 1.8rem;
+            font-weight: 500;
+            width: fit-content;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        p{
+            width: 100%;
+            max-width: 440px;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+    }
+
+    form{
+        color: #000000;
+        margin: 0 20px;
+        margin-top: 20px;
+        padding: 10px;
+
+        #form-container{
+            width: 100%;
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                margin-bottom: 20px;
+    
+                label{
+                    width: 150px;
+                    text-align: left;
+                    padding-right: 10px;
+                    margin-bottom: 5px;
+                    font-size: 1.15rem;
+                }
+        
+                input{
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 5px;
+                    font-size: 1.1rem;
+                }
+                
+                .star-container {
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    font-size: 1.5rem;
+                    padding: 0 25px;
+                    width: fit-content;
+                  }
+
+                  .star{
+                    font-size: 1.5rem;
+                  }
+                  
+                  .star-container input {
+                    display: none;
+                  }
+                  
+                  .star-container label {
+                    width: fit-content;
+                    margin-bottom: 0;
+                    color: #ccc;
+                    cursor: pointer;
+                  }
+                  
+                  .star-container input:checked ~ label {
+                    color: $secondary-color;
+                  }
+                  
+                  .star-container label:hover,
+                  .star-container label:hover ~ label {
+                    color: $secondary-color;
+                  }
+    
+                .meddelande{
+                    align-self: flex-start;
+                }
+    
+                textarea{
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-size: 1.1rem;
+                    width: 100%;
+                    resize: none;
+                }
+                #meddelande::placeholder{
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+            
+        }
+    }
+
+    .skicka{
+        position: relative;
+        top: 20px;
+        display: block;
+        margin: 0 auto;
+        background-color: $third-color;
+        border: 5px solid $secondary-color;
+        color: #fff;
+        font-size: 1.15rem;
+        width: 45%;
+        text-align: center;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    .skicka:active{
+        border: 5px solid #fccd67;
+      }
+
+}
+
+@import "_omdomedesktop";
