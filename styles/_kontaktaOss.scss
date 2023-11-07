@@ -3,12 +3,14 @@
 
 
 #kontakt{
+    background-color: $primary-color;
     border: 3px solid $secondary-color;
+    border-radius: 10px;
     margin: 0 auto;
     padding-top: 0;
 
-    .main{
-        padding-top: 40px;
+    .main2{
+        padding-top: 20px;
         padding-bottom: 20px;
         h1{
             font-size: 1.8rem;
@@ -25,6 +27,7 @@
             width: 100%;
             max-width: 440px;
             text-align: center;
+            padding: 10px;
             margin: 0 auto;
             line-height: 1.5;
         }
@@ -33,11 +36,11 @@
 
     form{
         background-color: $third-color;
-        box-shadow: 0 3px 0 rgba($color: #000000, $alpha: 0.25);
         color: #fff;
-        margin: 0 5px;
-        margin-top: 40px;
-        padding: 10px;
+        // margin: 0 5px;
+        padding: 15px;
+        width: 95%;
+        margin: 0 auto;
         border-radius: 10px;
 
         #form-container{
