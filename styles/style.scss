@@ -46,6 +46,8 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  width: 80%;
+  text-align: center;
 }
 
 /* Create a root stacking context */
@@ -298,33 +300,33 @@ header {
     margin-top: 50px;
     height: 70vh;
   }
-}
 
-.sidebar a {
-  text-decoration: none;
-  padding: 1px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  font-size: 0.8rem;
-  transition: 400ms;
-}
 
-.sidebar a:hover {
-  background-color: #020101;
-  color: #ffffff;
-  border-radius: 25px;
-  box-shadow: -2px 3px 5px 1px #888888;
-}
+  .sidebar a {
+    text-decoration: none;
+    padding: 1px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+    transition: 400ms;
+  }
 
-#menu-toggle:checked+.sidebar {
-  left: 0;
-  transition: left 0.5s;
-}
+  .sidebar a:hover {
+    background-color: #020101;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: -2px 3px 5px 1px #888888;
+  }
 
-.container {
-  margin: 0;
-  width: 95%;
-  border-radius: 2px;
-  align-self: center;
-}
+  #menu-toggle:checked+.sidebar {
+    left: 0;
+    transition: left 0.5s;
+  }
+
+  .container {
+    margin: 0;
+    width: 95%;
+    border-radius: 2px;
+    align-self: center;
+  }
 }
