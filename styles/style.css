@@ -8,6 +8,7 @@
   border-radius: 10px;
   margin: 0 auto;
   padding-top: 0;
+  margin: -10px;
 }
 #kontakt .main2 {
   padding-top: 20px;
@@ -119,6 +120,13 @@
 }
 
 @media screen and (min-width: 1920px) {
+  #kontakt {
+    width: 100%;
+    min-width: 1085px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #kontakt .main2 {
     padding-top: 45px;
   }
@@ -188,6 +196,7 @@
   #kontakt .kontakt-info {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     padding: 20px;
     padding-left: 60px;
     line-height: 1.5;
