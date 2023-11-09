@@ -2,81 +2,124 @@
 /* RESET CSS
   1. Use a more-intuitive box-sizing model.
 */
-#kontakt {
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#omdome {
   background-color: #FCF7EF;
   border: 3px solid #EFAE1F;
   border-radius: 10px;
-  margin: 0 auto;
   padding-top: 0;
-  margin: -10px;
 }
-#kontakt .main2 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+#omdome .main2 {
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
-#kontakt .main2 h1 {
+#omdome .main2 h1 {
   font-size: 1.8rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  color: #000000;
   padding-bottom: 10px;
 }
-#kontakt .main2 p {
-  color: #000000;
+#omdome .main2 p {
   width: 100%;
   max-width: 440px;
   text-align: center;
-  padding: 10px;
   margin: 0 auto;
   line-height: 1.5;
 }
-#kontakt form {
-  background-color: #2B4B58;
-  color: #fff;
-  padding: 15px;
-  width: 95%;
-  margin: 0 auto;
-  border-radius: 10px;
+#omdome form {
+  color: #000000;
+  margin: 0 20px;
+  padding: 10px;
 }
-#kontakt form #form-container {
+#omdome form #form-container {
   width: 100%;
 }
-#kontakt form #form-container .form-group {
+#omdome form #form-container .form-group {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-#kontakt form #form-container .form-group label {
+#omdome form #form-container .form-group label {
   width: 150px;
   text-align: left;
   padding-right: 10px;
-  padding-bottom: 5px;
   margin-bottom: 5px;
   font-size: 1.15rem;
 }
-#kontakt form #form-container .form-group input {
+#omdome form #form-container .form-group input {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
   font-size: 1.1rem;
 }
-#kontakt form #form-container .form-group .meddelande {
+#omdome form #form-container .form-group .star-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 0 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+#omdome form #form-container .form-group .star {
+  font-size: 1.5rem;
+}
+#omdome form #form-container .form-group .star-container input {
+  display: none;
+}
+#omdome form #form-container .form-group .star-container label {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+  color: #ccc;
+  cursor: pointer;
+}
+#omdome form #form-container .form-group .star-container input:checked ~ label {
+  color: #EFAE1F;
+}
+#omdome form #form-container .form-group .star-container label:hover,
+#omdome form #form-container .form-group .star-container label:hover ~ label {
+  color: #EFAE1F;
+}
+#omdome form #form-container .form-group .meddelande {
   align-self: flex-start;
 }
-#kontakt form #form-container .form-group textarea {
-  padding: 5px;
+#omdome form #form-container .form-group textarea {
+  padding: 10px;
   border-radius: 5px;
+  font-size: 1.1rem;
   width: 100%;
   resize: none;
 }
-#kontakt form #form-container .form-group #meddelande::placeholder {
+#omdome form #form-container .form-group #meddelande::-moz-placeholder {
   font-size: 1rem;
   line-height: 1.5;
 }
-#kontakt .skicka {
+#omdome form #form-container .form-group #meddelande::placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#omdome form #form-container .datum {
+  margin-bottom: 15px;
+}
+#omdome .skicka {
   position: relative;
   top: 20px;
   display: block;
@@ -85,28 +128,14 @@
   border: 5px solid #EFAE1F;
   color: #fff;
   font-size: 1.15rem;
-  width: 60%;
+  width: 50%;
   text-align: center;
   padding: 5px 10px;
   cursor: pointer;
   margin-bottom: 40px;
 }
-#kontakt .skicka:active {
+#omdome .skicka:active {
   border: 5px solid #fccd67;
-}
-#kontakt .kontakt-info {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  line-height: 1.5;
-}
-#kontakt .kontakt-info a {
-  color: black;
-  text-decoration: none;
-  text-align: left;
-}
-#kontakt .kontakt-info p {
-  width: fit-content;
 }
 
 * {
@@ -120,89 +149,392 @@
 }
 
 @media screen and (min-width: 1920px) {
-  #kontakt {
-    width: 100%;
-    min-width: 1085px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #omdome {
+    padding-bottom: 40px;
   }
-  #kontakt .main2 {
-    padding-top: 45px;
+  #omdome .main h1 {
+    font-size: 2rem;
   }
-  #kontakt .main2 h1 {
-    font-size: 2.6rem;
-  }
-  #kontakt .main2 p {
+  #omdome .main p {
     font-size: 1.4rem;
     max-width: 600px;
   }
-  #kontakt form {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 40px;
-    margin-top: 10px;
-    padding: 70px;
-  }
-  #kontakt form #form-container {
+  #omdome form #form-container {
+    width: -moz-fit-content;
     width: fit-content;
   }
-  #kontakt form #form-container .form-group {
+  #omdome form #form-container .form-group {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
   }
-  #kontakt form #form-container .form-group label {
+  #omdome form #form-container .form-group label {
     text-align: right;
     padding-bottom: 0;
-    width: 200px;
     margin: 0;
     font-size: 1.4rem;
   }
-  #kontakt form #form-container .form-group input {
+  #omdome form #form-container .form-group input {
     width: 450px;
     font-size: 1.5rem;
   }
-  #kontakt form #form-container .form-group textarea {
+  #omdome form #form-container .form-group textarea {
     width: 450px;
     resize: none;
     font-size: 1.4rem;
   }
-  #kontakt form #form-container .form-group #meddelande::placeholder {
-    font-size: 1.2rem;
+  #omdome form #form-container .form-group #meddelande::-moz-placeholder {
+    font-size: 1.3rem;
     line-height: 1.5;
-    padding: 10px;
   }
-  #kontakt .skicka {
+  #omdome form #form-container .form-group #meddelande::placeholder {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  #omdome .skicka {
     position: relative;
-    top: 20px;
     display: block;
     margin: 0 auto;
     background-color: #2B4B58;
     border: 5px solid #EFAE1F;
     color: #fff;
     font-size: 1.5rem;
-    width: 40%;
+    width: 25%;
     text-align: center;
     padding: 7px 40px;
     cursor: pointer;
-    margin-bottom: 40px;
   }
-  #kontakt .skicka:active {
+  #omdome .skicka:active {
     border: 5px solid #fccd67;
   }
-  #kontakt .kontakt-info {
+}
+#betalning {
+  background-color: #FCF7EF;
+  color: #000000;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+#betalning .main2 {
+  padding-bottom: 10px;
+}
+#betalning .main2 h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1.5;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#betalning .main2 p {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+#betalning form {
+  margin: 0 auto;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #EFAE1F;
+}
+#betalning form #form-container {
+  width: 100%;
+}
+#betalning form #form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 15px;
+}
+#betalning form #form-container .form-group label {
+  width: 150px;
+  text-align: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 1.15rem;
+}
+#betalning form #form-container .form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+#betalning form #form-container .form-group .betalningsadress-container {
+  display: flex;
+  flex-direction: column;
+}
+#betalning form #form-container .form-group .betalningsadress-container label {
+  padding: 0;
+}
+#betalning form #form-container .form-group .betalningsadress-container p {
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 0.72rem;
+}
+#betalning form #form-container .form-group input[type=date] {
+  width: 200px;
+  height: 40px;
+}
+#betalning form #form-container .form-group .meddelande {
+  align-self: flex-start;
+}
+#betalning form #form-container .form-group textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+}
+#betalning form #form-container .form-group #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#betalning form #form-container .form-group #meddelande::placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#betalning .payment-container {
+  margin-top: 20px;
+}
+#betalning .payment-container p {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#betalning #payment-form {
+  padding: 0;
+}
+#betalning #payment-form .payment-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+#betalning #payment-form .payment-method label {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+#betalning #payment-form .payment-method label img {
+  width: 150px;
+}
+#betalning #payment-form .payment-method .visa-card {
+  padding-bottom: 0;
+}
+#betalning #payment-form .payment-method .visa-card img {
+  width: 250px;
+}
+#betalning .totalSumma {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#betalning .skicka {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: #2B4B58;
+  border: 5px solid #EFAE1F;
+  color: #fff;
+  font-size: 1.15rem;
+  width: 60%;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#betalning .skicka:active {
+  border: 5px solid #fccd67;
+}
+
+@media screen and (min-width: 1920px) {
+  #betalning {
+    padding: 50px;
+    padding-bottom: 80px;
+    width: 100%;
+    min-width: 1085px;
+  }
+  #betalning .main2 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  #betalning .main2 h1 {
+    font-size: 2.5rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  #betalning .main2 p {
+    position: relative;
+    left: 40px;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  #betalning form {
     display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    padding: 20px;
-    padding-left: 60px;
-    line-height: 1.5;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px;
+    margin-bottom: 50px;
+  }
+  #betalning form #form-container {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #betalning form #form-container .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #betalning form #form-container .form-group label {
+    text-align: right;
+    padding-bottom: 0;
+    width: 200px;
+    margin: 0;
     font-size: 1.4rem;
   }
-  #kontakt .kontakt-info a {
+  #betalning form #form-container .form-group input {
+    width: 450px;
+    font-size: 1.5rem;
+  }
+  #betalning form #form-container .form-group .betalningsadress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #betalning form #form-container .form-group .betalningsadress-container label {
+    text-align: right;
+    padding-right: 10px;
+  }
+  #betalning form #form-container .form-group .betalningsadress-container p {
+    text-align: center;
+    font-weight: 600;
+  }
+  #betalning form #form-container .form-group textarea {
+    width: 450px;
+    resize: none;
+    font-size: 1.4rem;
+  }
+  #betalning form #form-container .form-group #meddelande::-moz-placeholder {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  #betalning form #form-container .form-group #meddelande::placeholder {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  #betalning form #form-container #Leveransdatum {
+    margin-bottom: 25px;
+  }
+  #betalning form #form-container #Leveransadress {
+    align-self: flex-start;
+  }
+  #betalning .payment-container p {
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    left: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  #betalning #payment-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  #betalning #payment-form .payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  #betalning #payment-form .payment-method label {
+    height: 100px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  #betalning #payment-form .payment-method label img {
+    width: 180px;
+  }
+  #betalning #payment-form .payment-method input[type=radio] {
+    margin-top: 30px;
+    transform: scale(1.5);
+  }
+  #betalning #payment-form .payment-method .visa-card {
+    padding-bottom: 0;
+  }
+  #betalning #payment-form .payment-method .visa-card img {
+    width: 280px;
+  }
+  #betalning #payment-form .desktop-mastercard label {
+    padding-bottom: 0;
+  }
+  #betalning #payment-form .desktop-klarna label {
+    padding-bottom: 0;
+  }
+  #betalning #payment-form .desktop-googlePay {
+    padding-top: 0;
+  }
+  #betalning #payment-form .desktop-googlePay label {
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  #betalning .totalSumma {
+    font-size: 3rem;
+    font-weight: 500;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  #betalning .skicka {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: #2B4B58;
+    border: 5px solid #EFAE1F;
+    color: #fff;
+    font-size: 1.7rem;
+    width: 310px;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  #betalning .skicka:active {
+    border: 5px solid #fccd67;
+  }
+  #betalning .kontakt-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 1.5;
+  }
+  #betalning .kontakt-info a {
     color: black;
     text-decoration: none;
   }
@@ -263,7 +595,7 @@ h6 {
   isolation: isolate;
 }
 
-.main {
+main {
   background: url(top-view-vegetables-red-tablecloth-tomatoes-spices-pepper-plate-roasted-vegetables.jpg);
   min-height: 2000px;
   width: 100%;
@@ -282,6 +614,32 @@ h6 {
   height: 0;
 }
 
+.nav-icon-desk {
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  padding-top: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-icon-desk.fa-user::before {
+  content: "\f007";
+  margin-right: -50px;
+}
+
+.nav-icon-desk.fa-user {
+  color: #fcf7ef;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.nav-icon-desk.fa-user:hover {
+  color: #EFAD1F;
+  transition: 800ms;
+}
+
 /* Logo */
 .logo {
   width: 150px;
@@ -290,31 +648,6 @@ h6 {
   margin: 0;
   border-right: solid 3px #000000;
   border-bottom: solid 1.5px #000000;
-}
-
-.user {
-  display: flex;
-  text-align: center;
-}
-
-.user a {
-  text-align: center;
-}
-
-.fa-user::before {
-  content: "\f007";
-  margin-right: -50px;
-}
-
-.fa-user {
-  color: #fcf7ef;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.fa-user:hover {
-  color: #EFAD1F;
-  transition: 800ms;
 }
 
 /* Sidebar */
@@ -339,6 +672,7 @@ h6 {
   text-align: center;
   justify-content: space-between;
   margin-top: 10px;
+  font-weight: bolder;
 }
 
 .sidebar a {
@@ -374,6 +708,20 @@ header {
   height: 20vh;
   margin-left: 150px;
   margin-top: 0;
+  flex-direction: column;
+}
+
+.fa-user {
+  color: #fcf7ef;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 800ms;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.fa-user:hover {
+  background-color: rgba(0, 0, 0, 0.8470588235);
 }
 
 .headline {
@@ -451,6 +799,9 @@ footer {
     width: 50px;
     background-color: rgba(0, 0, 0, 0);
   }
+  .nav-icon-desk {
+    display: none;
+  }
   .nav {
     display: flex;
     width: 100%;
@@ -475,9 +826,6 @@ footer {
   #icon-3 {
     text-align: right;
     flex: 1;
-  }
-  .user {
-    display: none;
   }
   .fa-user::before {
     content: "\f007";
@@ -553,5 +901,12 @@ footer {
   }
   section {
     padding: 30px;
+    height: 100vh;
   }
-}
+  footer {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+  }
+}/*# sourceMappingURL=style.css.map */

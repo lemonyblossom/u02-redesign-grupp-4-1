@@ -2,29 +2,30 @@
 @import "reset";
 
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) {
 
-    #kontakt{
+    #kontakt {
         width: 100%;
         min-width: 1085px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .main2{
+
+        .main2 {
             padding-top: 45px;
-            
-            h1{
+
+            h1 {
                 font-size: 2.6rem;
             }
 
-            p{
+            p {
                 font-size: 1.4rem;
                 max-width: 600px;
             }
 
         }
 
-        form{
+        form {
             display: flex;
             justify-content: center;
             width: 100%;
@@ -33,43 +34,44 @@
             margin-top: 10px;
             padding: 70px;
 
-            #form-container{
+            #form-container {
                 width: fit-content;
-                
+
                 .form-group {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-        
-                    label{
+
+                    label {
                         text-align: right;
                         padding-bottom: 0;
                         width: 200px;
                         margin: 0;
                         font-size: 1.4rem;
                     }
-            
-                    input{
+
+                    input {
                         width: 450px;
                         font-size: 1.5rem;
                     }
-        
-                    textarea{
+
+                    textarea {
                         width: 450px;
                         resize: none;
                         font-size: 1.4rem;
                     }
-                    #meddelande::placeholder{
+
+                    #meddelande::placeholder {
                         font-size: 1.2rem;
                         line-height: 1.5;
                         padding: 10px;
                     }
                 }
-                
+
             }
         }
 
-        .skicka{
+        .skicka {
             position: relative;
             top: 20px;
             display: block;
@@ -85,11 +87,11 @@
             margin-bottom: 40px;
         }
 
-        .skicka:active{
+        .skicka:active {
             border: 5px solid #fccd67;
         }
 
-        .kontakt-info{
+        .kontakt-info {
             display: flex;
             flex-direction: column;
             align-self: flex-start;
@@ -97,13 +99,14 @@
             padding-left: 60px;
             line-height: 1.5;
             font-size: 1.4rem;
-            a{
+
+            a {
                 color: black;
                 text-decoration: none;
             }
 
         }
-        
+
 
     }
 }
