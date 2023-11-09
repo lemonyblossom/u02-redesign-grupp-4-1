@@ -6,14 +6,10 @@ $font-size-p: 24px;
 $font-size-mobil-h2:20px;
 $font-size-mobil-p:8.4px;
 
-$logo-size:
-(
-    width:242px,
 
-);
 $logo-size-mobil:
 (
-    width: 84.7px,
+    width: 25%,
 
 );
 
@@ -78,7 +74,7 @@ align-items: left;
  
     .member-image {
         
-        width: map-get($logo-size, width);
+        width:50%;
         
         padding-top: 10%;
         padding-bottom: 10%;
