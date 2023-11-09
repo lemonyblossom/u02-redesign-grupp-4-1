@@ -1,3 +1,5 @@
+@import 'medlemslista';
+
 /* RESET CSS
   1. Use a more-intuitive box-sizing model.
 */
@@ -224,7 +226,7 @@ section {
   align-content: center;
   text-align: center;
   align-items: center;
-  padding: 50px;
+  // padding: 50px;
 
 }
 
@@ -386,3 +388,4 @@ footer {
     padding: 30px;
   }
 }
+

@@ -1,0 +1,140 @@
+
+
+$font-size-h2: 2rem;
+$font-size-p: 24px; 
+
+$font-size-mobil-h2:20px;
+$font-size-mobil-p:8.4px;
+
+$logo-size:
+(
+    width:242px,
+
+);
+$logo-size-mobil:
+(
+    width: 84.7px,
+
+);
+
+
+
+h1 //"h2 för Våra cateringfirmor"
+ {
+
+    font-size: $font-size-h2;
+    margin: 0;
+    font-family: quicksand;
+    padding-top:10px;
+    @media (max-width: 391px) {
+                
+        font-size: $font-size-mobil-h2;
+        color: black;
+        
+      } 
+
+}
+//"container"
+.member-list {
+
+    
+    width: 100%; //ska vara 1358px (?)
+    
+    // background-color: #FCF7EF;
+    display: flex;
+    
+    flex-direction:column;
+    justify-content: space-between; 
+    align-items: center; 
+    
+    // margin:0 auto;
+    border:2px solid #efae1f;
+    border-radius: 5px;
+    @media (max-width: 391px) {
+        width: 100%;
+        font-size:$font-size-mobil-p;
+        color: black;
+        
+        
+      } 
+
+}
+.contact-icon
+{
+
+
+ //få lite mer utrymme mellan ikonerna och texten
+align-items: left;
+
+}
+.member {
+   // width:90%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between; 
+}
+ 
+    .member-image {
+        
+        width: map-get($logo-size, width);
+        
+        padding-top: 10%;
+        padding-bottom: 10%;
+        border-radius: 50%;
+        
+    @media(max-width:391px)
+    {   
+        
+        width: map-get($logo-size-mobil, width);
+        
+    }    
+    }
+
+    .member-details {
+        h2 {
+            font-size: $font-size-h2;
+            margin: 0;
+            font-family: quicksand;
+            
+            @media (max-width: 391px) {
+                
+                font-size:$font-size-mobil-h2;
+                color: black;
+                
+              } 
+
+        }
+
+        .details{
+            display:flex;
+            flex-direction: row;
+        }
+
+        .details img{
+            width:10px;
+            height:10px;
+        }
+
+        p {
+
+            font-size:$font-size-p;
+            color: rgb(0, 0, 0);
+            font-family: quicksand;
+            margin: 0;
+            word-wrap: break-word; 
+            overflow: hidden; 
+            text-align:center;
+            
+            @media (max-width: 391px) {
+                
+                font-size: $font-size-mobil-p;
+                color: black;
+                
+              } 
+
+
+        }
+
+}
