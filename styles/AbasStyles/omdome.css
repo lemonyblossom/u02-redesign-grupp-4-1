@@ -15,13 +15,12 @@
   padding-top: 0;
 }
 #omdome .main2 {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 #omdome .main2 h1 {
   font-size: 1.8rem;
   font-weight: 500;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -69,7 +68,6 @@
   border-radius: 20px;
   font-size: 1.5rem;
   padding: 0 25px;
-  width: -moz-fit-content;
   width: fit-content;
 }
 #omdome form #form-container .form-group .star {
@@ -79,7 +77,6 @@
   display: none;
 }
 #omdome form #form-container .form-group .star-container label {
-  width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 0;
   color: #ccc;
@@ -96,15 +93,11 @@
   align-self: flex-start;
 }
 #omdome form #form-container .form-group textarea {
-  padding: 10px;
+  padding: 4px;
   border-radius: 5px;
   font-size: 1.1rem;
   width: 100%;
   resize: none;
-}
-#omdome form #form-container .form-group #meddelande::-moz-placeholder {
-  font-size: 1rem;
-  line-height: 1.5;
 }
 #omdome form #form-container .form-group #meddelande::placeholder {
   font-size: 1rem;
@@ -148,7 +141,6 @@
     max-width: 600px;
   }
   #omdome form #form-container {
-    width: -moz-fit-content;
     width: fit-content;
   }
   #omdome form #form-container .form-group {
@@ -159,6 +151,7 @@
   }
   #omdome form #form-container .form-group label {
     text-align: right;
+    width: 156px;
     padding-bottom: 0;
     margin: 0;
     font-size: 1.4rem;
@@ -172,10 +165,6 @@
     resize: none;
     font-size: 1.4rem;
   }
-  #omdome form #form-container .form-group #meddelande::-moz-placeholder {
-    font-size: 1.3rem;
-    line-height: 1.5;
-  }
   #omdome form #form-container .form-group #meddelande::placeholder {
     font-size: 1.3rem;
     line-height: 1.5;
@@ -187,8 +176,8 @@
     background-color: #2B4B58;
     border: 5px solid #EFAE1F;
     color: #fff;
-    font-size: 1.5rem;
-    width: 25%;
+    font-size: 1.6rem;
+    width: 45%;
     text-align: center;
     padding: 7px 40px;
     cursor: pointer;
@@ -196,4 +185,4 @@
   #omdome .skicka:active {
     border: 5px solid #fccd67;
   }
-}/*# sourceMappingURL=omdome.css.map */
+}

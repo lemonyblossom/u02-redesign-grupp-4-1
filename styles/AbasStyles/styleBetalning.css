@@ -23,17 +23,14 @@
 #betalning .main2 h1 {
   font-size: 1.5rem;
   font-weight: 500;
-  width: -moz-fit-content;
   width: fit-content;
   line-height: 1.5;
   padding: 0 10px;
-  padding-top: 20px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 20px;
 }
 #betalning .main2 p {
-  width: -moz-fit-content;
   width: fit-content;
   text-align: left;
   margin-left: 10px;
@@ -92,10 +89,6 @@
   border-radius: 5px;
   width: 100%;
   resize: none;
-}
-#betalning form #form-container .form-group #meddelande::-moz-placeholder {
-  font-size: 1rem;
-  line-height: 1.5;
 }
 #betalning form #form-container .form-group #meddelande::placeholder {
   font-size: 1rem;
@@ -168,7 +161,6 @@
   }
   #betalning .main2 h1 {
     font-size: 2.5rem;
-    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     text-align: center;
@@ -178,7 +170,6 @@
   #betalning .main2 p {
     position: relative;
     left: 40px;
-    width: -moz-fit-content;
     width: fit-content;
     text-align: left;
     margin-left: 10px;
@@ -194,7 +185,6 @@
     margin-bottom: 50px;
   }
   #betalning form #form-container {
-    width: -moz-fit-content;
     width: fit-content;
   }
   #betalning form #form-container .form-group {
@@ -232,10 +222,6 @@
     resize: none;
     font-size: 1.4rem;
   }
-  #betalning form #form-container .form-group #meddelande::-moz-placeholder {
-    font-size: 1.3rem;
-    line-height: 1.5;
-  }
   #betalning form #form-container .form-group #meddelande::placeholder {
     font-size: 1.3rem;
     line-height: 1.5;
@@ -247,7 +233,6 @@
     align-self: flex-start;
   }
   #betalning .payment-container p {
-    width: -moz-fit-content;
     width: fit-content;
     position: relative;
     left: 40px;
@@ -305,7 +290,6 @@
   #betalning .totalSumma {
     font-size: 3rem;
     font-weight: 500;
-    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
   }
@@ -336,4 +320,4 @@
     color: black;
     text-decoration: none;
   }
-}/*# sourceMappingURL=styleBetalning.css.map */
+}
