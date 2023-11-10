@@ -1,0 +1,196 @@
+$font-size-h2: 52.2px;
+$font-size-h2-card-2: 16.57px;
+$button-card-color: #195a94;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #cea562;
+}
+
+@mixin flexCenter($direktion, $justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+  flex-direction: $direktion;
+}
+// Card 1
+
+.container-restaurang-all {
+  width: 1034px;
+  height: 1190.9px;
+
+  .ram-card-1 {
+    @include flexCenter(column, center);
+    width: 1031px;
+    height: 1190.9px;
+    background-color: #ffffff;
+    border-radius: 19.07px;
+    .card-1 {
+      width: 887.81px;
+      height: 673.01px;
+      margin-top: 71px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 19.09px;
+      }
+    }
+  }
+  .h2-card-1 {
+    width: 887.81px;
+    text-align: left;
+    font-size: $font-size-h2;
+  }
+  .calender-knapp-flex-card-1 {
+    @include flexCenter(row, space-between);
+    width: 887.81px;
+    height: 100%;
+    margin-bottom: 20px;
+
+    .calender-p-flex {
+      @include flexCenter(row, content);
+      .calender {
+        width: 57.28px;
+        height: 57.28px;
+      }
+      .calender-text {
+        font-size: 28.64px;
+        margin-left: 26px;
+      }
+    }
+    .button-card-1 {
+      background-color: $button-card-color;
+      font-size: 31.03px;
+      width: 322.19px;
+      height: 119.73px;
+      border-radius: 37.8px;
+      color: white;
+    }
+  }
+
+  // Card 2
+
+  .restaurang-container {
+    @include flexCenter(row, space-between);
+    width: 1031px;
+    margin-top: 117px;
+
+    .ram-card-2 {
+      @include flexCenter(column, center);
+      width: 325.43px;
+      height: 375.91px;
+      background-color: #ffffff;
+      border-radius: 6.03px;
+      .card-2 {
+        width: 280.23px;
+        height: 212.44px;
+        margin-top: 22.6px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 6.03px;
+        }
+      }
+    }
+    .h2-card-2 {
+      width: 280.23px;
+      text-align: left;
+      font-size: $font-size-h2-card-2;
+    }
+    .calender-knapp-flex-card-2 {
+      @include flexCenter(row, space-between);
+      width: 280.23px;
+      height: 100%;
+      margin-bottom: 20px;
+
+      .calender-p-flex-card-2 {
+        @include flexCenter(row, content);
+        .calender-card-2 {
+          width: 18.08px;
+          height: 18.08px;
+        }
+        .calender-text-card-2 {
+          font-size: 9.04px;
+          margin-left: 10px;
+        }
+      }
+      .button-card-2 {
+        background-color: $button-card-color;
+        font-size: 9.04px;
+        width: 101.7px;
+        height: 38.07px;
+        border-radius: 11px;
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .container-restaurang-all {
+    .restaurang-container {
+      @include flexCenter(column, space-between);
+      margin: 0px;
+      .ram-card-2 {
+        width: 1031px;
+        height: 1190.9px;
+        background-color: #ffffff;
+        border-radius: 19.07px;
+        margin-top: 117px;
+
+        .card-2 {
+          width: 887.81px;
+          height: 673.01px;
+          margin-top: 71px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 19.09px;
+          }
+        }
+
+        .h2-card-2 {
+          width: 887.81px;
+          text-align: left;
+          font-size: $font-size-h2;
+        }
+
+        .calender-knapp-flex-card-2 {
+          @include flexCenter(row, space-between);
+          width: 887.81px;
+          height: 100%;
+          margin-bottom: 20px;
+
+          .calender-p-flex-card-2 {
+            @include flexCenter(row, content);
+            .calender-card-2 {
+              width: 57.28px;
+              height: 57.28px;
+            }
+
+            .calender-text-card-2 {
+              font-size: 28.64px;
+              margin-left: 26px;
+            }
+          }
+
+          .button-card-2 {
+            background-color: $button-card-color;
+            font-size: 31.03px;
+            width: 322.19px;
+            height: 119.73px;
+            border-radius: 37.8px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
