@@ -1,6 +1,17 @@
-@import "variables";
-@import "reset";
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
 
+$primary-color: #FCF7EF; 
+$secondary-color: #EFAE1F;
+$third-color: #2B4B58;
+$border-color: #EFAE1F;
 
 #omdome{
 
@@ -48,7 +59,6 @@
                     width: 150px;
                     text-align: left;
                     padding-right: 10px;
-                    margin-bottom: 5px;
                     font-size: 1.15rem;
                 }
         
@@ -69,7 +79,6 @@
                     font-size: 1.5rem;
                     padding: 0 25px;
                     width: fit-content;
-                    margin-bottom: 10px;
                   }
 
                   .star{
@@ -142,4 +151,80 @@
 
 }
 
-@import "_omdomedesktop";
+// Desktop: 1920px
+@media screen and (min-width: 1920px){
+
+    #omdome{
+        padding-bottom: 60px;
+        .main2{
+            padding-top: 30px;
+            padding-bottom: 15px;
+            h1{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1.4rem;
+                max-width: 600px;
+            }
+
+        }
+
+        form{
+
+            #form-container{
+                width: fit-content;
+                
+                .form-group {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 20px;
+        
+                    label{
+                        text-align: right;
+                        padding-bottom: 0;
+                        margin: 0;
+                        font-size: 1.4rem;
+                    }
+            
+                    input{
+                        width: 450px;
+                        font-size: 1.5rem;
+                    }
+        
+                    textarea{
+                        width: 450px;
+                        resize: none;
+                        font-size: 1.4rem;
+                    }
+                    #meddelande::placeholder{
+                        font-size: 1.3rem;
+                        line-height: 1.5;
+                    }
+                }
+                
+            }
+        }
+
+        .skicka{
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            background-color: $third-color;
+            border: 5px solid $secondary-color;
+            color: #fff;
+            font-size: 1.5rem;
+            width: 25%;
+            text-align: center;
+            padding: 7px 40px;
+            cursor: pointer;
+        }
+
+        .skicka:active{
+            border: 5px solid #fccd67;
+        }
+        
+
+    }
+}

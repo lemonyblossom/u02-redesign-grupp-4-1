@@ -1,17 +1,194 @@
-@import "variables";
-// @import "reset";
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+$primary-color: #FCF7EF; 
+$secondary-color: #EFAE1F;
+$third-color: #2B4B58;
+$border-color: #EFAE1F;
 
 
+#betalning{
+    background-color: $primary-color;
+    color: #000000;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 30px;
+
+    .main2{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        h1{
+            font-size: 1.5rem;
+            font-weight: 500;
+            width: fit-content;
+            line-height: 1.5;
+            padding: 0 10px;
+            padding-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p{
+            width: fit-content;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 1.1rem;
+        }
+
+    }
+
+    form{
+        margin: 0 auto;
+        margin: 0 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px solid $secondary-color;
+
+        #form-container{
+            width: 100%;
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                margin-bottom: 15px;
+    
+                label{
+                    width: 150px;
+                    text-align: left;
+                    padding-right: 10px;
+                    font-size: 1.15rem;
+                }
+        
+                input{
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 5px;
+                    font-size: 1.1rem;
+                }
+
+                .betalningsadress-container{
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        padding: 0;
+                        margin-bottom: -5px;
+                    }
+                    p{
+                        padding-bottom: 5px;
+                        text-align: left;
+                        font-size: 0.72rem;
+                    }
+                }
+
+                input[type="date"] {
+                    width: 200px; 
+                    height: 40px; 
+                  }
+    
+                .meddelande{
+                    align-self: flex-start;
+                }
+    
+                textarea{
+                    padding: 5px;
+                    border-radius: 5px;
+                    width: 100%;
+                    resize: none;
+                }
+                #meddelande::placeholder{
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+            
+        }
+    }
+
+    .payment-container{
+        margin-top: 20px;
+        p{
+            font-size: 1.1rem;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    }
+
+    #payment-form{
+        padding: 0;
+        .payment-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            margin-bottom: 20px;
+    
+            label{
+                margin-bottom: 5px;
+                padding-bottom: 10px;
+                
+                img{
+                    width: 150px;
+                }
+            }
+
+            .visa-card{
+                padding-bottom: 0;
+                img{
+                    width: 250px;
+                }
+            }
+    
+          }
+
+    }
+    
+    .totalSumma{
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+
+    .skicka{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        background-color: $third-color;
+        border: 5px solid $secondary-color;
+        color: #fff;
+        font-size: 1.15rem;
+        width: 60%;
+        text-align: center;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .skicka:active{
+        border: 5px solid #fccd67;
+      }
+}
+
+// Desktop: 1920px
 @media screen and (min-width: 1920px){
 
     #betalning{
-        padding: 50px;
-        padding-bottom: 80px;
+        padding: 20px 50px 80px;
         width: 100%;
         min-width: 1085px;
 
         .main2{
-            padding-top: 40px;
             padding-bottom: 10px;
             h1{
                 font-size: 2.5rem;
@@ -19,6 +196,7 @@
                 margin: 0 auto;
                 text-align: center;
                 margin-bottom: 25px;
+                padding-top: 10px;
             }
     
             p{
@@ -187,8 +365,6 @@
             font-weight: 500;
             width: fit-content;
             margin: 0 auto;
-            padding-bottom: 30px;
-            margin-bottom: 10px;
         }
     
         .skicka{

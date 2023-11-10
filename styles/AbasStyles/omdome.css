@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+#omdome {
+  background-color: #FCF7EF;
+  border: 3px solid #EFAE1F;
+  border-radius: 10px;
+  padding-top: 0;
+}
+#omdome .main2 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+#omdome .main2 h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#omdome .main2 p {
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+#omdome form {
+  color: #000000;
+  margin: 0 20px;
+  padding: 10px;
+}
+#omdome form #form-container {
+  width: 100%;
+}
+#omdome form #form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
+}
+#omdome form #form-container .form-group label {
+  width: 150px;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 1.15rem;
+}
+#omdome form #form-container .form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+#omdome form #form-container .form-group .star-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 0 25px;
+  width: fit-content;
+}
+#omdome form #form-container .form-group .star {
+  font-size: 1.5rem;
+}
+#omdome form #form-container .form-group .star-container input {
+  display: none;
+}
+#omdome form #form-container .form-group .star-container label {
+  width: fit-content;
+  margin-bottom: 0;
+  color: #ccc;
+  cursor: pointer;
+}
+#omdome form #form-container .form-group .star-container input:checked ~ label {
+  color: #EFAE1F;
+}
+#omdome form #form-container .form-group .star-container label:hover,
+#omdome form #form-container .form-group .star-container label:hover ~ label {
+  color: #EFAE1F;
+}
+#omdome form #form-container .form-group .meddelande {
+  align-self: flex-start;
+}
+#omdome form #form-container .form-group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 100%;
+  resize: none;
+}
+#omdome form #form-container .form-group #meddelande::placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#omdome form #form-container .datum {
+  margin-bottom: 15px;
+}
+#omdome .skicka {
+  position: relative;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: #2B4B58;
+  border: 5px solid #EFAE1F;
+  color: #fff;
+  font-size: 1.15rem;
+  width: 50%;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+#omdome .skicka:active {
+  border: 5px solid #fccd67;
+}
+
+@media screen and (min-width: 1920px) {
+  #omdome {
+    padding-bottom: 60px;
+  }
+  #omdome .main2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  #omdome .main2 h1 {
+    font-size: 2rem;
+  }
+  #omdome .main2 p {
+    font-size: 1.4rem;
+    max-width: 600px;
+  }
+  #omdome form #form-container {
+    width: fit-content;
+  }
+  #omdome form #form-container .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #omdome form #form-container .form-group label {
+    text-align: right;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  #omdome form #form-container .form-group input {
+    width: 450px;
+    font-size: 1.5rem;
+  }
+  #omdome form #form-container .form-group textarea {
+    width: 450px;
+    resize: none;
+    font-size: 1.4rem;
+  }
+  #omdome form #form-container .form-group #meddelande::placeholder {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  #omdome .skicka {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: #2B4B58;
+    border: 5px solid #EFAE1F;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 25%;
+    text-align: center;
+    padding: 7px 40px;
+    cursor: pointer;
+  }
+  #omdome .skicka:active {
+    border: 5px solid #fccd67;
+  }
+}
