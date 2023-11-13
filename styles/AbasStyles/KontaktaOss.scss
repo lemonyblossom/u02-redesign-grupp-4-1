@@ -19,7 +19,6 @@ $border-color: #EFAE1F;
     border: 3px solid $secondary-color;
     border-radius: 10px;
     margin: 0 auto;
-    padding-top: 0;
 
     .main2{
         padding-top: 15px;
@@ -31,7 +30,7 @@ $border-color: #EFAE1F;
             margin: 0 auto;
             text-align: center;
             color: $third-color;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
         }
 
         p{
@@ -48,9 +47,10 @@ $border-color: #EFAE1F;
     form{
         background-color: $third-color;
         color: #fff;
-        margin: 0 auto;
-        margin: 0 20px;
-        padding: 10px;
+        margin: 0 7px;
+        padding: 9px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         border-radius: 10px;
 
         #form-container{
@@ -64,9 +64,6 @@ $border-color: #EFAE1F;
                 label{
                     width: 150px;
                     text-align: left;
-                    padding-right: 10px;
-                    padding-bottom: 5px;
-                    margin-bottom: 5px;
                     font-size: 1.15rem;
                 }
         
@@ -116,6 +113,11 @@ $border-color: #EFAE1F;
         border: 5px solid #fccd67;
       }
 
+    
+    input[type="submit"].skicka:hover{
+        background-color: red;
+    }
+
     .kontakt-info{
         display: flex;
         flex-direction: column;
@@ -134,8 +136,6 @@ $border-color: #EFAE1F;
 }
 
 //Desktop: 1920px
-
-
 @media screen and (min-width: 1920px){
 
     #kontakt{
@@ -179,6 +179,7 @@ $border-color: #EFAE1F;
                     label{
                         text-align: right;
                         padding-bottom: 0;
+                        padding-right: 10px;
                         width: 200px;
                         margin: 0;
                         font-size: 1.4rem;
@@ -191,12 +192,10 @@ $border-color: #EFAE1F;
         
                     textarea{
                         width: 450px;
-                        resize: none;
                         font-size: 1.4rem;
                     }
                     #meddelande::placeholder{
                         font-size: 1.2rem;
-                        line-height: 1.5;
                         padding: 10px;
                     }
                 }
@@ -205,23 +204,10 @@ $border-color: #EFAE1F;
         }
 
         .skicka{
-            position: relative;
-            top: 20px;
-            display: block;
-            margin: 0 auto;
-            background-color: $third-color;
-            border: 5px solid $secondary-color;
-            color: #fff;
             font-size: 1.5rem;
             width: 40%;
-            text-align: center;
             padding: 7px 40px;
-            cursor: pointer;
             margin-bottom: 60px;
-        }
-
-        .skicka:active{
-            border: 5px solid #fccd67;
         }
 
         .kontakt-info{
@@ -230,12 +216,7 @@ $border-color: #EFAE1F;
             align-self: flex-start;
             padding: 20px;
             padding-left: 60px;
-            line-height: 1.5;
             font-size: 1.4rem;
-            a{
-                color: black;
-                text-decoration: none;
-            }
 
             p{
                 text-align: left;

@@ -38,8 +38,10 @@
 #kontakt form {
   background-color: #2B4B58;
   color: #fff;
-  margin: 0 20px;
-  padding: 10px;
+  margin: 0 10px;
+  padding: 9px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 10px;
 }
 #kontakt form #form-container {
@@ -54,7 +56,6 @@
 #kontakt form #form-container .form-group label {
   width: 150px;
   text-align: left;
-  margin-bottom: 5px;
   font-size: 1.15rem;
 }
 #kontakt form #form-container .form-group input {
@@ -73,7 +74,7 @@
   resize: none;
 }
 #kontakt form #form-container .form-group #meddelande::placeholder {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 #kontakt .skicka {
@@ -94,15 +95,8 @@
 #kontakt .skicka:active {
   border: 5px solid #fccd67;
 }
-#kontakt .kontakt-info {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  line-height: 1.5;
-}
-#kontakt .kontakt-info a {
-  color: black;
-  text-decoration: none;
+#kontakt input[type=submit].skicka:hover {
+  background-color: red;
 }
 
 @media screen and (min-width: 1920px) {
@@ -141,8 +135,8 @@
   }
   #kontakt form #form-container .form-group label {
     text-align: right;
-    padding-bottom: 0;
     padding-right: 10px;
+    margin-bottom: 5px;
     width: 200px;
     margin: 0;
     font-size: 1.4rem;
@@ -153,42 +147,16 @@
   }
   #kontakt form #form-container .form-group textarea {
     width: 450px;
-    resize: none;
     font-size: 1.4rem;
     padding: 9px;
   }
   #kontakt form #form-container .form-group #meddelande::placeholder {
     font-size: 1.2rem;
-    line-height: 1.5;
   }
   #kontakt .skicka {
-    position: relative;
-    top: 20px;
-    display: block;
-    margin: 0 auto;
-    background-color: #2B4B58;
-    border: 5px solid #EFAE1F;
-    color: #fff;
     font-size: 1.5rem;
     width: 32%;
     text-align: center;
     padding: 7px 40px;
-    cursor: pointer;
-    margin-bottom: 40px;
-  }
-  #kontakt .skicka:active {
-    border: 5px solid #fccd67;
-  }
-  #kontakt .kontakt-info {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    padding-left: 60px;
-    line-height: 1.5;
-    font-size: 1.4rem;
-  }
-  #kontakt .kontakt-info a {
-    color: black;
-    text-decoration: none;
   }
 }
