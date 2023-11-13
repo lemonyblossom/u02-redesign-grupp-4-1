@@ -15,7 +15,7 @@
   padding-top: 0;
 }
 #omdome .main2 {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 #omdome .main2 h1 {
@@ -93,7 +93,7 @@
   align-self: flex-start;
 }
 #omdome form #form-container .form-group textarea {
-  padding: 10px;
+  padding: 4px;
   border-radius: 5px;
   font-size: 1.1rem;
   width: 100%;
@@ -151,6 +151,7 @@
   }
   #omdome form #form-container .form-group label {
     text-align: right;
+    width: 156px;
     padding-bottom: 0;
     margin: 0;
     font-size: 1.4rem;
@@ -175,8 +176,8 @@
     background-color: #2B4B58;
     border: 5px solid #EFAE1F;
     color: #fff;
-    font-size: 1.5rem;
-    width: 25%;
+    font-size: 1.6rem;
+    width: 45%;
     text-align: center;
     padding: 7px 40px;
     cursor: pointer;
