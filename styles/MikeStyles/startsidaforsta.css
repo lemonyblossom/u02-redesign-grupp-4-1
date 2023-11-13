@@ -1,13 +1,13 @@
 .article-container {
-  width: 1390px;
-  height: 2292px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .article-container h1 {
-  width: 783px;
+  width: 75%;
   height: 130px;
   font-size: 50px;
   display: flex;
@@ -22,13 +22,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 31px;
-  width: 955px;
+  width: 75%;
   height: auto;
-  font-size: 16px;
+  font-size: 1.5rem;
   text-align: center;
 }
 .article-container .mat-startsida {
-  width: 800px;
+  width: 75%;
   height: auto;
 }
 .article-container .bild-anvandare {
@@ -36,38 +36,63 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 1013.6px;
+  width: 75%;
   height: auto;
 }
 .article-container .h3-style {
   font-size: 24px;
   font-weight: bold;
 }
+.article-container .anvandare-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
 .article-container .bild-user {
-  width: 228.48px;
-  height: 62.72px;
+  width: 75%;
+  height: auto;
 }
 .article-container .omdome-stjarna {
-  width: 100%;
-  margin-left: 300px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
 }
+.article-container .anvandare-container {
+  margin-bottom: 200px;
+}
 @media (max-width: 390px) {
+  .article-container .mat-startsida {
+    width: 100%;
+    height: auto;
+  }
+  .article-container .bild-anvandare {
+    width: 100%;
+  }
   .article-container h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .article-container .omdome-stjarna {
     width: 100%;
-    margin-left: 300px;
+    height: 200px;
+    margin-top: 50px;
+    display: block;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
+  }
+  .article-container .anvandare-container {
+    margin-bottom: 60px;
+  }
+  .article-container .valkommen-text {
+    width: 100%;
   }
 }/*# sourceMappingURL=startsidaforsta.css.map */

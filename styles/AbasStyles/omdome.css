@@ -21,6 +21,7 @@
 #omdome .main2 h1 {
   font-size: 1.8rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -68,6 +69,7 @@
   border-radius: 20px;
   font-size: 1.5rem;
   padding: 0 25px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #omdome form #form-container .form-group .star {
@@ -77,6 +79,7 @@
   display: none;
 }
 #omdome form #form-container .form-group .star-container label {
+  width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 0;
   color: #ccc;
@@ -98,6 +101,10 @@
   font-size: 1.1rem;
   width: 100%;
   resize: none;
+}
+#omdome form #form-container .form-group #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 #omdome form #form-container .form-group #meddelande::placeholder {
   font-size: 1rem;
@@ -141,6 +148,7 @@
     max-width: 600px;
   }
   #omdome form #form-container {
+    width: -moz-fit-content;
     width: fit-content;
   }
   #omdome form #form-container .form-group {
@@ -165,6 +173,10 @@
     resize: none;
     font-size: 1.4rem;
   }
+  #omdome form #form-container .form-group #meddelande::-moz-placeholder {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
   #omdome form #form-container .form-group #meddelande::placeholder {
     font-size: 1.3rem;
     line-height: 1.5;
@@ -185,4 +197,4 @@
   #omdome .skicka:active {
     border: 5px solid #fccd67;
   }
-}
+}/*# sourceMappingURL=omdome.css.map */

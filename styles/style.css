@@ -99,7 +99,7 @@ main {
 }
 
 .nav-icon-desk.fa-user:hover {
-  color: #EFAD1F;
+  color: #efad1f;
   transition: 800ms;
 }
 
@@ -300,7 +300,7 @@ footer {
     cursor: pointer;
   }
   .fa-user:hover {
-    color: #EFAD1F;
+    color: #efad1f;
     transition: 800ms;
   }
   .menu-icon {
@@ -320,7 +320,7 @@ footer {
   }
   .menu-icon:hover,
   .menu-icon:active {
-    color: #EFAD1F;
+    color: #efad1f;
     transform: rotate(90deg);
     transition: 800ms;
   }
@@ -331,7 +331,7 @@ footer {
     width: 120px;
     height: 100vh;
     transition: left 1s;
-    border-right: solid 3px #EFAD1F;
+    border-right: solid 3px #efad1f;
     z-index: 1;
   }
   .sidebar-content {

@@ -1,72 +1,86 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: #cea562;
+.h2Nyheter {
+  width: 100%;
+  height: auto;
+  font-size: 50px;
+  margin-top: 38px;
+  margin-bottom: 100px;
 }
 
 .container-restaurang-all {
-  width: 1034px;
-  height: 1190.9px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 .container-restaurang-all .ram-card-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 1031px;
-  height: 1190.9px;
+  width: 80%;
   background-color: #ffffff;
-  border-radius: 19.07px;
+  border-radius: 20px;
 }
 .container-restaurang-all .ram-card-1 .card-1 {
-  width: 887.81px;
-  height: 673.01px;
+  width: 95%;
   margin-top: 71px;
+  border-radius: 20px;
 }
 .container-restaurang-all .ram-card-1 .card-1 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 19.09px;
+  border-radius: 20px;
 }
 .container-restaurang-all .h2-card-1 {
-  width: 887.81px;
+  display: flex;
+  width: 100%;
+  padding: 25px;
   text-align: left;
-  font-size: 52.2px;
+  font-size: 1.5rem;
 }
 .container-restaurang-all .calender-knapp-flex-card-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 887.81px;
+  width: 95%;
   height: 100%;
   margin-bottom: 20px;
+  /* VAD ÄR FEL PÅ DATE-TEXTEN!?- Olli-Heikki*/
 }
 .container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex {
+  width: 30%;
   display: flex;
-  justify-content: content;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 .container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex .calender {
-  width: 57.28px;
   height: 57.28px;
+  margin-right: 20px;
 }
-.container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex .calender-text {
-  font-size: 28.64px;
-  margin-left: 26px;
+.container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex .cal-date {
+  text-align: left;
 }
 .container-restaurang-all .calender-knapp-flex-card-1 .button-card-1 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container-restaurang-all .calender-knapp-flex-card-1 button {
   background-color: #195a94;
-  font-size: 31.03px;
-  width: 322.19px;
-  height: 119.73px;
+  width: 50%;
+  font-size: 1.5rem;
+  padding: 10 40px;
   border-radius: 37.8px;
   color: white;
 }
@@ -75,7 +89,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 1031px;
+  width: 100%;
   margin-top: 117px;
 }
 .container-restaurang-all .restaurang-container .ram-card-2 {
@@ -83,7 +97,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 325.43px;
   height: 375.91px;
   background-color: #ffffff;
   border-radius: 6.03px;
@@ -110,13 +123,13 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 280.23px;
+  width: 100%;
   height: 100%;
   margin-bottom: 20px;
 }
 .container-restaurang-all .restaurang-container .calender-knapp-flex-card-2 .calender-p-flex-card-2 {
   display: flex;
-  justify-content: content;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
@@ -146,8 +159,8 @@ body {
     margin: 0px;
   }
   .container-restaurang-all .restaurang-container .ram-card-2 {
-    width: 1031px;
-    height: 1190.9px;
+    width: 100%;
+    height: 100%;
     background-color: #ffffff;
     border-radius: 19.07px;
     margin-top: 117px;
@@ -167,7 +180,7 @@ body {
   .container-restaurang-all .restaurang-container .ram-card-2 .h2-card-2 {
     width: 887.81px;
     text-align: left;
-    font-size: 52.2px;
+    font-size: 1.5rem;
   }
   .container-restaurang-all .restaurang-container .ram-card-2 .calender-knapp-flex-card-2 {
     display: flex;
@@ -180,7 +193,7 @@ body {
   }
   .container-restaurang-all .restaurang-container .ram-card-2 .calender-knapp-flex-card-2 .calender-p-flex-card-2 {
     display: flex;
-    justify-content: content;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
   }
