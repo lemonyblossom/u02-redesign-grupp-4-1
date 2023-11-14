@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+$primary-color: #FCF7EF; 
+$secondary-color: #EFAE1F;
+$third-color: #2B4B58;
+$border-color: #EFAE1F;
+$goldStar: #F1D058;
+
+
+@import "omdome";
+@import "AbasMedlemKontakt";
+@import "KontaktaOss";
+@import "styleBetalning";
+// @import " ";
+

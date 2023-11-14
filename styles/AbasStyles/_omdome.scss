@@ -1,0 +1,430 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    margin: 20px;
+    margin-top: 100px;
+
+    .grid-item{
+        position: relative;
+        background-color: #476E91;
+        border-radius: 20px;
+        margin-bottom: 80px;
+        height: 450px;
+        justify-self: center;
+        margin-top: 48px;
+
+        .profile{
+            display: flex;
+            justify-content: center;
+            img{
+                position: absolute;
+                top: -47px;
+                width: 88px;
+                border-radius: 100%;
+            }
+        }
+
+        .name{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2{
+                color: #fff;
+                font-size: 1.3rem;
+                padding-top: 58px;
+                margin-bottom: 4px;
+            }
+            
+            p{
+                color: #fff;
+                margin-bottom: 10px;
+            }
+        }
+
+        .about{
+            text-align: center;
+            line-height: 2;
+            font-size: 0.9rem;
+            color: #fff;
+            margin: 14px 10px;
+        }
+
+        .form-group5{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            margin-bottom: 10px;
+
+            label{
+                width: 150px;
+                text-align: left;
+                padding-right: 10px;
+                font-size: 1.15rem;
+                color: $goldStar;
+            }
+    
+            input{
+                width: 100%;
+                padding: 8px;
+                border-radius: 10px;
+                font-size: 1.1rem;
+            }
+            
+            .star-container2{
+                position: absolute;
+                bottom: 30px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                font-size: 1.5rem;
+                padding: 0 25px;
+                width: fit-content;
+                align-self: center;
+              }
+
+              .star{
+                font-size: 2.1rem;
+              }
+
+              .grey{
+                color: #ccc;
+              }
+              
+              .star-container2 input {
+                display: none;
+              }
+              
+              .star-container2 label {
+                width: fit-content;
+                cursor: pointer;
+              }
+
+        }
+    }
+
+}
+
+#omdome{
+
+    background-color: $primary-color;
+    border: 3px solid $secondary-color;
+    border-radius: 10px;
+    padding-top: 0;
+
+    .main1{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        h2{
+            font-size: 1.7rem;
+            font-weight: 500;
+            width: fit-content;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        p{
+            width: 100%;
+            max-width: 440px;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+    }
+
+    #myForm1{
+        color: #000000;
+        padding: 10px;
+
+        #form-container1{
+            width: 100%;
+            .form-group1{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                margin-bottom: 10px;
+    
+                label{
+                    width: 150px;
+                    text-align: left;
+                    padding-right: 10px;
+                    font-size: 1.15rem;
+                }
+        
+                input{
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 10px;
+                    font-size: 1.1rem;
+                }
+                
+                .star-container {
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    font-size: 1.5rem;
+                    padding: 0 25px;
+                    width: fit-content;
+                  }
+
+                  .star{
+                    font-size: 1.5rem;
+                  }
+                  
+                  .star-container input {
+                    display: none;
+                  }
+                  
+                  .star-container label {
+                    width: fit-content;
+                    margin-bottom: 0;
+                    color: #ccc;
+                    cursor: pointer;
+                  }
+                  
+                  .star-container input:checked ~ label {
+                    color: $secondary-color;
+                  }
+                  
+                  .star-container label:hover,
+                  .star-container label:hover ~ label {
+                    color: $secondary-color;
+                  }
+    
+                .meddelande{
+                    align-self: flex-start;
+                }
+    
+                textarea{
+                    padding: 6px;
+                    border-radius: 14px;
+                    font-size: 1.1rem;
+                    width: 100%;
+                    resize: none;
+                }
+                #meddelande::placeholder{
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+
+            .datum{
+                margin-bottom: 15px;
+            }
+            
+        }
+    }
+
+    .skicka1{
+        position: relative;
+        top: 20px;
+        display: block;
+        margin: 0 auto;
+        background-color: $third-color;
+        border: 5px solid $secondary-color;
+        color: #fff;
+        font-size: 1.15rem;
+        width: 50%;
+        text-align: center;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    .skicka1:active{
+        border: 5px solid #fccd67;
+      }
+    
+    input[type="submit"].skicka1:hover{
+        background-color: red;
+    }
+
+}
+
+// Desktop: 1920px
+@media screen and (min-width: 1920px){
+
+    
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .grid-item{
+        position: relative;
+        background-color: #476E91;
+        width: 90%;
+        border-radius: 20px;
+        margin-top: 44px;
+
+        img{
+            left: 39%;
+            top: -44px;
+        }
+
+        .name{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+
+            h2{
+                color: #fff;
+                font-size: 1.3rem;
+                padding-top: 40px;
+                margin-bottom: 4px;
+            }
+            
+            p{
+                color: #fff;
+                margin-bottom: 10px;
+            }
+        }
+
+        .about{
+            text-align: center;
+            line-height: 2;
+            font-size: 0.9rem;
+            color: #fff;
+            margin: 14px 10px;
+        }
+
+        .card-3{
+            margin: 39px 14px;
+        }
+
+        .form-group5{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            margin-bottom: 10px;
+
+            label{
+                width: 150px;
+                text-align: left;
+                padding-right: 10px;
+                font-size: 1.15rem;
+                color: $goldStar;
+            }
+    
+            input{
+                width: 100%;
+                padding: 8px;
+                border-radius: 10px;
+                font-size: 1.1rem;
+            }
+            
+            .star-container2{
+                position: absolute;
+                bottom: 30px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                font-size: 1.5rem;
+                padding: 0 25px;
+                width: fit-content;
+                align-self: center;
+              }
+
+              .star{
+                font-size: 2.1rem;
+              }
+
+              .grey1, .grey2{
+                color: #ccc;
+              }
+              
+              .star-container2 input {
+                display: none;
+              }
+              
+              .star-container2 label {
+                width: fit-content;
+                cursor: pointer;
+              }
+
+        }
+    }
+
+}
+
+    #omdome{
+        padding: 70px;
+        padding-top: 20px;
+        padding-bottom: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .main1{
+            padding-top: 30px;
+            padding-bottom: 15px;
+            h2{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1.4rem;
+                max-width: 600px;
+            }
+
+        }
+
+        #myForm1{
+            margin: 0 20px;
+            #form-container1{
+                width: fit-content;
+                
+                .form-group1{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 30px;
+        
+                    label{
+                        text-align: right;
+                        width: 156px;
+                        padding-bottom: 0;
+                        margin: 0;
+                        font-size: 1.4rem;
+                    }
+            
+                    input{
+                        width: 610px;
+                        font-size: 1.5rem;
+                    }
+        
+                    textarea{
+                        width: 610px;
+                        font-size: 1.4rem;
+                    }
+                    #meddelande::placeholder{
+                        font-size: 1.3rem;
+                    }
+                }
+                
+            }
+        }
+
+        .skicka1{
+            font-size: 1.6rem;
+            width: 35%;
+            padding: 7px 40px;
+            cursor: pointer;
+        }
+
+    }
+}

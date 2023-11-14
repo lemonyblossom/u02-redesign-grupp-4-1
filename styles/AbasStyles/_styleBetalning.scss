@@ -1,18 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style-type: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-}
-
-$primary-color: #FCF7EF; 
-$secondary-color: #EFAE1F;
-$third-color: #2B4B58;
-$border-color: #EFAE1F;
-
 
 #betalning{
     background-color: $primary-color;
@@ -22,7 +7,7 @@ $border-color: #EFAE1F;
     padding-top: 0;
     padding-bottom: 30px;
 
-    .main2{
+    .main4{
         padding-top: 20px;
         padding-bottom: 10px;
         h1{
@@ -45,7 +30,7 @@ $border-color: #EFAE1F;
 
     }
 
-    form{
+    #myForm4{
         margin: 0 10px;
         padding: 9px;
         padding-top: 20px;
@@ -53,9 +38,9 @@ $border-color: #EFAE1F;
         border-radius: 10px;
         border: 3px solid $secondary-color;
 
-        #form-container{
+        #form-container4{
             width: 100%;
-            .form-group {
+            .form-group4{
                 display: flex;
                 flex-direction: column;
                 align-items: left;
@@ -125,6 +110,10 @@ $border-color: #EFAE1F;
 
     #payment-form{
         padding: 0;
+        border-radius: 10px;
+        border: 3px solid $secondary-color;
+        margin-bottom: 10px;
+
         .payment-method {
             display: flex;
             flex-direction: column;
@@ -161,7 +150,7 @@ $border-color: #EFAE1F;
     }
 
 
-    .skicka{
+    .skicka4{
         position: relative;
         display: block;
         margin: 0 auto;
@@ -176,11 +165,11 @@ $border-color: #EFAE1F;
     }
 
     
-    input[type="submit"].skicka:hover{
+    input[type="submit"].skicka4:hover{
         background-color: red;
     }
 
-    .skicka:active{
+    .skicka4:active{
         border: 5px solid #fccd67;
       }
 }
@@ -193,7 +182,7 @@ $border-color: #EFAE1F;
         width: 100%;
         min-width: 1085px;
 
-        .main2{
+        .main4{
             h1{
                 font-size: 2.5rem;
                 margin-bottom: 48px;
@@ -208,21 +197,21 @@ $border-color: #EFAE1F;
     
         }
     
-        form{
+        #myForm4{
 
             display: flex;
             justify-content: center;
             margin: 0 20px;
             width: 100%;
-            max-width: 900px;
+            max-width: 970px;
             padding: 70px;
             margin-bottom: 50px;
 
 
-            #form-container{
+            #form-container4{
                 width: fit-content;
                 
-                .form-group {
+                .form-group4{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -292,6 +281,7 @@ $border-color: #EFAE1F;
             justify-content: space-around;
             align-items: center;
             padding-top: 15px;
+            padding-bottom: 20px;
             margin-bottom: 15px;
             
             .payment-method {
@@ -347,9 +337,10 @@ $border-color: #EFAE1F;
             font-size: 3rem;
             font-weight: 500;
             width: fit-content;
+            padding-bottom: 40px;
         }
     
-        .skicka{
+        .skicka4{
             font-size: 1.7rem;
             width: 310px;
             margin-bottom: 0;
