@@ -38,7 +38,7 @@ $button-card-color: #195a94;
     border-radius: 20px;
     .card-1 {
       width: 95%;
-      margin-top: 71px;
+      margin-top: 5%;
       border-radius: 20px;
       img {
         width: 100%;
@@ -64,7 +64,7 @@ $button-card-color: #195a94;
 
     .calender-p-flex {
       //container
-      width: 30%;
+      width: 110%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -73,23 +73,26 @@ $button-card-color: #195a94;
       .calender {
         //logga
         height: 57.28px;
-        margin-right: 20px;
+        padding-right: 20px;
       }
       .cal-date {
         text-align: left;
+        width: 95px;
+        width: 100%;
       }
     }
     /* VAD ÄR FEL PÅ DATE-TEXTEN!?- Olli-Heikki*/
 
     .button-card-1 {
-      width: 50%;
+      width: 80%;
+      height: 80%;
       display: flex;
       justify-content: flex-end;
     }
     button {
       background-color: $button-card-color;
-      width: 50%;
-      font-size: 1.5rem;
+      width: 70%;
+      font-size: 1rem;
       padding: 10 40px;
       border-radius: 37.8px;
       color: white;
@@ -153,67 +156,50 @@ $button-card-color: #195a94;
     }
   }
 }
+/*---------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 390px) {
-  .container-restaurang-all {
-    .restaurang-container {
-      @include flexCenter(column, space-between);
-      margin: 0px;
+@media screen and (max-width: 390px) {
+  .h2Nyheter {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 30x;
+  }
+  .container-restaurang-all .h2-card-1 {
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .container-restaurang-all .calender-knapp-flex-card-1 button {
+    width: 80%;
+    height: 100%;
+  }
+  .calender-p-flex {
+    margin-left: 20px;
+  }
+  .container-restaurang-all .ram-card-1 .card-1 {
+    margin-top: 10%;
+  }
 
-      .ram-card-2 {
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-        border-radius: 19.07px;
-        margin-top: 117px;
+  .container-restaurang-all .ram-card-1 {
+    width: 100%;
+  }
 
-        .card-2 {
-          width: 887.81px;
-          height: 673.01px;
-          margin-top: 71px;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 19.09px;
-          }
-        }
+  .cal-date {
+    font-size: 0.8rem;
+  }
+  .calender {
+    height: 30px;
+  }
+  .button-card-1 {
+    width: 30%;
+  }
 
-        .h2-card-2 {
-          width: 887.81px;
-          text-align: left;
-          font-size: $font-size-h2;
-        }
+  // 3 Cards
 
-        .calender-knapp-flex-card-2 {
-          @include flexCenter(row, space-between);
-          width: 887.81px;
-          height: 100%;
-          margin-bottom: 20px;
-
-          .calender-p-flex-card-2 {
-            @include flexCenter(row, center);
-            .calender-card-2 {
-              width: 57.28px;
-              height: 57.28px;
-            }
-
-            .calender-text-card-2 {
-              font-size: 28.64px;
-              margin-left: 26px;
-            }
-          }
-
-          .button-card-2 {
-            background-color: $button-card-color;
-            font-size: 31.03px;
-            width: 322.19px;
-            height: 119.73px;
-            border-radius: 37.8px;
-            color: white;
-          }
-        }
-      }
-    }
+  .restaurang-container {
+    @include flexCenter(column, center);
   }
 }

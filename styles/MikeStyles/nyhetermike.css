@@ -30,7 +30,7 @@
 }
 .container-restaurang-all .ram-card-1 .card-1 {
   width: 95%;
-  margin-top: 71px;
+  margin-top: 5%;
   border-radius: 20px;
 }
 .container-restaurang-all .ram-card-1 .card-1 img {
@@ -58,7 +58,7 @@
   /* VAD ÄR FEL PÅ DATE-TEXTEN!?- Olli-Heikki*/
 }
 .container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex {
-  width: 30%;
+  width: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,20 +66,23 @@
 }
 .container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex .calender {
   height: 57.28px;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 .container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex .cal-date {
   text-align: left;
+  width: 95px;
+  width: 100%;
 }
 .container-restaurang-all .calender-knapp-flex-card-1 .button-card-1 {
-  width: 50%;
+  width: 80%;
+  height: 80%;
   display: flex;
   justify-content: flex-end;
 }
 .container-restaurang-all .calender-knapp-flex-card-1 button {
   background-color: #195a94;
-  width: 50%;
-  font-size: 1.5rem;
+  width: 70%;
+  font-size: 1rem;
   padding: 10 40px;
   border-radius: 37.8px;
   color: white;
@@ -150,67 +153,47 @@
   color: white;
 }
 
-@media (max-width: 390px) {
-  .container-restaurang-all .restaurang-container {
+/*---------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 390px) {
+  .h2Nyheter {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 30x;
+  }
+  .container-restaurang-all .h2-card-1 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px;
-  }
-  .container-restaurang-all .restaurang-container .ram-card-2 {
     width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 19.07px;
-    margin-top: 117px;
-  }
-  .container-restaurang-all .restaurang-container .ram-card-2 .card-2 {
-    width: 887.81px;
-    height: 673.01px;
-    margin-top: 71px;
-  }
-  .container-restaurang-all .restaurang-container .ram-card-2 .card-2 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 19.09px;
-  }
-  .container-restaurang-all .restaurang-container .ram-card-2 .h2-card-2 {
-    width: 887.81px;
+    padding: 25px;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  .container-restaurang-all .restaurang-container .ram-card-2 .calender-knapp-flex-card-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 887.81px;
+  .container-restaurang-all .calender-knapp-flex-card-1 button {
+    width: 80%;
     height: 100%;
-    margin-bottom: 20px;
   }
-  .container-restaurang-all .restaurang-container .ram-card-2 .calender-knapp-flex-card-2 .calender-p-flex-card-2 {
+  .calender-p-flex {
+    margin-left: 20px;
+  }
+  .container-restaurang-all .ram-card-1 .card-1 {
+    margin-top: 10%;
+  }
+  .container-restaurang-all .ram-card-1 {
+    width: 100%;
+  }
+  .cal-date {
+    font-size: 0.8rem;
+  }
+  .calender {
+    height: 30px;
+  }
+  .button-card-1 {
+    width: 30%;
+  }
+  .restaurang-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-  }
-  .container-restaurang-all .restaurang-container .ram-card-2 .calender-knapp-flex-card-2 .calender-p-flex-card-2 .calender-card-2 {
-    width: 57.28px;
-    height: 57.28px;
-  }
-  .container-restaurang-all .restaurang-container .ram-card-2 .calender-knapp-flex-card-2 .calender-p-flex-card-2 .calender-text-card-2 {
-    font-size: 28.64px;
-    margin-left: 26px;
-  }
-  .container-restaurang-all .restaurang-container .ram-card-2 .calender-knapp-flex-card-2 .button-card-2 {
-    background-color: #195a94;
-    font-size: 31.03px;
-    width: 322.19px;
-    height: 119.73px;
-    border-radius: 37.8px;
-    color: white;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=nyhetermike.css.map */
