@@ -24,7 +24,7 @@ $border-color: #EFAE1F;
         padding-top: 20px;
         padding-bottom: 10px;
         h1{
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 500;
             width: fit-content;
             margin: 0 auto;
@@ -44,7 +44,6 @@ $border-color: #EFAE1F;
 
     form{
         color: #000000;
-        margin: 0 20px;
         padding: 10px;
 
         #form-container{
@@ -65,7 +64,7 @@ $border-color: #EFAE1F;
                 input{
                     width: 100%;
                     padding: 8px;
-                    border-radius: 5px;
+                    border-radius: 10px;
                     font-size: 1.1rem;
                 }
                 
@@ -110,8 +109,8 @@ $border-color: #EFAE1F;
                 }
     
                 textarea{
-                    padding: 4px;
-                    border-radius: 5px;
+                    padding: 6px;
+                    border-radius: 14px;
                     font-size: 1.1rem;
                     width: 100%;
                     resize: none;
@@ -148,6 +147,10 @@ $border-color: #EFAE1F;
     .skicka:active{
         border: 5px solid #fccd67;
       }
+    
+    input[type="submit"].skicka:hover{
+        background-color: red;
+    }
 
 }
 
@@ -155,7 +158,12 @@ $border-color: #EFAE1F;
 @media screen and (min-width: 1920px){
 
     #omdome{
-        padding-bottom: 60px;
+        padding-bottom: 42px;
+        width: 924px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         .main2{
             padding-top: 30px;
             padding-bottom: 15px;
@@ -171,7 +179,7 @@ $border-color: #EFAE1F;
         }
 
         form{
-
+            margin: 0 20px;
             #form-container{
                 width: fit-content;
                 
@@ -179,7 +187,7 @@ $border-color: #EFAE1F;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
         
                     label{
                         text-align: right;
@@ -190,18 +198,16 @@ $border-color: #EFAE1F;
                     }
             
                     input{
-                        width: 450px;
+                        width: 610px;
                         font-size: 1.5rem;
                     }
         
                     textarea{
-                        width: 450px;
-                        resize: none;
+                        width: 610px;
                         font-size: 1.4rem;
                     }
                     #meddelande::placeholder{
                         font-size: 1.3rem;
-                        line-height: 1.5;
                     }
                 }
                 
@@ -209,23 +215,11 @@ $border-color: #EFAE1F;
         }
 
         .skicka{
-            position: relative;
-            display: block;
-            margin: 0 auto;
-            background-color: $third-color;
-            border: 5px solid $secondary-color;
-            color: #fff;
             font-size: 1.6rem;
-            width: 45%;
-            text-align: center;
+            width: 35%;
             padding: 7px 40px;
             cursor: pointer;
         }
-
-        .skicka:active{
-            border: 5px solid #fccd67;
-        }
-        
 
     }
 }
