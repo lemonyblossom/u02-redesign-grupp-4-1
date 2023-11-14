@@ -104,7 +104,7 @@ $button-card-color: #195a94;
   .restaurang-container {
     @include flexCenter(row, space-between);
     width: 80%;
-    margin-top: 10%;
+    margin-top: 5%;
 
     .ram-card-2 {
       @include flexCenter(column, center);
@@ -179,6 +179,10 @@ $button-card-color: #195a94;
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 30x;
+  }
+
+  .container-restaurang-all .restaurang-container {
+    margin-top: 10%;
   }
   .container-restaurang-all .h2-card-1 {
     display: flex;

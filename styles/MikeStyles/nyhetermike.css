@@ -93,7 +93,7 @@
   align-items: center;
   flex-direction: row;
   width: 80%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .container-restaurang-all .restaurang-container .ram-card-2 {
   display: flex;
@@ -172,6 +172,9 @@
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 30x;
+  }
+  .container-restaurang-all .restaurang-container {
+    margin-top: 10%;
   }
   .container-restaurang-all .h2-card-1 {
     display: flex;
