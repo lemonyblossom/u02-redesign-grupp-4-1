@@ -51,39 +51,29 @@
          <article>
             <h1 class="welcome">Välkomna</h1>
             <p class="valkommen-text">Välkommen till Resto Culinair – Ditt förstahandsval för kulinariska mästerverk på
-               dina evenemang. Vi är
-               här
-               för att ta din fest till nästa nivå med enastående smaker, kreativa rätter och oöverträfflig service.
-               Oavsett om
-               det är
-               en
-               bröllopsbankett, en företagslunch eller en privat tillställning, låt oss skapa minnen genom mat. Varmt
-               välkommen till
-               smakupplevelser som du kommer att minnas för livet!
+               dina evenemang. <br>
+               Vi är här för att ta din fest till nästa nivå med enastående smaker, kreativa rätter och oöverträfflig
+               service. <br>
+               Oavsett om det är en bröllopsbankett, en företagslunch eller en privat tillställning så skapar vi
+               minnesvärda ögonblick för dig och dina gäster. <br>
+               Varmt välkommen till smakupplevelser som du kommer att minnas för livet!
             </p>
 
 
-            <p class="valkommen-text"> Hos Resto Culinair handlar allt om att ge din fest en smakfull touch. Vår passion
-               är mat, och vår
-               hängivenhet är att
-               göra ditt evenemang minnesvärt. Med enastående kockar och en mångsidig meny är vi redo att skräddarsy
-               din
-               cateringupplevelse precis efter dina önskemål. Välkommen till en värld av utsökta smaker, där varje
-               tugga är
-               en resa i
-               sig själv</p>
+            <p class="valkommen-text">
+               Hos Resto Culinair handlar allt om att ge din fest en smakfull touch. <br>
+               Vår passion är mat, och vår hängivenhet är att göra ditt evenemang minnesvärt. <br>
+               Med enastående kockar och en mångsidig meny är vi redo att skräddarsy din cateringupplevelse precis efter
+               dina önskemål. <br>
+               Välkommen till en värld av utsökta smaker, där varje tugga är en resa i sig själv in i Resto Culinairs
+               värld av gastronomi och gästfrihet. </p>
 
-
-            <p class="valkommen-text"> in i Resto Culinairs värld av gastronomi och gästfrihet. Vi är stolta över att
-               erbjuda
-               cateringtjänster
-               som tar
-               maten till nya höjder. Vårt mål är att göra ditt evenemang oförglömligt med våra kulinariska konstverk.
-               Oavsett om du
-               ordnar en fest, konferens eller en intim middag, vi är här för att göra varje ögonblick smakfullt. Tack
-               för
-               att du valde
-               Resto Culinair - din kulinariska resa börjar här!</p>
+            <p class="valkommen-text">
+               Vi är stolta över att erbjuda cateringtjänster som tar maten till nya höjder.<br>
+               Vårt mål är att göra ditt evenemang oförglömligt med våra kulinariska konstverk.<br>
+               Oavsett om du ordnar en fest, konferens eller en intim middag, vi är här för att göra varje ögonblick
+               smakfullt.<br>
+               Tack för att du valde Resto Culinair - din kulinariska resa börjar här!</p>
             <img class="mat-startsida" src="img-mike/welcome-food.png" alt="Bild på mat">
             <p class="valkommen-text">Vi ser fram emot att erbjuda våra användare dessa enastående restauranger och
                enastående matupplevelser!
@@ -104,74 +94,78 @@
                   <h2> Lämna ditt omdöme </h2>
 
                </article>
+               <section>
+                  <form id="myForm">
 
-               <form id="myForm">
+                     <div id="form-container">
+                        <div class="form-group">
+                           <label for="namn" required>Namn:</label>
+                           <input type="text" id="namn">
+                        </div>
 
-                  <div id="form-container">
-                     <div class="form-group">
-                        <label for="namn" required>Namn:</label>
-                        <input type="text" id="namn">
-                     </div>
+                        <div class="form-group datum">
+                           <label for="datum"> Datum:</label>
+                           <input type="date" id="datum" name="datum">
+                        </div>
 
-                     <div class="form-group datum">
-                        <label for="datum"> Datum:</label>
-                        <input type="date" id="datum" name="datum">
-                     </div>
+                        <div class="form-group">
+                           <label for="betyg"> Antal stjärnor:</label>
+                           <div class="star-container">
+                              <input type="radio" id="5-stars" name="rating" value="5" />
+                              <label for="5-stars" class="star">&#9733;</label>
+                              <input type="radio" id="4-stars" name="rating" value="4" />
+                              <label for="4-stars" class="star">&#9733;</label>
+                              <input type="radio" id="3-stars" name="rating" value="3" />
+                              <label for="3-stars" class="star">&#9733;</label>
+                              <input type="radio" id="2-stars" name="rating" value="2" />
+                              <label for="2-stars" class="star">&#9733;</label>
+                              <input type="radio" id="1-star" name="rating" value="1" />
+                              <label for="1-star" class="star">&#9733;</label>
+                           </div>
+                        </div>
 
-                     <div class="form-group">
-                        <label for="betyg"> Antal stjärnor:</label>
-                        <div class="star-container">
-                           <input type="radio" id="5-stars" name="rating" value="5" />
-                           <label for="5-stars" class="star">&#9733;</label>
-                           <input type="radio" id="4-stars" name="rating" value="4" />
-                           <label for="4-stars" class="star">&#9733;</label>
-                           <input type="radio" id="3-stars" name="rating" value="3" />
-                           <label for="3-stars" class="star">&#9733;</label>
-                           <input type="radio" id="2-stars" name="rating" value="2" />
-                           <label for="2-stars" class="star">&#9733;</label>
-                           <input type="radio" id="1-star" name="rating" value="1" />
-                           <label for="1-star" class="star">&#9733;</label>
+                        <div class="form-group" id="messageArea">
+                           <label for="meddelande" class="meddelande">Kommentar:</label>
+                           <textarea id="meddelande" rows="11" cols="48"
+                              placeholder="Dela med dig av din upplevelse här. Ditt omdöme är värdefullt för oss."></textarea>
                         </div>
                      </div>
+                  </form>
 
-                     <div class="form-group" id="messageArea">
-                        <label for="meddelande" class="meddelande">Kommentar:</label>
-                        <textarea id="meddelande" rows="11" cols="48"
-                           placeholder="Dela med dig av din upplevelse här. Ditt omdöme är värdefullt för oss."></textarea>
-                     </div>
-                  </div>
-               </form>
-
-               <input form="myForm" type="submit" value="Skicka" class="skicka">
+                  <input form="myForm" type="submit" value="Skicka" class="skicka">
             </div>
+
+
+         </section>
 
       </div>
-
-
       <footer>
-         <div class="left">
-            RESTO CULINAIR
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            <br>
-            Nisi, laboriosam voluptas laborum quod placeat rerum temporibus
-            <br>
-            tempore quaerat a cum, expedita numquam reprehenderit veritatis
-            <br>
-            aliquam quas illo cupiditate adipisci voluptates?
-         </div>
-         <div class="right">
-            <div class="socials">
-               <h3> Följ oss!</h3>
-               ikon
-               ikon
 
+         <h3> Följ oss!</h3>
+         <div id="socials">
+            <a href="mailto:info@restoculinair.com"> <i class="fa fa-envelope" title="email"></i></a>
+            <a href="https://www.pinterest.se/" class="fa fa-pinterest" title="pinterest"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" title="instagram"></a>
+            <a href="https://github.com/" class="fa fa-github" title="github"></a>
+
+         </div>
+         <div id="contact">
+            <div class="left">
+               RESTO CULINAIR
+               <p>
+                  your go-to for unforgettable events. Elevate celebrations with expertly crafted gastronomy and
+                  impeccable service. Join us for extraordinary dining..</p>
             </div>
-            <div class="kundservice">
+            <div class="right">
+
                <h2> Kontakta kundservice</h2>
                <h3><a>Kontakta oss</a> om du har frågor</h3>
                mailikon
+
+
             </div>
          </div>
+
       </footer>
    </main> <!--wrapper-->
 </body>

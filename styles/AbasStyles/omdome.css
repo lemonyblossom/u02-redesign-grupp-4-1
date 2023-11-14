@@ -1,16 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style-type: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-}
-
 #omdome {
-  background-color: #FCF7EF;
-  border: 3px solid #EFAE1F;
+  color: white;
+  background-color: rgba(5, 5, 5, 0.735);
+  border: 2px solid #000000;
   border-radius: 10px;
   padding-top: 0;
 }
@@ -48,6 +39,7 @@
   margin-bottom: 10px;
 }
 #omdome form #form-container .form-group label {
+  color: white;
   width: 150px;
   text-align: left;
   padding-right: 10px;
@@ -85,11 +77,11 @@
   cursor: pointer;
 }
 #omdome form #form-container .form-group .star-container input:checked ~ label {
-  color: #EFAE1F;
+  color: #ffbc2c;
 }
 #omdome form #form-container .form-group .star-container label:hover,
 #omdome form #form-container .form-group .star-container label:hover ~ label {
-  color: #EFAE1F;
+  color: #ffbc2c;
 }
 #omdome form #form-container .form-group .meddelande {
   align-self: flex-start;
@@ -117,8 +109,8 @@
   top: 20px;
   display: block;
   margin: 0 auto;
-  background-color: #2B4B58;
-  border: 5px solid #EFAE1F;
+  background-color: rgb(210, 210, 210);
+  border: 2px solid #000000;
   color: #fff;
   font-size: 1.15rem;
   width: 50%;
@@ -128,16 +120,17 @@
   margin-bottom: 40px;
 }
 #omdome .skicka:active {
-  border: 5px solid #fccd67;
+  border: 2px solid #fccd67;
 }
 #omdome input[type=submit].skicka:hover {
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 1920px) {
   #omdome {
     padding-bottom: 42px;
-    width: 924px;
+    width: 80%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;

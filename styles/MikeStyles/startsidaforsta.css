@@ -13,17 +13,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  max-width: 800px;
   height: auto;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   margin: 16px;
-  border: 1px black solid;
 }
 
 .mat-startsida {
-  max-width: 80%;
+  width: 80%;
   height: auto;
 }
 
@@ -64,10 +63,14 @@
     width: 100%;
   }
   .omdome-stjarna {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+    padding: 30px;
+  }
+  .omdome-stjarna h3 {
+    text-align: left;
+  }
+  .mat-startsida {
+    max-width: 100%;
+    border-radius: 3px;
+    height: auto;
   }
 }/*# sourceMappingURL=startsidaforsta.css.map */

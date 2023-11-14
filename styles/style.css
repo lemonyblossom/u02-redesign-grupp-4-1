@@ -245,22 +245,36 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 200px;
   background-color: #860000;
-  z-index: 2;
+  z-index: 1;
 }
 
-.right,
-.left {
-  width: 50%;
-  height: 50%;
-}
-
-.kundservice {
+#contact {
   display: flex;
-  background: #5d5252;
+  flex-direction: row;
+}
+
+.left,
+.right {
+  display: flex;
   flex-direction: column;
+  width: 50%;
+  padding: 16px;
+  justify-content: center;
+}
+
+.left p {
+  text-align: left;
+}
+
+#socials {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* --------------------------Mobile menu ----------------------------------------------*/
@@ -381,17 +395,16 @@ footer {
     width: 95%;
     border-radius: 2px;
     align-self: center;
+    padding: 0;
   }
   article {
     width: 100%;
-    padding: 10px;
+    padding: 0;
   }
   section {
-    padding: 30px;
-    height: 100vh;
+    padding: 0;
   }
   footer {
-    height: 150px;
     background-color: #138b00;
   }
 }/*# sourceMappingURL=style.css.map */
