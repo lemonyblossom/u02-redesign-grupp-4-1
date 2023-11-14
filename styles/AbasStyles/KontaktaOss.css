@@ -21,6 +21,7 @@
 #kontakt .main2 h1 {
   font-size: 1.8rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -72,6 +73,10 @@
   border-radius: 5px;
   width: 100%;
   resize: none;
+}
+#kontakt form #form-container .form-group #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 #kontakt form #form-container .form-group #meddelande::placeholder {
   font-size: 1rem;
@@ -139,6 +144,7 @@
     padding-left: 0;
   }
   #kontakt form #form-container {
+    width: -moz-fit-content;
     width: fit-content;
   }
   #kontakt form #form-container .form-group {
@@ -162,6 +168,10 @@
     width: 450px;
     font-size: 1.4rem;
   }
+  #kontakt form #form-container .form-group #meddelande::-moz-placeholder {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
   #kontakt form #form-container .form-group #meddelande::placeholder {
     font-size: 1.2rem;
     padding: 10px;
@@ -183,4 +193,4 @@
   #kontakt .kontakt-info p {
     text-align: left;
   }
-}
+}/*# sourceMappingURL=KontaktaOss.css.map */

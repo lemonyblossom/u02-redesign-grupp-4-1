@@ -16,8 +16,6 @@ body {
   font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
 }
 
 /* Improve media defaults */
@@ -49,7 +47,7 @@ h6 {
   overflow-wrap: break-word;
   width: 80%;
   text-align: center;
-  align-content: center;
+
 }
 
 /* Create a root stacking context */
@@ -60,7 +58,7 @@ h6 {
 
 main {
   background: url(top-view-vegetables-red-tablecloth-tomatoes-spices-pepper-plate-roasted-vegetables.jpg);
-  min-height: 2000px;
+  height: 100%;
   width: 100%;
   background-attachment: fixed;
   background-position: bottom center;
@@ -68,6 +66,14 @@ main {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 /*nav*/
@@ -224,13 +230,13 @@ header {
   align-self: center;
   align-content: center;
   align-items: center;
-  background-color: #fcf7ef93;
+  background-color: #fcf7efa6;
   height: 100%;
   width: 75%;
   border-radius: 10px;
   margin: 30px 50px 50px 200px;
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 
 }
 
@@ -245,10 +251,26 @@ section {
 }
 
 footer {
-  display: block;
+  color: white;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 150px;
-  background-color: #000000;
+  height: 200px;
+  background-color: #860000;
+  z-index: 2;
+}
+
+.right,
+.left {
+  width: 50%;
+  height: 50%;
+}
+
+.kundservice {
+  display: flex;
+  background: #5d5252;
+  flex-direction: column;
+
 }
 
 /* --------------------------Mobile menu ----------------------------------------------*/
@@ -265,10 +287,10 @@ footer {
 
   .logo {
     width: 50px;
-    position: fixed;
     background-color: #00000000;
     margin: 0;
     border: none;
+    position: relative !important;
   }
 
 
@@ -399,15 +421,18 @@ footer {
     align-self: center;
   }
 
+  article {
+    width: 100%;
+    padding: 10px;
+  }
+
   section {
     padding: 30px;
     height: 100vh;
   }
 
   footer {
-    display: block;
-    width: 100%;
     height: 150px;
-    background-color: #000000;
+    background-color: #138b00;
   }
 }

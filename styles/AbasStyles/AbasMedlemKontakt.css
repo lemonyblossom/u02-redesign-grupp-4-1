@@ -21,6 +21,7 @@
 #kontakt .main2 h1 {
   font-size: 1.8rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -72,6 +73,10 @@
   border-radius: 5px;
   width: 100%;
   resize: none;
+}
+#kontakt form #form-container .form-group #meddelande::-moz-placeholder {
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 #kontakt form #form-container .form-group #meddelande::placeholder {
   font-size: 0.9rem;
@@ -126,6 +131,7 @@
     margin-bottom: 32px;
   }
   #kontakt form #form-container {
+    width: -moz-fit-content;
     width: fit-content;
   }
   #kontakt form #form-container .form-group {
@@ -150,6 +156,9 @@
     font-size: 1.4rem;
     padding: 9px;
   }
+  #kontakt form #form-container .form-group #meddelande::-moz-placeholder {
+    font-size: 1.2rem;
+  }
   #kontakt form #form-container .form-group #meddelande::placeholder {
     font-size: 1.2rem;
   }
@@ -159,4 +168,4 @@
     text-align: center;
     padding: 7px 40px;
   }
-}
+}/*# sourceMappingURL=AbasMedlemKontakt.css.map */
