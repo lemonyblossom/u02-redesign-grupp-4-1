@@ -84,7 +84,7 @@ $button-card-color: #195a94;
     /* VAD ÄR FEL PÅ DATE-TEXTEN!?- Olli-Heikki*/
 
     .button-card-1 {
-      width: 80%;
+      width: 40%;
       height: 80%;
       display: flex;
       justify-content: flex-end;
@@ -99,59 +99,74 @@ $button-card-color: #195a94;
     }
   }
 
-  // Card 2
+  // Card 2 som innehåller 3 små kort
 
   .restaurang-container {
     @include flexCenter(row, space-between);
-    width: 100%;
-    margin-top: 117px;
+    width: 80%;
+    margin-top: 10%;
 
     .ram-card-2 {
       @include flexCenter(column, center);
-      height: 375.91px;
+      width: 30%;
       background-color: #ffffff;
       border-radius: 6.03px;
       .card-2 {
-        width: 280.23px;
-        height: 212.44px;
+        @include flexCenter(column, center);
+        width: 100%;
         margin-top: 22.6px;
-        img {
-          width: 100%;
-          height: 100%;
+        .h2-card-2 {
+        }
+
+        .rest-bild {
+          width: 95%;
           object-fit: cover;
-          border-radius: 6.03px;
+          border-radius: 20px;
         }
       }
     }
     .h2-card-2 {
-      width: 280.23px;
+      width: 100%;
       text-align: left;
-      font-size: $font-size-h2-card-2;
+      font-size: 1rem;
+      margin-left: 10%;
     }
     .calender-knapp-flex-card-2 {
       @include flexCenter(row, space-between);
       width: 100%;
-      height: 100%;
-      margin-bottom: 20px;
+      height: auto;
+      margin-bottom: 5px;
 
       .calender-p-flex-card-2 {
-        @include flexCenter(row, center);
-        .calender-card-2 {
-          width: 18.08px;
-          height: 18.08px;
-        }
-        .calender-text-card-2 {
-          font-size: 9.04px;
-          margin-left: 10px;
-        }
+        @include flexCenter(row, left);
+        width: 100%;
       }
+
+      .calender-card-2 {
+        width: 20%;
+        margin-left: 7%;
+      }
+      .calender-text-card-2 {
+        font-size: 1rem;
+
+        margin-right: 10%;
+      }
+      .width-button {
+        align-items: center;
+        width: 46%;
+        height: 50px;
+        padding-right: 5%;
+        margin-top: 3%;
+      }
+
       .button-card-2 {
         background-color: $button-card-color;
-        font-size: 9.04px;
-        width: 101.7px;
-        height: 38.07px;
+        font-size: 1rem;
+        width: 110%;
+        height: 80%;
         border-radius: 11px;
         color: white;
+        border-radius: 37.8px;
       }
     }
   }
@@ -176,19 +191,45 @@ $button-card-color: #195a94;
     width: 80%;
     height: 100%;
   }
-  .calender-p-flex {
-    margin-left: 20px;
+  .container-restaurang-all
+    .calender-knapp-flex-card-1
+    .calender-p-flex
+    .container-restaurang-all
+    .ram-card-1
+    .card-1 {
+    width: 100%;
   }
-  .container-restaurang-all .ram-card-1 .card-1 {
-    margin-top: 10%;
+  .container-restaurang-all .calender-knapp-flex-card-1 .button-card-1 {
+    width: 70%;
+    height: 80%;
+    margin-right: 1.7%;
+  }
+  .container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex {
+    margin-left: 5%;
   }
 
   .container-restaurang-all .ram-card-1 {
     width: 100%;
   }
-
+  .container-restaurang-all
+    .calender-knapp-flex-card-1
+    .calender-p-flex
+    .calender {
+    width: 33%;
+    height: auto;
+  }
+  .container-restaurang-all .calender-knapp-flex-card-1 {
+    width: 100%;
+  }
+  .container-restaurang-all .h2-card-1 {
+    padding: 0%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+  }
   .cal-date {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    width: 10%;
+    margin-left: 8%;
   }
   .calender {
     height: 30px;
@@ -199,7 +240,18 @@ $button-card-color: #195a94;
 
   // 3 Cards
 
-  .restaurang-container {
+  .container-restaurang-all .restaurang-container {
     @include flexCenter(column, center);
+    width: 100%;
+    .ram-card-2 {
+      width: 100%;
+      margin-bottom: 10%;
+      border-radius: 20px;
+
+      .card-2 {
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+      }
+    }
   }
 }
