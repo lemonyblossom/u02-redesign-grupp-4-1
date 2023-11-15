@@ -3,7 +3,7 @@ section {
 }
 
 .member-list {
-  width: 1200px;
+  width: 100%;
   background-color: #FCF7EF;
   display: flex;
   padding: 10%;
