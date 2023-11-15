@@ -1,31 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style-type: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-}
-
-$primary-color: #FCF7EF; 
-$secondary-color: #EFAE1F;
-$third-color: #2B4B58;
-$border-color: #EFAE1F;
-
-
-
-#kontakt{
+#kontakt2{
 
     background-color: $primary-color;
     border: 3px solid $secondary-color;
     border-radius: 10px;
     margin: 0 auto;
 
-    .main2{
+    .main3{
         padding-top: 25px;
         padding-bottom: 35px;
-        h1{
+        h2{
             font-size: 1.8rem;
             font-weight: 500;
             width: fit-content;
@@ -46,7 +29,7 @@ $border-color: #EFAE1F;
 
     }
 
-    form{
+    #myForm3{
         background-color: $third-color;
         color: #fff;
         margin: 0 10px;
@@ -55,9 +38,9 @@ $border-color: #EFAE1F;
         padding-bottom: 20px;
         border-radius: 10px;
 
-        #form-container{
+        #form-container3{
             width: 100%;
-            .form-group {
+            .form-group3{
                 display: flex;
                 flex-direction: column;
                 align-items: left;
@@ -95,7 +78,7 @@ $border-color: #EFAE1F;
         }
     }
 
-    .skicka{
+    .skicka3{
         position: relative;
         top: 20px;
         display: block;
@@ -111,11 +94,11 @@ $border-color: #EFAE1F;
         margin-bottom: 40px;
     }
 
-    .skicka:active{
+    .skicka3:active{
         border: 5px solid #fccd67;
       }
 
-    input[type="submit"].skicka:hover{
+    input[type="submit"].skicka3:hover{
         background-color: red;
     }
 
@@ -124,12 +107,12 @@ $border-color: #EFAE1F;
 
 @media screen and (min-width: 1920px){
 
-    #kontakt{
+    #kontakt2{
         padding-top: 32px;
         width: 1200px;
         padding-bottom: 40px;
 
-        .main2{
+        .main3{
             padding-top: 0;
 
             h1{
@@ -144,7 +127,7 @@ $border-color: #EFAE1F;
 
         }
 
-        form{
+        #myForm3{
             display: flex;
             justify-content: flex-start;
             width: 100%;
@@ -153,10 +136,10 @@ $border-color: #EFAE1F;
             padding: 70px;
             margin-bottom: 32px;
 
-            #form-container{
+            #form-container3{
                 width: fit-content;
                 
-                .form-group {
+                .form-group3{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -188,7 +171,7 @@ $border-color: #EFAE1F;
             }
         }
 
-        .skicka{
+        .skicka3{
             font-size: 1.5rem;
             width: 32%;
             text-align: center;
