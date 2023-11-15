@@ -14,13 +14,16 @@
   border-radius: 10px;
   margin: 0 auto;
 }
+
 #kontakt .main2 {
   padding-top: 25px;
   padding-bottom: 35px;
 }
+
 #kontakt .main2 h1 {
   font-size: 1.8rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
@@ -28,6 +31,7 @@
   color: #2B4B58;
   padding-bottom: 10px;
 }
+
 #kontakt .main2 p {
   color: #000000;
   width: 100%;
@@ -36,6 +40,7 @@
   margin: 0 auto;
   line-height: 1.5;
 }
+
 #kontakt form {
   background-color: #2B4B58;
   color: #fff;
@@ -45,43 +50,52 @@
   padding-bottom: 20px;
   border-radius: 10px;
 }
+
 #kontakt form #form-container {
   width: 100%;
 }
+
 #kontakt form #form-container .form-group {
   display: flex;
   flex-direction: column;
   align-items: left;
   margin-bottom: 15px;
 }
+
 #kontakt form #form-container .form-group label {
   width: 150px;
   text-align: left;
   font-size: 1.15rem;
 }
+
 #kontakt form #form-container .form-group input {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
   font-size: 1.1rem;
 }
+
 #kontakt form #form-container .form-group .meddelande {
   align-self: flex-start;
 }
+
 #kontakt form #form-container .form-group textarea {
   padding: 5px;
   border-radius: 5px;
   width: 100%;
   resize: none;
 }
+
 #kontakt form #form-container .form-group #meddelande::-moz-placeholder {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
 #kontakt form #form-container .form-group #meddelande::placeholder {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
 #kontakt .skicka {
   position: relative;
   top: 20px;
@@ -97,9 +111,11 @@
   cursor: pointer;
   margin-bottom: 40px;
 }
+
 #kontakt .skicka:active {
   border: 5px solid #fccd67;
 }
+
 #kontakt input[type=submit].skicka:hover {
   background-color: red;
 }
@@ -110,17 +126,21 @@
     width: 1200px;
     padding-bottom: 40px;
   }
+
   #kontakt .main2 {
     padding-top: 0;
   }
+
   #kontakt .main2 h1 {
     font-size: 2.6rem;
   }
+
   #kontakt .main2 p {
     font-size: 1.4rem;
     max-width: 600px;
     line-height: 1.6;
   }
+
   #kontakt form {
     display: flex;
     justify-content: flex-start;
@@ -130,15 +150,19 @@
     padding: 70px;
     margin-bottom: 32px;
   }
+
   #kontakt form #form-container {
+    width: -moz-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
+
   #kontakt form #form-container .form-group {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   #kontakt form #form-container .form-group label {
     text-align: right;
     padding-right: 10px;
@@ -147,25 +171,32 @@
     margin: 0;
     font-size: 1.4rem;
   }
+
   #kontakt form #form-container .form-group input {
     width: 450px;
     font-size: 1.5rem;
   }
+
   #kontakt form #form-container .form-group textarea {
     width: 450px;
     font-size: 1.4rem;
     padding: 9px;
   }
+
   #kontakt form #form-container .form-group #meddelande::-moz-placeholder {
     font-size: 1.2rem;
   }
+
   #kontakt form #form-container .form-group #meddelande::placeholder {
     font-size: 1.2rem;
   }
+
   #kontakt .skicka {
     font-size: 1.5rem;
     width: 32%;
     text-align: center;
     padding: 7px 40px;
   }
-}/*# sourceMappingURL=AbasMedlemKontakt.css.map */
+}
+
+/*# sourceMappingURL=AbasMedlemKontakt.css.map */
