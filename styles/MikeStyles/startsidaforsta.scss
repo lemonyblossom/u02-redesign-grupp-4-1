@@ -5,58 +5,67 @@
   align-items: $align;
 }
 
-.article-container {
-  width: 1390px;
-  height: 2292px;
-  @include flex(column, center, center);
+.welcome h1 {
+  width: 700px;
+  font-size: 50px;
+  @include flex(row, center, center);
+  margin-top: 50px;
+}
 
+.valkommen-text {
+  @include flex(row, center, center);
+  max-width: 800px;
+  height: auto;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+  margin: 16px;
+}
+
+.mat-startsida {
+  width: 80%;
+  height: auto;
+}
+
+.bild-anvandare {
+  @include flex(row, center, center);
+  width: 100%;
+  height: auto;
+}
+
+
+.bild-user {
+  width: 200px;
+}
+
+
+.omdome-stjarna {
+  width: 100%;
+  @include flex(column, flex-start, left);
+}
+
+.omdome-stjarna h3 {
+  text-align: left;
+}
+
+/*---------------------------------MOBILE---------------------------------------*/
+
+@media screen and (max-width: 390px) {
   h1 {
-    width: 783px;
-    height: 130px;
-    font-size: 50px;
-    @include flex(row, center, center);
-    margin-top: 38px;
+    @include flex(column, center, center);
   }
-  .valkommen-text {
-    @include flex(row, center, center);
-    margin-top: 31px;
-    width: 955px;
-    height: auto;
-    font-size: 16px;
-    text-align: center;
+
+  .valkommen-text {}
+
+  .omdome-stjarna {}
+
+  .omdome-stjarna h3 {
+    text-align: left;
   }
+
   .mat-startsida {
-    width: 800px;
+    max-width: 100%;
+    border-radius: 3px;
     height: auto;
-  }
-  .bild-anvandare {
-    @include flex(row, center, center);
-    width: 1013.6px;
-    height: auto;
-  }
-  .h3-style {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .bild-user {
-    width: 228.48px;
-    height: 62.72px;
-  }
-
-  .omdome-stjarna {
-    width: 100%;
-    margin-left: 300px;
-    @include flex(column, flex-start, left);
-  }
-
-  @media (max-width: 390px) {
-    h1 {
-      @include flex(column, center, center);
-    }
-    .omdome-stjarna {
-      width: 100%;
-      margin-left: 300px;
-      @include flex(column, center, left);
-    }
   }
 }
