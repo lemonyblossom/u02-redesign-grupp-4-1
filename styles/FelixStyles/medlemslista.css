@@ -1,24 +1,16 @@
-h2 {
-  font-size: 50px;
-  margin: 0;
-  font-family: quicksand;
-  padding-top: 10px;
-}
-@media (max-width: 391px) {
-  h2 {
-    font-size: 20px;
-    color: black;
-  }
+section {
+  text-align: left;
 }
 
 .member-list {
-  width: 1358px;
+  width: 100%;
   background-color: #FCF7EF;
   display: flex;
+  padding: 10%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   border: 2px solid #efae1f;
   border-radius: 5px;
@@ -31,58 +23,77 @@ h2 {
   }
 }
 
-.contact-icon {
-  width: 1em;
-  height: auto;
-  padding-right: 5px;
-  align-items: left;
-}
-
 .member {
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
   justify-content: space-between;
 }
-.member .member-image {
-  width: 242px;
-  height: 242px;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  border-radius: 50%;
-}
-@media (max-width: 391px) {
-  .member .member-image {
-    width: 84.7px;
-    height: 84.7px;
-  }
-}
-.member .member-details h2 {
-  font-size: 50px;
+
+h2 {
   margin: 0;
   font-family: quicksand;
-  padding-left: 10%;
+  padding-top: 10px;
 }
 @media (max-width: 391px) {
-  .member .member-details h2 {
+  h2 {
     font-size: 20px;
     color: black;
   }
 }
-.member .member-details p {
+
+.member-left {
+  display: flex;
+  width: 100%;
+}
+
+.member-left img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.member-right {
+  align-items: center;
+  width: 50%;
+  text-align: left;
+}
+.member-right h2 {
+  margin: 0;
+  font-family: quicksand;
+}
+@media (max-width: 391px) {
+  .member-right h2 {
+    font-size: 20px;
+    color: black;
+  }
+}
+.member-right p {
   font-size: 24px;
   color: rgb(0, 0, 0);
   font-family: quicksand;
   margin: 0;
   word-wrap: break-word;
   overflow: hidden;
-  text-align: auto;
+  text-align: left;
 }
 @media (max-width: 391px) {
-  .member .member-details p {
+  .member-right p {
     font-size: 8.4px;
     color: black;
   }
 }
+
+.details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.details img {
+  width: 1em;
+  height: 1em;
+  margin-right: 3px;
+}/*# sourceMappingURL=medlemslista.css.map */

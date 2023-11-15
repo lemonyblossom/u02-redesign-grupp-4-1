@@ -9,8 +9,9 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="./styles/AbasStyles/abasMain.css">
    <link rel="stylesheet" href="./styles/style.css">
+   <link rel="stylesheet" href="./styles/FelixStyles/prislista.css">
+   <link rel="stylesheet" href="./styles/AbasStyles/abasMain.css">
    <link rel="icon" type="image/x-icon" href="/Img/favicon.ico">
    <title>Restoculinair</title>
 </head>
@@ -49,20 +50,97 @@
     <div class="container">
       <section>
         <!-- felix matpriser -->
+<h1>Meny</h1>
 
+<div class="matpriser-container">
+  <div class="matpriser-bild">
+  <img src="Img/Emma-midjourney-grupp4-mexican-food.png" alt="Bild av mexikansk mat">
 
-        <div id="betalning">
+  </div>
+  <div class="matpriser">
+  <div class="matpriser-left">
+    <p class="matpriser-restaurang">Mexican Harlem</p>
+    <p class="matpriser-p">Upplev en smakrik samling av tapas med spansk omelett, patatas bravas, chorizo, gambas al ajillo, och en variation av ost och skinka. 
+      Njut av autentiska spanska smaker hos oss.</p>
+  </div>
+    <p class="matpriser-pris">Pris per person: 289:-</p>
+  </div>
+</div>
+<div class="matpriser-container">
+  <div class="matpriser-bild">
+  <img src="Img/Emma-midjourney-grupp4-sushi.png" alt="Bild av sushi">
+
+  </div>
+  <div class="matpriser">
+  <div class="matpriser-left">
+    <p class="matpriser-restaurang">Noma Sushi</p>
+    <p class="matpriser-p">Vår sushibuffé erbjuder ett urval av färsk fisk, inklusive lax, tonfisk, och räkor, som konstfullt rullas in i sushi, sashimi, och maki. 
+      En mångfald av smaker med kreativa tillbehör.</p>
+  </div>
+
+    <p class="matpriser-pris">Pris per person: 289:-</p>
+  </div>
+</div>
+
+<div class="matpriser-container">
+  <div class="matpriser-bild">
+  <img src="Img/Emma-midjourney-grupp4-Chinese-food.png" alt="Bild av indisk mat">
+
+  </div>
+  <div class="matpriser">
+  <div class="matpriser-left">
+    <p class="matpriser-restaurang">Indian Kitchen</p>
+    <p class="matpriser-p">Njut av en smakresa till Indien med vår buffé. Inkluderar favoriter som vårrullar, kung pao-kyckling, räkor med vitlökssås, färska dumplings, och sötsaker som avslutning.
+    En utsökt Indisk måltid väntar! </p>
+  </div>
+
+    <p class="matpriser-pris">Pris per person: 289:-</p>
+  </div>
+</div>
+
+<div class="matpriser-container">
+  <div class="matpriser-bild">
+  <img src="Img/Emma-midjourney-grupp4-desserts.png" alt="Bild av kinesisk mat">
+
+  </div>
+  <div class="matpriser">
+  <div class="matpriser-left">
+    <p class="matpriser-restaurang">Mr Pizza</p>
+    <p class="matpriser-p">Njut av en smakresa till Kina med vår buffé. Inkluderar favoriter som vårrullar, kung pao-kyckling, räkor med vitlökssås, färska dumplings, och sötsaker som avslutning.
+    En utsökt kinesisk måltid väntar! </p>
+  </div>
+
+  <p class="matpriser-pris">Pris per person: 289:-</p>
+  </div>
+</div>
+
+<div class="matpriser-container">
+  <div class="matpriser-bild">
+  <img src="Img/Emma-midjourney-grupp4-Chinese-food.png" alt="Bild av kinesisk mat">
+
+  </div>
+  <div class="matpriser">
+  <div class="matpriser-left">
+    <p class="matpriser-restaurang">Kinesisk Mat</p>
+    <p class="matpriser-p">Njut av en smakresa till Kina med vår buffé. Inkluderar favoriter som vårrullar, kung pao-kyckling, räkor med vitlökssås, färska dumplings, och sötsaker som avslutning.
+    En utsökt kinesisk måltid väntar! </p>
+  </div>
+    <p class="matpriser-pris">Pris per person: 289:-</p>
+  </div>
+</div>
+
+         </section>
+<!-- Abas formulär i matpriser-->
+<section>
+            <div id="betalning">
 
                <article class="main4">
-       
                  <h1>BETALSÄTT OCH KUNDUPPGIFTER</h1>
                  <p>Dina uppgifter</p>
-       
+
                </article>
-       
-               <form id="myForm4">
-                 
-                   <div id="form-container4">
+             <form id="myForm4">
+                         <div id="form-container4">
                      <div class="form-group4">
                        <label for="foretagsnamn">Företagsnamn:</label>
                        <input type="text" id="foretagsnamn">
@@ -95,14 +173,14 @@
                        </div>
                        <input type="text" id="Leveransadress" required>
                      </div>
-         
+
                      <div class="form-group4" id="messageArea">
                        <label for="meddelande" class="meddelande">Meddelande:</label>
                        <textarea id="meddelande" rows="10" cols="48" placeholder="Om du har ytterligare frågor eller önskemål, vänligen inkludera dem här."></textarea> 
                      </div>
                    </div>
                </form>
-       
+
                <div class="payment-container">
                    <p>Betalningsätt</p>
                    <form id="payment-form">
@@ -137,11 +215,14 @@
                
                <input form="myForm" type="submit" value="Betala Köp" class="skicka4">
            </div>
+
+        
          </section>
+</div>
          <footer>
 
-      </footer>
-    </div> <!--wrapper-->
+         </footer>
+      </div> <!--wrapper-->
 </body>
 
 </html>
