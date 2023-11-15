@@ -1,0 +1,62 @@
+.matpriser-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.matpriser-container .matpriser-bild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.matpriser-container .matpriser-bild img {
+  width: 100%;
+  border-radius: 9px;
+  margin-top: 10%;
+}
+.matpriser-container .matpriser {
+  display: flex;
+  justify-content: space-between;
+}
+.matpriser-container .matpriser .matpriser-restaurang {
+  display: flex;
+}
+.matpriser-container .matpriser .matpriser-left {
+  display: flex;
+  flex-direction: column;
+}
+.matpriser-container .matpriser .matpriser-p {
+  text-align: left;
+  display: flex;
+  align-items: left;
+}
+.matpriser-container .matpriser .matpriser-restaurang {
+  display: flex;
+  font-weight: bold;
+  flex-direction: row;
+}
+.matpriser-container .matpriser .matpriser-pris {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .matpriser-container .matpriser {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+  .matpriser-container .matpriser .matpriser-pris {
+    display: flex;
+    text-align: left;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+  .matpriser-bild img, .matpriser-bild {
+    border-radius: 5px !important;
+  }
+}/*# sourceMappingURL=prislista.css.map */

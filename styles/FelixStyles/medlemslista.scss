@@ -1,125 +1,126 @@
-$font-size-h2: 50px;
-$font-size-p: 24px; 
-
-$font-size-mobil-h2:20px;
-$font-size-mobil-p:8.4px;
-
-$logo-size:
-(
-    width:242px,
-    height:242px
-
-);
-$logo-size-mobil:
-(
-    width: 84.7px,
-    height: 84.7px,
-    flex-shrink: 0
-);
 
 
 
-h2 //"h2 för Våra cateringfirmor"
- {
 
-    font-size: $font-size-h2;
-    margin: 0;
-    font-family: quicksand;
-    padding-top:10px;
-    @media (max-width: 391px) {
-                
-        font-size: $font-size-mobil-h2;
-        color: black;
-        
-      } 
 
+section
+{
+    text-align: left;
 }
+
+
 .member-list {
 
     
-    width:  1358px; //ska vara 1358px (?)
+     width:100%;
+    
     background-color: #FCF7EF;
     display: flex;
-    
+    padding:10%;
     flex-direction:column;
     justify-content: space-between; 
     align-items: center; 
-    height: 100%; 
+    height: auto; 
     margin:0 auto;
     border:2px solid #efae1f;
     border-radius: 5px;
     @media (max-width: 391px) {
         width: 100%;
-        font-size:$font-size-mobil-p;
+        
         color: black;
         
         
       } 
 
 }
-.contact-icon
-{
-width : 1em;
-height: auto;
-padding-right: 5px; //få lite mer utrymme mellan ikonerna och texten
-align-items: left;
 
-}
 .member {
-    width:90%;
+    width:100%;
     display: flex;
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
     justify-content: space-between; 
- 
-    .member-image {
-        width: map-get($logo-size, width);
-        height: map-get($logo-size, height);
-        padding-top: 10%;
-        padding-bottom: 10%;
-        border-radius: 50%;
-    @media(max-width:391px)
-    {   
-        width: map-get($logo-size-mobil, width);
-        height: map-get($logo-size-mobil, height);
-    }    
-    }
+}
 
-    .member-details {
-        h2 {
-            font-size: $font-size-h2;
-            margin: 0;
-            font-family: quicksand;
-            padding-left: 10%;
-            @media (max-width: 391px) {
+h2{ //"h2 för Våra cateringfirmor"
+
+    
+    margin: 0;
+    font-family: quicksand;
+    padding-top:10px;
+    @media (max-width: 391px) {
                 
-                font-size:$font-size-mobil-h2;
-                color: black;
-                
-              } 
-
-        }
-        p {
-
-            font-size:$font-size-p;
-            color: rgb(0, 0, 0);
-            font-family: quicksand;
-            margin: 0;
-            word-wrap: break-word; 
-            overflow: hidden; 
-            text-align:auto;
-            
-            @media (max-width: 391px) {
-                
-                font-size: $font-size-mobil-p;
-                color: black;
-                
-              } 
-
-
-        }
         
-    }
+        color: black;
+        
+      } 
 
 }
+.member-left { //bildcontainer
+    display:flex;
+    width:100%;
+   
+}
+
+.member-left img{
+  
+     width:50%;
+        border-radius: 50%;
+}
+
+
+ .member-right {
+    align-items: center;
+    width: 50%;
+    text-align: left;
+    h2 {
+        
+        margin: 0;
+        font-family: quicksand;
+        @media (max-width: 391px) {
+            
+            
+            color: black;
+            
+          } 
+
+    }
+    p {
+
+        
+        color: rgb(0, 0, 0);
+        font-family: quicksand;
+        margin: 0;
+        word-wrap: break-word; 
+        overflow: hidden; 
+        text-align:left;
+        
+        @media (max-width: 391px) {
+            
+            
+            color: black;
+            
+          } 
+
+
+    }
+    
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.details img{ //inuti member right ikoner
+width : 1em;
+height: 1em;
+margin-right: 3px;
+//padding-right: 5px; //få lite mer utrymme mellan ikonerna och texten
+}
+
+
+
+
+
