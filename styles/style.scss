@@ -256,7 +256,7 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #860000;
+  background-color: #000000;
   z-index: 1;
 }
 
@@ -284,6 +284,66 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.fa {
+  color: #838383;
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.fa-instagram:hover {
+  color: #ff3bc1ee;
+}
+
+
+.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.fa-pinterest:hover {
+  color: rgb(255, 0, 0);
+}
+
+.fa-github:hover {
+  color: #b578ff;
+}
+
+.fa-envelope:hover {
+  color: #d3e3ff;
+}
+
+.fa:hover {
+  transform: scale(1.8);
+}
+
+.fa-instagram:hover {
+  color: #ff3bc1ee;
+}
+
+.fa-linkedin:hover {
+  color: #028ac9;
+}
+
+.fa-pinterest:hover {
+  color: rgb(255, 0, 0);
+}
+
+.fa-github:hover {
+  color: #b578ff;
+}
+
+.fa-envelope:hover {
+  color: #d3e3ff;
+}
+
+.fa:hover {
+  transform: scale(1.8);
 }
 
 
@@ -374,7 +434,6 @@ footer {
     z-index: 2;
     cursor: pointer;
     margin-left: -50px;
-
   }
 
   #menu-toggle {
@@ -444,9 +503,7 @@ footer {
     padding: 0;
   }
 
-  footer {
-    background-color: #138b00;
-  }
+
 
 
 }
