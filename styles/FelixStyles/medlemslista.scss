@@ -1,8 +1,4 @@
-$font-size-h2: 50px;
-$font-size-p: 24px; 
 
-$font-size-mobil-h2:20px;
-$font-size-mobil-p:8.4px;
 
 
 
@@ -30,7 +26,7 @@ section
     border-radius: 5px;
     @media (max-width: 391px) {
         width: 100%;
-        font-size:$font-size-mobil-p;
+        
         color: black;
         
         
@@ -55,7 +51,7 @@ h2{ //"h2 för Våra cateringfirmor"
     padding-top:10px;
     @media (max-width: 391px) {
                 
-        font-size: $font-size-mobil-h2;
+        
         color: black;
         
       } 
@@ -69,15 +65,9 @@ h2{ //"h2 för Våra cateringfirmor"
 
 .member-left img{
   
-     width:60%;
+     width:50%;
         border-radius: 50%;
-   //@media(max-width:391px)
-   //{   
-   //    width:50%;
-   //   //width: map-get($logo-size-mobil, width);
-   //   //height: map-get($logo-size-mobil, height);
-   //}    
-    }
+}
 
 
  .member-right {
@@ -85,12 +75,12 @@ h2{ //"h2 för Våra cateringfirmor"
     width: 50%;
     text-align: left;
     h2 {
-        //font-size: $font-size-h2;
+        
         margin: 0;
         font-family: quicksand;
         @media (max-width: 391px) {
             
-            font-size:$font-size-mobil-h2;
+            
             color: black;
             
           } 
@@ -98,7 +88,7 @@ h2{ //"h2 för Våra cateringfirmor"
     }
     p {
 
-        font-size:$font-size-p;
+        
         color: rgb(0, 0, 0);
         font-family: quicksand;
         margin: 0;
@@ -108,7 +98,7 @@ h2{ //"h2 för Våra cateringfirmor"
         
         @media (max-width: 391px) {
             
-            font-size: $font-size-mobil-p;
+            
             color: black;
             
           } 
