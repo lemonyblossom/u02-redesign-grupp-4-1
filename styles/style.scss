@@ -16,8 +16,6 @@ body {
   font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
 }
 
 /* Improve media defaults */
@@ -49,7 +47,7 @@ h6 {
   overflow-wrap: break-word;
   width: 80%;
   text-align: center;
-  align-content: center;
+
 }
 
 /* Create a root stacking context */
@@ -60,7 +58,7 @@ h6 {
 
 main {
   background: url(top-view-vegetables-red-tablecloth-tomatoes-spices-pepper-plate-roasted-vegetables.jpg);
-  min-height: 2000px;
+  height: 100%;
   width: 100%;
   background-attachment: fixed;
   background-position: bottom center;
@@ -68,6 +66,14 @@ main {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 /*nav*/
@@ -224,13 +230,13 @@ header {
   align-self: center;
   align-content: center;
   align-items: center;
-  background-color: #fcf7ef93;
+  background-color: #fcf7efa6;
   height: 100%;
   width: 75%;
   border-radius: 10px;
   margin: 30px 50px 50px 200px;
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 
 }
 
@@ -245,15 +251,104 @@ section {
 }
 
 footer {
-  display: block;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 150px;
   background-color: #000000;
+  z-index: 1;
 }
+
+#contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 16px;
+  justify-content: center;
+}
+
+.left p {
+  text-align: left;
+}
+
+#socials {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fa {
+  color: #838383;
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.fa-instagram:hover {
+  color: #ff3bc1ee;
+}
+
+
+.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.fa-pinterest:hover {
+  color: rgb(255, 0, 0);
+}
+
+.fa-github:hover {
+  color: #b578ff;
+}
+
+.fa-envelope:hover {
+  color: #d3e3ff;
+}
+
+.fa:hover {
+  transform: scale(1.8);
+}
+
+.fa-instagram:hover {
+  color: #ff3bc1ee;
+}
+
+.fa-linkedin:hover {
+  color: #028ac9;
+}
+
+.fa-pinterest:hover {
+  color: rgb(255, 0, 0);
+}
+
+.fa-github:hover {
+  color: #b578ff;
+}
+
+.fa-envelope:hover {
+  color: #d3e3ff;
+}
+
+.fa:hover {
+  transform: scale(1.8);
+}
+
 
 /* --------------------------Mobile menu ----------------------------------------------*/
 @media screen and (max-width: 767px) {
-
 
   header {
     display: none;
@@ -265,10 +360,10 @@ footer {
 
   .logo {
     width: 50px;
-    position: fixed;
     background-color: #00000000;
     margin: 0;
     border: none;
+    position: relative !important;
   }
 
 
@@ -339,7 +434,6 @@ footer {
     z-index: 2;
     cursor: pointer;
     margin-left: -50px;
-
   }
 
   #menu-toggle {
@@ -397,17 +491,19 @@ footer {
     width: 95%;
     border-radius: 2px;
     align-self: center;
+    padding: 0;
+  }
+
+  article {
+    width: 100%;
+    padding: 0;
   }
 
   section {
-    padding: 30px;
-    height: 100vh;
+    padding: 0;
   }
 
-  footer {
-    display: block;
-    width: 100%;
-    height: 150px;
-    background-color: #000000;
-  }
+
+
+
 }
