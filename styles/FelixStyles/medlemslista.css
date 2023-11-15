@@ -15,11 +15,9 @@ section {
   border: 2px solid #efae1f;
   border-radius: 5px;
 }
-
 @media (max-width: 391px) {
   .member-list {
     width: 100%;
-    font-size: 8.4px;
     color: black;
   }
 }
@@ -38,10 +36,8 @@ h2 {
   font-family: quicksand;
   padding-top: 10px;
 }
-
 @media (max-width: 391px) {
   h2 {
-    font-size: 20px;
     color: black;
   }
 }
@@ -52,7 +48,7 @@ h2 {
 }
 
 .member-left img {
-  width: 60%;
+  width: 50%;
   border-radius: 50%;
 }
 
@@ -61,21 +57,16 @@ h2 {
   width: 50%;
   text-align: left;
 }
-
 .member-right h2 {
   margin: 0;
   font-family: quicksand;
 }
-
 @media (max-width: 391px) {
   .member-right h2 {
-    font-size: 20px;
     color: black;
   }
 }
-
 .member-right p {
-  font-size: 24px;
   color: rgb(0, 0, 0);
   font-family: quicksand;
   margin: 0;
@@ -83,10 +74,8 @@ h2 {
   overflow: hidden;
   text-align: left;
 }
-
 @media (max-width: 391px) {
   .member-right p {
-    font-size: 8.4px;
     color: black;
   }
 }
@@ -102,6 +91,4 @@ h2 {
   width: 1em;
   height: 1em;
   margin-right: 3px;
-}
-
-/*# sourceMappingURL=medlemslista.css.map */
+}/*# sourceMappingURL=medlemslista.css.map */

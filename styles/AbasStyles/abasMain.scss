@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -8,10 +8,10 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-$primary-color: #FCF7EF; 
-$secondary-color: #EFAE1F;
-$third-color: #2B4B58;
-$border-color: #EFAE1F;
+$primary-color: rgb(140, 140, 140);
+$secondary-color: #ffc341;
+$third-color: #649875;
+$border-color: #000000;
 $goldStar: #F1D058;
 
 
@@ -20,4 +20,3 @@ $goldStar: #F1D058;
 @import "KontaktaOss";
 @import "styleBetalning";
 // @import " ";
-

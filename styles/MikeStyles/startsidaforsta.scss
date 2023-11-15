@@ -41,11 +41,7 @@
 
 .omdome-stjarna {
   width: 100%;
-  @include flex(column, flex-start, left);
-}
-
-.omdome-stjarna h3 {
-  text-align: left;
+  @include flex(column, flex-start, center);
 }
 
 /*---------------------------------MOBILE---------------------------------------*/
@@ -55,13 +51,8 @@
     @include flex(column, center, center);
   }
 
-  .valkommen-text {}
 
-  .omdome-stjarna {}
 
-  .omdome-stjarna h3 {
-    text-align: left;
-  }
 
   .mat-startsida {
     max-width: 100%;

@@ -13,16 +13,16 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #grid-container .grid-item {
   position: relative;
-  background-color: #476E91;
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7921568627);
+  border-radius: 10px;
   margin-bottom: 80px;
-  height: 450px;
+  height: 380px;
   justify-self: center;
-  margin-top: 48px;
+  margin-top: 10px;
 }
 #grid-container .grid-item .profile {
   display: flex;
@@ -85,6 +85,7 @@
   border-radius: 20px;
   font-size: 1.5rem;
   padding: 0 25px;
+  width: -moz-fit-content;
   width: fit-content;
   align-self: center;
 }
@@ -98,13 +99,14 @@
   display: none;
 }
 #grid-container .grid-item .form-group5 .star-container2 label {
+  width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
 }
 
 #omdome {
-  background-color: #FCF7EF;
-  border: 3px solid #EFAE1F;
+  background-color: rgb(140, 140, 140);
+  border: 2px solid #000000;
   border-radius: 10px;
   padding-top: 0;
 }
@@ -113,8 +115,9 @@
   padding-bottom: 10px;
 }
 #omdome .main1 h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -161,6 +164,7 @@
   border-radius: 20px;
   font-size: 1.5rem;
   padding: 0 25px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #omdome #myForm1 #form-container1 .form-group1 .star {
@@ -170,17 +174,18 @@
   display: none;
 }
 #omdome #myForm1 #form-container1 .form-group1 .star-container label {
+  width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 0;
   color: #ccc;
   cursor: pointer;
 }
 #omdome #myForm1 #form-container1 .form-group1 .star-container input:checked ~ label {
-  color: #EFAE1F;
+  color: #ffc341;
 }
 #omdome #myForm1 #form-container1 .form-group1 .star-container label:hover,
 #omdome #myForm1 #form-container1 .form-group1 .star-container label:hover ~ label {
-  color: #EFAE1F;
+  color: #ffc341;
 }
 #omdome #myForm1 #form-container1 .form-group1 .meddelande {
   align-self: flex-start;
@@ -191,6 +196,10 @@
   font-size: 1.1rem;
   width: 100%;
   resize: none;
+}
+#omdome #myForm1 #form-container1 .form-group1 #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 #omdome #myForm1 #form-container1 .form-group1 #meddelande::placeholder {
   font-size: 1rem;
@@ -204,8 +213,8 @@
   top: 20px;
   display: block;
   margin: 0 auto;
-  background-color: #2B4B58;
-  border: 5px solid #EFAE1F;
+  background-color: rgb(142, 177, 151);
+  border: 2px solid #000000;
   color: #fff;
   font-size: 1.15rem;
   width: 50%;
@@ -213,12 +222,16 @@
   padding: 5px 10px;
   cursor: pointer;
   margin-bottom: 40px;
+  border-radius: 5px;
 }
 #omdome .skicka1:active {
-  border: 5px solid #fccd67;
+  border: 2px solid #ffffff;
 }
 #omdome input[type=submit].skicka1:hover {
-  background-color: red;
+  background-color: #649875;
+  box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 800ms;
 }
 
 @media screen and (min-width: 1920px) {
@@ -296,19 +309,22 @@
     border-radius: 20px;
     font-size: 1.5rem;
     padding: 0 25px;
+    width: -moz-fit-content;
     width: fit-content;
     align-self: center;
   }
   #grid-container .grid-item .form-group5 .star {
     font-size: 2.1rem;
   }
-  #grid-container .grid-item .form-group5 .grey1, #grid-container .grid-item .form-group5 .grey2 {
+  #grid-container .grid-item .form-group5 .grey1,
+  #grid-container .grid-item .form-group5 .grey2 {
     color: #ccc;
   }
   #grid-container .grid-item .form-group5 .star-container2 input {
     display: none;
   }
   #grid-container .grid-item .form-group5 .star-container2 label {
+    width: -moz-fit-content;
     width: fit-content;
     cursor: pointer;
   }
@@ -335,6 +351,7 @@
     margin: 0 20px;
   }
   #omdome #myForm1 #form-container1 {
+    width: -moz-fit-content;
     width: fit-content;
   }
   #omdome #myForm1 #form-container1 .form-group1 {
@@ -358,6 +375,9 @@
     width: 610px;
     font-size: 1.4rem;
   }
+  #omdome #myForm1 #form-container1 .form-group1 #meddelande::-moz-placeholder {
+    font-size: 1.3rem;
+  }
   #omdome #myForm1 #form-container1 .form-group1 #meddelande::placeholder {
     font-size: 1.3rem;
   }
@@ -369,8 +389,8 @@
   }
 }
 #kontakt2 {
-  background-color: #FCF7EF;
-  border: 3px solid #EFAE1F;
+  background-color: rgb(140, 140, 140);
+  border: 3px solid #ffc341;
   border-radius: 10px;
   margin: 0 auto;
 }
@@ -381,10 +401,11 @@
 #kontakt2 .main3 h2 {
   font-size: 1.8rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  color: #2B4B58;
+  color: #649875;
   padding-bottom: 10px;
 }
 #kontakt2 .main3 p {
@@ -396,7 +417,7 @@
   line-height: 1.5;
 }
 #kontakt2 #myForm3 {
-  background-color: #2B4B58;
+  background-color: #649875;
   color: #fff;
   margin: 0 10px;
   padding: 9px;
@@ -433,6 +454,10 @@
   width: 100%;
   resize: none;
 }
+#kontakt2 #myForm3 #form-container3 .form-group3 #meddelande::-moz-placeholder {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
 #kontakt2 #myForm3 #form-container3 .form-group3 #meddelande::placeholder {
   font-size: 0.9rem;
   line-height: 1.5;
@@ -442,8 +467,8 @@
   top: 20px;
   display: block;
   margin: 0 auto;
-  background-color: #2B4B58;
-  border: 5px solid #EFAE1F;
+  background-color: #649875;
+  border: 5px solid #ffc341;
   color: #fff;
   font-size: 1.15rem;
   width: 60%;
@@ -486,6 +511,7 @@
     margin-bottom: 32px;
   }
   #kontakt2 #myForm3 #form-container3 {
+    width: -moz-fit-content;
     width: fit-content;
   }
   #kontakt2 #myForm3 #form-container3 .form-group3 {
@@ -510,6 +536,9 @@
     font-size: 1.4rem;
     padding: 9px;
   }
+  #kontakt2 #myForm3 #form-container3 .form-group3 #meddelande::-moz-placeholder {
+    font-size: 1.2rem;
+  }
   #kontakt2 #myForm3 #form-container3 .form-group3 #meddelande::placeholder {
     font-size: 1.2rem;
   }
@@ -521,8 +550,8 @@
   }
 }
 #kontakt1 {
-  background-color: #FCF7EF;
-  border: 3px solid #EFAE1F;
+  background-color: rgb(140, 140, 140);
+  border: 3px solid #ffc341;
   border-radius: 10px;
   margin: 0 auto;
 }
@@ -533,10 +562,11 @@
 #kontakt1 .main2 h1 {
   font-size: 1.8rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  color: #2B4B58;
+  color: #649875;
   padding-bottom: 20px;
 }
 #kontakt1 .main2 p {
@@ -548,7 +578,7 @@
   line-height: 1.5;
 }
 #kontakt1 #myForm2 {
-  background-color: #2B4B58;
+  background-color: #649875;
   color: #fff;
   margin: 0 7px;
   padding: 9px;
@@ -585,6 +615,10 @@
   width: 100%;
   resize: none;
 }
+#kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 #kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::placeholder {
   font-size: 1rem;
   line-height: 1.5;
@@ -594,8 +628,8 @@
   top: 20px;
   display: block;
   margin: 0 auto;
-  background-color: #2B4B58;
-  border: 5px solid #EFAE1F;
+  background-color: #649875;
+  border: 5px solid #ffc341;
   color: #fff;
   font-size: 1.15rem;
   width: 60%;
@@ -651,6 +685,7 @@
     padding-left: 0;
   }
   #kontakt1 #myForm2 #form-container2 {
+    width: -moz-fit-content;
     width: fit-content;
   }
   #kontakt1 #myForm2 #form-container2 .form-group2 {
@@ -673,6 +708,10 @@
   #kontakt1 #myForm2 #form-container2 .form-group2 textarea {
     width: 450px;
     font-size: 1.4rem;
+  }
+  #kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::-moz-placeholder {
+    font-size: 1.2rem;
+    padding: 10px;
   }
   #kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::placeholder {
     font-size: 1.2rem;
@@ -697,7 +736,7 @@
   }
 }
 #betalning {
-  background-color: #FCF7EF;
+  background-color: rgb(140, 140, 140);
   color: #000000;
   border-radius: 10px;
   margin: 0 auto;
@@ -711,6 +750,7 @@
 #betalning .main4 h1 {
   font-size: 1.5rem;
   font-weight: 500;
+  width: -moz-fit-content;
   width: fit-content;
   line-height: 1.5;
   padding: 0 10px;
@@ -719,6 +759,7 @@
   margin-bottom: 20px;
 }
 #betalning .main4 p {
+  width: -moz-fit-content;
   width: fit-content;
   text-align: left;
   margin-left: 10px;
@@ -730,7 +771,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
-  border: 3px solid #EFAE1F;
+  border: 3px solid #ffc341;
 }
 #betalning #myForm4 #form-container4 {
   width: 100%;
@@ -779,6 +820,10 @@
   width: 100%;
   resize: none;
 }
+#betalning #myForm4 #form-container4 .form-group4 #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 #betalning #myForm4 #form-container4 .form-group4 #meddelande::placeholder {
   font-size: 1rem;
   line-height: 1.5;
@@ -795,7 +840,7 @@
 #betalning #payment-form {
   padding: 0;
   border-radius: 10px;
-  border: 3px solid #EFAE1F;
+  border: 3px solid #ffc341;
   margin-bottom: 10px;
 }
 #betalning #payment-form .payment-method {
@@ -829,8 +874,8 @@
   position: relative;
   display: block;
   margin: 0 auto;
-  background-color: #2B4B58;
-  border: 5px solid #EFAE1F;
+  background-color: #649875;
+  border: 5px solid #ffc341;
   color: #fff;
   font-size: 1.15rem;
   width: 60%;
@@ -871,6 +916,7 @@
     margin-bottom: 50px;
   }
   #betalning #myForm4 #form-container4 {
+    width: -moz-fit-content;
     width: fit-content;
   }
   #betalning #myForm4 #form-container4 .form-group4 {
@@ -903,6 +949,9 @@
     width: 450px;
     font-size: 1.4rem;
   }
+  #betalning #myForm4 #form-container4 .form-group4 #meddelande::-moz-placeholder {
+    font-size: 1.3rem;
+  }
   #betalning #myForm4 #form-container4 .form-group4 #meddelande::placeholder {
     font-size: 1.3rem;
   }
@@ -913,6 +962,7 @@
     align-self: flex-start;
   }
   #betalning .payment-container p {
+    width: -moz-fit-content;
     width: fit-content;
     position: relative;
     left: 40px;
@@ -958,6 +1008,7 @@
   #betalning .totalSumma {
     font-size: 3rem;
     font-weight: 500;
+    width: -moz-fit-content;
     width: fit-content;
     padding-bottom: 40px;
   }
@@ -966,4 +1017,4 @@
     width: 310px;
     margin-bottom: 0;
   }
-}
+}/*# sourceMappingURL=abasMain.css.map */
