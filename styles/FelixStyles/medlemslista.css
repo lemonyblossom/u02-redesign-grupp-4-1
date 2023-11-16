@@ -3,21 +3,21 @@ section {
 }
 
 .member-list {
-  width: 100%;
-  background-color: #FCF7EF;
+  max-width: 100%;
   display: flex;
   padding: 10%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: auto;
-  margin: 0 auto;
-  border: 2px solid #efae1f;
+  margin: 10px 10px;
+  border: 2px solid #ffffff;
   border-radius: 5px;
 }
 @media (max-width: 391px) {
   .member-list {
     width: 100%;
+    padding: 0;
     color: black;
   }
 }
@@ -29,27 +29,15 @@ section {
   padding: 10px;
   box-sizing: border-box;
   justify-content: space-between;
-}
-
-h2 {
-  margin: 0;
-  font-family: quicksand;
-  padding-top: 10px;
+  flex-direction: row;
 }
 @media (max-width: 391px) {
-  h2 {
-    color: black;
+  .member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
-}
-
-.member-left {
-  display: flex;
-  width: 100%;
-}
-
-.member-left img {
-  width: 50%;
-  border-radius: 50%;
 }
 
 .member-right {
@@ -59,24 +47,19 @@ h2 {
 }
 .member-right h2 {
   margin: 0;
-  font-family: quicksand;
-}
-@media (max-width: 391px) {
-  .member-right h2 {
-    color: black;
-  }
+  text-align: left;
+  width: 100%;
 }
 .member-right p {
-  color: rgb(0, 0, 0);
-  font-family: quicksand;
   margin: 0;
   word-wrap: break-word;
   overflow: hidden;
   text-align: left;
 }
-@media (max-width: 391px) {
-  .member-right p {
-    color: black;
+@media screen and (max-width: 390px) {
+  .member-right {
+    width: 60%;
+    justify-content: center;
   }
 }
 
@@ -86,9 +69,42 @@ h2 {
   flex-wrap: nowrap;
   align-items: center;
 }
+@media screen and (max-width: 390px) {
+  .details {
+    align-items: baseline;
+  }
+}
 
 .details img {
   width: 1em;
   height: 1em;
   margin-right: 3px;
+}
+@media screen and (max-width: 390px) {
+  .details img {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.member-left {
+  width: 100%;
+  justify-content: center;
+}
+@media screen and (max-width: 390px) {
+  .member-left {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+  }
+}
+
+.member-left img {
+  width: 40%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 390px) {
+  .member-left img {
+    width: 80%;
+  }
 }/*# sourceMappingURL=medlemslista.css.map */

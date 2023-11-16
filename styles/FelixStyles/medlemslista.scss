@@ -1,126 +1,134 @@
-
-
-
-
-
-section
-{
+section {
     text-align: left;
 }
 
 
 .member-list {
 
-    
-     width:100%;
-    
-    background-color: #FCF7EF;
+
+    max-width: 100%;
     display: flex;
-    padding:10%;
-    flex-direction:column;
-    justify-content: space-between; 
-    align-items: center; 
-    height: auto; 
-    margin:0 auto;
-    border:2px solid #efae1f;
+    padding: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin: 10px 10px;
+    border: 2px solid #ffffff;
     border-radius: 5px;
+
     @media (max-width: 391px) {
         width: 100%;
-        
+        padding: 0;
         color: black;
-        
-        
-      } 
+
+
+    }
 
 }
 
 .member {
-    width:100%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
-    justify-content: space-between; 
-}
+    justify-content: space-between;
+    flex-direction: row;
 
-h2{ //"h2 för Våra cateringfirmor"
-
-    
-    margin: 0;
-    font-family: quicksand;
-    padding-top:10px;
     @media (max-width: 391px) {
-                
-        
-        color: black;
-        
-      } 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
 
 }
-.member-left { //bildcontainer
-    display:flex;
-    width:100%;
-   
-}
-
-.member-left img{
-  
-     width:50%;
-        border-radius: 50%;
-}
 
 
- .member-right {
+
+
+.member-right {
     align-items: center;
     width: 50%;
     text-align: left;
-    h2 {
-        
-        margin: 0;
-        font-family: quicksand;
-        @media (max-width: 391px) {
-            
-            
-            color: black;
-            
-          } 
 
+    h2 {
+
+        margin: 0;
+        text-align: left;
+        width: 100%;
     }
+
+
     p {
 
-        
-        color: rgb(0, 0, 0);
-        font-family: quicksand;
         margin: 0;
-        word-wrap: break-word; 
-        overflow: hidden; 
-        text-align:left;
-        
-        @media (max-width: 391px) {
-            
-            
-            color: black;
-            
-          } 
+        word-wrap: break-word;
+        overflow: hidden;
+        text-align: left;
 
 
     }
-    
+
+    @media screen and (max-width: 390px) {
+
+        width: 60%;
+        justify-content: center;
+
+    }
 }
+
+
+
 .details {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+
+    @media screen and (max-width: 390px) {
+        align-items: baseline;
+
+    }
 }
-.details img{ //inuti member right ikoner
-width : 1em;
-height: 1em;
-margin-right: 3px;
-//padding-right: 5px; //få lite mer utrymme mellan ikonerna och texten
+
+
+.details img {
+    //inuti member right ikoner
+    width: 1em;
+    height: 1em;
+    margin-right: 3px;
+    //padding-right: 5px; //få lite mer utrymme mellan ikonerna och texten
+
+    @media screen and (max-width: 390px) {
+        display: flex;
+        align-items: baseline;
+
+
+    }
 }
 
+.member-left {
+    width: 100%;
+    justify-content: center;
 
+    @media screen and (max-width: 390px) {
 
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
 
+    }
+}
 
+.member-left img {
+
+    width: 40%;
+    border-radius: 50%;
+
+    @media screen and (max-width: 390px) {
+        width: 80%;
+
+    }
+}

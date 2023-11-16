@@ -56,7 +56,7 @@ h6 {
 }
 
 main {
-  background: url(top-view-vegetables-red-tablecloth-tomatoes-spices-pepper-plate-roasted-vegetables.jpg);
+  background: url(paprika.webp);
   height: 100%;
   width: 100%;
   background-attachment: fixed;
@@ -223,7 +223,7 @@ header {
   align-self: center;
   align-content: center;
   align-items: center;
-  background-color: rgba(252, 247, 239, 0.6509803922);
+  background-color: rgba(252, 247, 239, 0.8156862745);
   height: 100%;
   width: 75%;
   border-radius: 10px;
