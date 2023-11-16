@@ -12,11 +12,11 @@
 .matpriser-container .matpriser-bild img {
   width: 100%;
   border-radius: 9px;
-  margin-top: 10%;
 }
 .matpriser-container .matpriser {
   display: flex;
   justify-content: space-between;
+  margin: 20px 0;
 }
 .matpriser-container .matpriser .matpriser-restaurang {
   display: flex;
@@ -48,7 +48,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 10px;
     text-align: center;
   }
   .matpriser-container .matpriser .matpriser-pris {
