@@ -18,38 +18,102 @@
 
 <body>
    <main>
-      <nav class="nav">
-         <div class="nav-icon" id="icon-1">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <input type="checkbox" id="menu-toggle">
-            <div class="sidebar">
-               <div class="sidebar-content">
-                  <a href="index.html">Välkommen</a>
-                  <a href="nyheter.html">Nyheter</a>
-                  <a href="medlemslista.html">Medlemmar</a>
-                  <a href="kontakt.html">Kontakta oss</a>
-                  <a href="matpriser.html">Priser</a>
-               </div>
-            </div>
-         </div>
-         <div class="nav-icon" id="icon-2"> <a class="logo" href="index.html">
-               <img src="Img/champagne.png" alt="company logo"></a></div>
-         <div class="nav-icon" id="icon-3"> <i class="fa fa-user" aria-hidden="true"></i>
-         </div>
-      </nav>
-
-
-      <header>
-         <div class="nav-icon-desk" id="icon-3"> <i class="fa fa-user" aria-hidden="true"></i>
-         </div>
-         <div class="headline">
-            <h1>RESTO</h1>
-            <p>CULINAIR </p>
-         </div>
+      <div class="headline">
+         <h1>RESTO</h1>
+         <p>CULINAIR </p>
+      </div>
       </header>
 
       <div class="container">
+
          <section>
+            <div id="betalning">
+
+               <article class="main4">
+
+                  <h1>BETALSÄTT OCH KUNDUPPGIFTER</h1>
+                  <p>Dina uppgifter</p>
+
+               </article>
+
+               <form id="myForm4">
+
+                  <div id="form-container4">
+                     <div class="form-group4">
+                        <label for="foretagsnamn">Företagsnamn:</label>
+                        <input type="text" id="foretagsnamn">
+                     </div>
+
+                     <div class="form-group4">
+                        <label for="namn">Förnamn:</label>
+                        <input type="text" id="namn">
+                     </div>
+
+                     <div class="form-group4">
+                        <label for="efternamn">Efternamn:</label>
+                        <input type="text" id="efternamn">
+                     </div>
+
+                     <div class="form-group4">
+                        <label for="e-post">E-postadress:</label>
+                        <input type="text" id="e-post" required>
+                     </div>
+
+                     <div id="Leveransdatum" class="form-group4">
+                        <label for="leveransdatum">Leveransdatum:</label>
+                        <input type="date" id="leveransdatum" name="leveransdatum">
+                     </div>
+
+                     <div class="form-group4">
+                        <div class="betalningsadress-container">
+                           <label for="Leveransadress">Leveransadress:</label>
+                           <p>(startavgift 500 kr, sedan 100kr/mil)</p>
+                        </div>
+                        <input type="text" id="Leveransadress" required>
+                     </div>
+
+                     <div class="form-group4" id="messageArea">
+                        <label for="meddelande" class="meddelande">Meddelande:</label>
+                        <textarea id="meddelande" rows="10" cols="48"
+                           placeholder="Om du har ytterligare frågor eller önskemål, vänligen inkludera dem här."></textarea>
+                     </div>
+                  </div>
+               </form>
+
+               <div class="payment-container">
+                  <p>Betalningsätt</p>
+                  <form id="payment-form">
+                     <div class="payment-method">
+                        <label class="visa-card" for="visa-card">
+                           <img src="img/visa%20logga.webp" alt="Debit Card">
+                        </label>
+                        <input type="radio" id="visa-card" name="payment">
+                     </div>
+                     <div class="payment-method desktop-mastercard">
+                        <label for="master-card">
+                           <img src="img/MasterCard_early_1990s_logo.svg.png" alt="Debit Card">
+                        </label>
+                        <input type="radio" id="master-card" name="payment">
+                     </div>
+                     <div class="payment-method desktop-klarna">
+                        <label for="klarna">
+                           <img src="img/klarna-payment-ny-logga-juni-2019.png" alt="klarna-app">
+                        </label>
+                        <input type="radio" id="klarna" name="payment">
+                     </div>
+                     <div class="payment-method desktop-googlePay">
+                        <label for="google-pay">
+                           <img src="img/Google_Pay_Logo.svg.png" alt="Debit Card">
+                        </label>
+                        <input type="radio" id="google-pay" name="payment">
+                     </div>
+                  </form>
+               </div>
+
+               <h2 class="totalSumma">Summa 10' 000</h2>
+
+               <input form="myForm" type="submit" value="Betala Köp" class="skicka4">
+            </div>
 
          </section>
          <footer>
