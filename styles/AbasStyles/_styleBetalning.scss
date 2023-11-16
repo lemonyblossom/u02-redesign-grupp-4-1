@@ -1,10 +1,17 @@
+.container-betalning{
+    background-color: #fcf7efd0;
+    margin: 0;
+    width: 100%;
+    border-radius: 2px;
+    align-self: center;
+    padding: 0;
+  }
 
 #betalning{
     background-color: $primary-color;
     color: #000000;
     border-radius: 10px;
-    margin: 0 auto;
-    padding-top: 0;
+    margin: 10px;
     padding-bottom: 30px;
 
     .main4{
@@ -18,7 +25,7 @@
             padding: 0 10px;
             margin: 0 auto;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom:0px;
         }
 
         p{
@@ -31,23 +38,21 @@
     }
 
     #myForm4{
-        margin: 0 10px;
-        padding: 9px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-radius: 10px;
-        border: 3px solid $secondary-color;
+            margin: 0 10px;
+            border-radius: 10px;
+          
+    }
 
         #form-container4{
             width: 100%;
             .form-group4{
                 display: flex;
                 flex-direction: column;
-                align-items: left;
+                align-items: flex-start;
                 margin-bottom: 15px;
     
                 label{
-                    width: 150px;
+                    width: 100%;
                     text-align: left;
                     padding-right: 10px;
                     font-size: 1.15rem;
@@ -113,6 +118,8 @@
         border-radius: 10px;
         border: 3px solid $secondary-color;
         margin-bottom: 10px;
+        padding: 16px 0;
+        margin: 10px;
 
         .payment-method {
             display: flex;
@@ -154,8 +161,8 @@
         position: relative;
         display: block;
         margin: 0 auto;
-        background-color: $third-color;
-        border: 5px solid $secondary-color;
+        background-color: #59705f;
+        border: 2px solid #ffffff;
         color: #fff;
         font-size: 1.15rem;
         width: 60%;
@@ -166,26 +173,47 @@
 
     
     input[type="submit"].skicka4:hover{
-        background-color: red;
+        background-color: rgb(227, 197, 197);
     }
 
     .skicka4:active{
-        border: 5px solid #fccd67;
+        border: 2px solid #000000;
       }
-}
+
 
 // Desktop: 1920px
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1280px){
+
+    .container-betalning {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        background-color: #fcf7efd0;
+        height: 100%;
+        width:90%;
+        border-radius: 10px;
+        margin:0;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(4px);
+      
+      }
+      
 
     #betalning{
         padding: 20px 50px 80px;
         width: 100%;
-        min-width: 1085px;
+        min-width: 1000px;
+        padding: 30px;
+        padding: 10%;
+        text-align:left;
+    }
 
         .main4{
             h1{
-                font-size: 2.5rem;
-                margin-bottom: 48px;
+                font-size: 2rem;
+                margin-bottom: 20px;
                 padding-top: 10px;
             }
     
@@ -201,15 +229,12 @@
 
             display: flex;
             justify-content: center;
-            margin: 0 20px;
-            width: 100%;
-            max-width: 970px;
-            padding: 70px;
-            margin-bottom: 50px;
 
+        }
 
             #form-container4{
                 width: fit-content;
+                
                 
                 .form-group4{
                     display: flex;
@@ -278,11 +303,10 @@
         #payment-form{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            padding-top: 15px;
-            padding-bottom: 20px;
-            margin-bottom: 15px;
+            padding: 10px 0;
+            margin: 5px;
             
             .payment-method {
         
@@ -346,6 +370,5 @@
             margin-bottom: 0;
         }
     
-    }
+    
 
-}

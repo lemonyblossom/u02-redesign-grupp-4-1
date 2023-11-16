@@ -742,12 +742,20 @@
     text-align: left;
   }
 }
+.container-betalning {
+  background-color: rgba(252, 247, 239, 0.8156862745);
+  margin: 0;
+  width: 100%;
+  border-radius: 2px;
+  align-self: center;
+  padding: 0;
+}
+
 #betalning {
   background-color: rgb(140, 140, 140);
   color: #000000;
   border-radius: 10px;
-  margin: 0 auto;
-  padding-top: 0;
+  margin: 10px;
   padding-bottom: 30px;
 }
 #betalning .main4 {
@@ -763,7 +771,7 @@
   padding: 0 10px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 #betalning .main4 p {
   width: -moz-fit-content;
@@ -774,115 +782,117 @@
 }
 #betalning #myForm4 {
   margin: 0 10px;
-  padding: 9px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-radius: 10px;
-  border: 3px solid #ffc341;
 }
-#betalning #myForm4 #form-container4 {
+#betalning #form-container4 {
   width: 100%;
 }
-#betalning #myForm4 #form-container4 .form-group4 {
+#betalning #form-container4 .form-group4 {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   margin-bottom: 15px;
 }
-#betalning #myForm4 #form-container4 .form-group4 label {
-  width: 150px;
+#betalning #form-container4 .form-group4 label {
+  width: 100%;
   text-align: left;
   padding-right: 10px;
   font-size: 1.15rem;
 }
-#betalning #myForm4 #form-container4 .form-group4 input {
+#betalning #form-container4 .form-group4 input {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
   font-size: 1.1rem;
 }
-#betalning #myForm4 #form-container4 .form-group4 .betalningsadress-container {
+#betalning #form-container4 .form-group4 .betalningsadress-container {
   display: flex;
   flex-direction: column;
 }
-#betalning #myForm4 #form-container4 .form-group4 .betalningsadress-container label {
+#betalning #form-container4 .form-group4 .betalningsadress-container label {
   padding: 0;
   margin-bottom: -5px;
 }
-#betalning #myForm4 #form-container4 .form-group4 .betalningsadress-container p {
+#betalning #form-container4 .form-group4 .betalningsadress-container p {
   padding-bottom: 5px;
   text-align: left;
   font-size: 0.72rem;
 }
-#betalning #myForm4 #form-container4 .form-group4 input[type=date] {
+#betalning #form-container4 .form-group4 input[type=date] {
   width: 200px;
   height: 40px;
 }
-#betalning #myForm4 #form-container4 .form-group4 .meddelande {
+#betalning #form-container4 .form-group4 .meddelande {
   align-self: flex-start;
 }
-#betalning #myForm4 #form-container4 .form-group4 textarea {
+#betalning #form-container4 .form-group4 textarea {
   padding: 5px;
   border-radius: 5px;
   width: 100%;
   resize: none;
 }
-#betalning #myForm4 #form-container4 .form-group4 #meddelande::-moz-placeholder {
+#betalning #form-container4 .form-group4 #meddelande::-moz-placeholder {
   font-size: 1rem;
   line-height: 1.5;
 }
-#betalning #myForm4 #form-container4 .form-group4 #meddelande::placeholder {
+#betalning #form-container4 .form-group4 #meddelande::placeholder {
   font-size: 1rem;
   line-height: 1.5;
 }
-#betalning .payment-container {
+
+.payment-container {
   margin-top: 20px;
 }
-#betalning .payment-container p {
+.payment-container p {
   font-size: 1.1rem;
   margin-left: 10px;
   margin-bottom: 10px;
   text-align: left;
 }
-#betalning #payment-form {
+
+#payment-form {
   padding: 0;
   border-radius: 10px;
   border: 3px solid #ffc341;
   margin-bottom: 10px;
+  padding: 16px 0;
+  margin: 10px;
 }
-#betalning #payment-form .payment-method {
+#payment-form .payment-method {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
   margin-bottom: 20px;
 }
-#betalning #payment-form .payment-method label {
+#payment-form .payment-method label {
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
-#betalning #payment-form .payment-method label img {
+#payment-form .payment-method label img {
   width: 150px;
 }
-#betalning #payment-form .payment-method .visa-card {
+#payment-form .payment-method .visa-card {
   padding-bottom: 0;
 }
-#betalning #payment-form .payment-method .visa-card img {
+#payment-form .payment-method .visa-card img {
   width: 250px;
 }
-#betalning .totalSumma {
+
+.totalSumma {
   font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-#betalning .skicka4 {
+
+.skicka4 {
   position: relative;
   display: block;
   margin: 0 auto;
   background-color: #59705f;
-  border: 5px solid #ffc341;
+  border: 2px solid #ffffff;
   color: #fff;
   font-size: 1.15rem;
   width: 60%;
@@ -890,138 +900,154 @@
   padding: 5px 10px;
   cursor: pointer;
 }
-#betalning input[type=submit].skicka4:hover {
-  background-color: red;
-}
-#betalning .skicka4:active {
-  border: 5px solid #fccd67;
+
+input[type=submit].skicka4:hover {
+  background-color: rgb(227, 197, 197);
 }
 
-@media screen and (min-width: 1920px) {
+.skicka4:active {
+  border: 2px solid #000000;
+}
+
+@media screen and (min-width: 1280px) {
+  .container-betalning {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(252, 247, 239, 0.8156862745);
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    margin: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+  }
   #betalning {
     padding: 20px 50px 80px;
     width: 100%;
-    min-width: 1085px;
+    min-width: 1000px;
+    padding: 30px;
+    padding: 10%;
+    text-align: left;
   }
-  #betalning .main4 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 48px;
+  .main4 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
     padding-top: 10px;
   }
-  #betalning .main4 p {
+  .main4 p {
     position: relative;
     left: 40px;
     font-size: 1.5rem;
   }
-  #betalning #myForm4 {
+  #myForm4 {
     display: flex;
     justify-content: center;
-    margin: 0 20px;
-    width: 100%;
-    max-width: 970px;
-    padding: 70px;
-    margin-bottom: 50px;
   }
-  #betalning #myForm4 #form-container4 {
+  #form-container4 {
     width: -moz-fit-content;
     width: fit-content;
   }
-  #betalning #myForm4 #form-container4 .form-group4 {
+  #form-container4 .form-group4 {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
   }
-  #betalning #myForm4 #form-container4 .form-group4 label {
+  #form-container4 .form-group4 label {
     text-align: right;
     width: 200px;
     font-size: 1.4rem;
   }
-  #betalning #myForm4 #form-container4 .form-group4 input {
+  #form-container4 .form-group4 input {
     width: 450px;
     font-size: 1.5rem;
   }
-  #betalning #myForm4 #form-container4 .form-group4 .betalningsadress-container {
+  #form-container4 .form-group4 .betalningsadress-container {
     align-items: center;
   }
-  #betalning #myForm4 #form-container4 .form-group4 .betalningsadress-container label {
+  #form-container4 .form-group4 .betalningsadress-container label {
     text-align: right;
     padding-right: 10px;
   }
-  #betalning #myForm4 #form-container4 .form-group4 .betalningsadress-container p {
+  #form-container4 .form-group4 .betalningsadress-container p {
     text-align: center;
     font-weight: 600;
   }
-  #betalning #myForm4 #form-container4 .form-group4 textarea {
+  #form-container4 .form-group4 textarea {
     width: 450px;
     font-size: 1.4rem;
   }
-  #betalning #myForm4 #form-container4 .form-group4 #meddelande::-moz-placeholder {
+  #form-container4 .form-group4 #meddelande::-moz-placeholder {
     font-size: 1.3rem;
   }
-  #betalning #myForm4 #form-container4 .form-group4 #meddelande::placeholder {
+  #form-container4 .form-group4 #meddelande::placeholder {
     font-size: 1.3rem;
   }
-  #betalning #myForm4 #form-container4 #Leveransdatum {
+  #form-container4 #Leveransdatum {
     margin-bottom: 25px;
   }
-  #betalning #myForm4 #form-container4 #Leveransadress {
+  #form-container4 #Leveransadress {
     align-self: flex-start;
   }
-  #betalning .payment-container p {
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-    left: 40px;
-    font-size: 1.5rem;
-  }
-  #betalning #payment-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-  }
-  #betalning #payment-form .payment-method label {
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  #betalning #payment-form .payment-method label img {
-    width: 180px;
-  }
-  #betalning #payment-form .payment-method input[type=radio] {
-    margin-top: 30px;
-    transform: scale(1.5);
-  }
-  #betalning #payment-form .payment-method .visa-card img {
-    width: 280px;
-  }
-  #betalning #payment-form .desktop-mastercard label {
-    padding-bottom: 0;
-  }
-  #betalning #payment-form .desktop-klarna label {
-    padding-bottom: 0;
-  }
-  #betalning #payment-form .desktop-googlePay {
-    padding-top: 0;
-  }
-  #betalning #payment-form .desktop-googlePay label {
-    padding-bottom: 0;
-    padding-right: 20px;
-  }
-  #betalning .totalSumma {
-    font-size: 3rem;
-    font-weight: 500;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding-bottom: 40px;
-  }
-  #betalning .skicka4 {
-    font-size: 1.7rem;
-    width: 310px;
-    margin-bottom: 0;
-  }
+}
+.payment-container p {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  left: 40px;
+  font-size: 1.5rem;
+}
+
+#payment-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 5px;
+}
+#payment-form .payment-method label {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#payment-form .payment-method label img {
+  width: 180px;
+}
+#payment-form .payment-method input[type=radio] {
+  margin-top: 30px;
+  transform: scale(1.5);
+}
+#payment-form .payment-method .visa-card img {
+  width: 280px;
+}
+#payment-form .desktop-mastercard label {
+  padding-bottom: 0;
+}
+#payment-form .desktop-klarna label {
+  padding-bottom: 0;
+}
+#payment-form .desktop-googlePay {
+  padding-top: 0;
+}
+#payment-form .desktop-googlePay label {
+  padding-bottom: 0;
+  padding-right: 20px;
+}
+
+.totalSumma {
+  font-size: 3rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 40px;
+}
+
+.skicka4 {
+  font-size: 1.7rem;
+  width: 310px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=abasMain.css.map */
