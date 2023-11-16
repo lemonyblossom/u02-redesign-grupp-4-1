@@ -214,7 +214,7 @@
   display: block;
   margin: 0 auto;
   background-color: #59705f;
-  border: 2px solid #000000;
+  border: 2px solid #bcd1bb;
   color: #fff;
   font-size: 1.15rem;
   width: 50%;
@@ -228,10 +228,11 @@
   border: 2px solid #ffffff;
 }
 #omdome input[type=submit].skicka1:hover {
-  background-color: rgb(188, 209, 187);
-  box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
+  color: black;
+  background-color: #bcd1bb;
+  box-shadow: 5px 2px 15px 2px #ffffff;
   border-radius: 10px;
-  transition: 800ms;
+  transition: 300ms;
 }
 
 @media screen and (min-width: 1280px) {
@@ -245,13 +246,11 @@
   }
   #grid-container .grid-item {
     position: relative;
-    background-color: #476E91;
     width: 90%;
     border-radius: 20px;
     margin-top: 44px;
   }
   #grid-container .grid-item img {
-    left: 39%;
     top: -44px;
   }
   #grid-container .grid-item .name {
@@ -553,10 +552,9 @@
   }
 }
 #kontakt1 {
-  background-color: rgb(140, 140, 140);
-  border: 3px solid #ffc341;
+  border: 2px solid white;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 3px auto;
 }
 #kontakt1 .main2 {
   padding-top: 15px;
@@ -632,20 +630,26 @@
   display: block;
   margin: 0 auto;
   background-color: #59705f;
-  border: 5px solid #ffc341;
+  border: 2px solid #bcd1bb;
   color: #fff;
   font-size: 1.15rem;
-  width: 60%;
+  width: 50%;
   text-align: center;
   padding: 5px 10px;
   cursor: pointer;
   margin-bottom: 40px;
+  border-radius: 5px;
 }
 #kontakt1 .skicka2:active {
-  border: 5px solid #fccd67;
+  border: 2px solid #ffffff;
 }
 #kontakt1 input[type=submit].skicka2:hover {
-  background-color: red;
+  color: black;
+  border: 2px solid black;
+  background-color: #bcd1bb;
+  box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 300ms;
 }
 #kontakt1 .kontakt-info {
   display: flex;
@@ -659,13 +663,13 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1280px) {
   #kontakt1 {
-    width: 100%;
-    min-width: 1085px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px;
   }
   #kontakt1 .main2 {
     padding-top: 25px;

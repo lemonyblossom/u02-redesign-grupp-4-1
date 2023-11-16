@@ -1,13 +1,16 @@
-#kontakt1{
-    background-color: $primary-color;
-    border: 3px solid $secondary-color;
-    border-radius: 10px;
-    margin: 0 auto;
+#kontakt1 {
 
-    .main2{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 3px auto;
+
+
+
+    .main2 {
         padding-top: 15px;
         padding-bottom: 20px;
-        h1{
+
+        h1 {
             font-size: 1.8rem;
             font-weight: 500;
             width: fit-content;
@@ -17,7 +20,7 @@
             padding-bottom: 20px;
         }
 
-        p{
+        p {
             color: #000000;
             width: 100%;
             max-width: 440px;
@@ -28,7 +31,7 @@
 
     }
 
-    #myForm2{
+    #myForm2 {
         background-color: $third-color;
         color: #fff;
         margin: 0 7px;
@@ -37,112 +40,122 @@
         padding-bottom: 20px;
         border-radius: 10px;
 
-        #form-container2{
+        #form-container2 {
             width: 100%;
-            .form-group2{
+
+            .form-group2 {
                 display: flex;
                 flex-direction: column;
                 align-items: left;
                 margin-bottom: 15px;
-    
-                label{
+
+                label {
                     width: 150px;
                     text-align: left;
                     font-size: 1.15rem;
                 }
-        
-                input{
+
+                input {
                     width: 100%;
                     padding: 8px;
                     border-radius: 5px;
                     font-size: 1.1rem;
                 }
-    
-                .meddelande{
+
+                .meddelande {
                     align-self: flex-start;
                 }
-    
-                textarea{
+
+                textarea {
                     padding: 5px;
                     border-radius: 5px;
                     width: 100%;
                     resize: none;
                 }
-                #meddelande::placeholder{
+
+                #meddelande::placeholder {
                     font-size: 1rem;
                     line-height: 1.5;
                 }
             }
-            
+
         }
     }
 
-    .skicka2{
+    .skicka2 {
         position: relative;
         top: 20px;
         display: block;
         margin: 0 auto;
         background-color: $third-color;
-        border: 5px solid $secondary-color;
+        border: 2px solid #bcd1bb;
         color: #fff;
         font-size: 1.15rem;
-        width: 60%;
+        width: 50%;
         text-align: center;
         padding: 5px 10px;
         cursor: pointer;
         margin-bottom: 40px;
+        border-radius: 5px;
     }
 
-    .skicka2:active{
-        border: 5px solid #fccd67;
-      }
-
-    
-    input[type="submit"].skicka2:hover{
-        background-color: red;
+    .skicka2:active {
+        border: 2px solid #ffffff;
     }
 
-    .kontakt-info{
+
+    input[type="submit"].skicka2:hover {
+        color: black;
+        border: 2px solid black;
+        background-color: #bcd1bb;
+        box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
+        border-radius: 10px;
+        transition: 300ms;
+
+    }
+
+    .kontakt-info {
         display: flex;
         flex-direction: column;
         padding: 8px;
         text-align: left;
         line-height: 1.5;
 
-        a{
+        a {
             color: black;
             text-decoration: none;
         }
 
     }
-    
+
 
 }
 
 //Desktop: 1920px
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1280px) {
 
-    #kontakt1{
-        width: 100%;
-        min-width: 1085px;
+    #kontakt1 {
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .main2{
+        margin: 30px;
+
+        .main2 {
             padding-top: 25px;
-            
-            h1{
+
+            h1 {
                 font-size: 2.6rem;
             }
 
-            p{
+            p {
                 font-size: 1.4rem;
                 max-width: 600px;
             }
 
         }
 
-        #myForm2{
+        #myForm2 {
             display: flex;
             justify-content: center;
             width: 100%;
@@ -152,15 +165,15 @@
             padding: 70px;
             padding-left: 0;
 
-            #form-container2{
+            #form-container2 {
                 width: fit-content;
-                
-                .form-group2{
+
+                .form-group2 {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-        
-                    label{
+
+                    label {
                         text-align: right;
                         padding-bottom: 0;
                         padding-right: 10px;
@@ -168,33 +181,34 @@
                         margin: 0;
                         font-size: 1.4rem;
                     }
-            
-                    input{
+
+                    input {
                         width: 450px;
                         font-size: 1.5rem;
                     }
-        
-                    textarea{
+
+                    textarea {
                         width: 450px;
                         font-size: 1.4rem;
                     }
-                    #meddelande::placeholder{
+
+                    #meddelande::placeholder {
                         font-size: 1.2rem;
                         padding: 10px;
                     }
                 }
-                
+
             }
         }
 
-        .skicka2{
+        .skicka2 {
             font-size: 1.5rem;
             width: 40%;
             padding: 7px 40px;
             margin-bottom: 60px;
         }
 
-        .kontakt-info{
+        .kontakt-info {
             display: flex;
             flex-direction: column;
             align-self: flex-start;
@@ -202,12 +216,12 @@
             padding-left: 60px;
             font-size: 1.4rem;
 
-            p{
+            p {
                 text-align: left;
             }
 
         }
-        
+
 
     }
 }
