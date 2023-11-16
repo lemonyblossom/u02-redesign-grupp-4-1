@@ -213,7 +213,7 @@
   top: 20px;
   display: block;
   margin: 0 auto;
-  background-color: rgb(142, 177, 151);
+  background-color: #59705f;
   border: 2px solid #000000;
   color: #fff;
   font-size: 1.15rem;
@@ -228,7 +228,7 @@
   border: 2px solid #ffffff;
 }
 #omdome input[type=submit].skicka1:hover {
-  background-color: #518862;
+  background-color: rgb(188, 209, 187);
   box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
   border-radius: 10px;
   transition: 800ms;
@@ -404,7 +404,7 @@
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  color: #518862;
+  color: #59705f;
   padding-bottom: 10px;
 }
 #kontakt3 .main3 p {
@@ -416,7 +416,7 @@
   line-height: 1.5;
 }
 #kontakt3 #myForm3 {
-  background-color: #518862;
+  background-color: #59705f;
   color: #fff;
   margin: 0 10px;
   padding: 9px;
@@ -481,7 +481,7 @@
   border: 2px solid #ffffff;
 }
 #kontakt3 input[type=submit].skicka3:hover {
-  background-color: #518862;
+  background-color: #59705f;
   box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
   border-radius: 10px;
   transition: 800ms;
@@ -569,7 +569,7 @@
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-  color: #518862;
+  color: #59705f;
   padding-bottom: 20px;
 }
 #kontakt1 .main2 p {
@@ -581,7 +581,7 @@
   line-height: 1.5;
 }
 #kontakt1 #myForm2 {
-  background-color: #518862;
+  background-color: #59705f;
   color: #fff;
   margin: 0 7px;
   padding: 9px;
@@ -631,7 +631,7 @@
   top: 20px;
   display: block;
   margin: 0 auto;
-  background-color: #518862;
+  background-color: #59705f;
   border: 5px solid #ffc341;
   color: #fff;
   font-size: 1.15rem;
@@ -877,7 +877,7 @@
   position: relative;
   display: block;
   margin: 0 auto;
-  background-color: #518862;
+  background-color: #59705f;
   border: 5px solid #ffc341;
   color: #fff;
   font-size: 1.15rem;
