@@ -49,6 +49,17 @@ h6 {
   text-align: center;
 }
 
+a {
+  color: #d0d0d0;
+  transition: 300ms;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 /* Create a root stacking context */
 #root,
 #__next {
@@ -249,6 +260,17 @@ footer {
   width: 100%;
   background-color: #000000;
   z-index: 1;
+  padding: 20px;
+}
+
+footer p, h2, h3 {
+  text-align: left;
+  margin: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 #contact {
@@ -263,6 +285,7 @@ footer {
   width: 50%;
   padding: 16px;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .left p {
@@ -461,11 +484,6 @@ footer {
     padding: 0;
   }
   section {
-    padding: 0;
-  }
-  footer {
-    display: block;
-    width: 100%;
-    background-color: #000000;
+    padding-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
