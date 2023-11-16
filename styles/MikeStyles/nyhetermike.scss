@@ -66,6 +66,7 @@ $button-card-color: #195a94;
     height: 100%;
     margin-bottom: 20px;
 
+
     .calender-p-flex {
       //container
       width: 110%;
@@ -99,8 +100,9 @@ $button-card-color: #195a94;
     button {
       background-color: $button-card-color;
       width: 70%;
+      height: 50px;
       font-size: 1rem;
-      padding: 10 40px;
+      padding: 0 40px;
       border-radius: 37.8px;
       color: white;
     }
@@ -191,7 +193,6 @@ $button-card-color: #195a94;
     width: 100%;
     font-size: 20px;
     margin-top: 15px;
-    margin-bottom: 30x;
   }
 
   .container-restaurang-all .restaurang-container {
@@ -207,8 +208,10 @@ $button-card-color: #195a94;
   }
 
   .container-restaurang-all .calender-knapp-flex-card-1 button {
+    //knapp
     width: 80%;
-    height: 100%;
+    height: 40px;
+    padding: 0;
   }
 
   .container-restaurang-all .calender-knapp-flex-card-1 .calender-p-flex .container-restaurang-all .ram-card-1 .card-1 {
@@ -216,6 +219,7 @@ $button-card-color: #195a94;
   }
 
   .container-restaurang-all .calender-knapp-flex-card-1 .button-card-1 {
+    //knapplåda
     width: 70%;
     height: 80%;
     margin-right: 1.7%;
