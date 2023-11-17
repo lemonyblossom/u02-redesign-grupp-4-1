@@ -97,16 +97,6 @@ article {
   height: 0;
 }
 
-.nav-icon-desk {
-  color: white;
-  font-size: 30px;
-  width: 100%;
-  padding-top: 50px;
-  padding-right: 50px;
-  display: flex;
-  justify-content: flex-end;
-}
-
 /* Logo */
 .logo {
   width: 150px;
@@ -140,7 +130,7 @@ article {
   justify-content: space-between;
   margin-top: 40px;
   font-weight: bolder;
-  height: 60%;
+  height: 50%;
 }
 
 .sidebar a {
@@ -348,6 +338,9 @@ footer p {
 
 /* --------------------------Mobile menu ----------------------------------------------*/
 @media screen and (max-width: 767px) {
+  main {
+    margin-top: 50px;
+  }
   header {
     display: none;
   }
@@ -365,44 +358,37 @@ footer p {
     width: 50px;
     background-color: rgba(0, 0, 0, 0);
   }
-  .nav-icon-desk {
-    display: none;
-  }
   .nav {
     display: flex;
     width: 100%;
     height: 50px;
     background-color: #000000;
     flex-direction: row;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 1;
   }
   .nav-icon {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   /* #icon-1, #icon-2, #icon-3 */
   #icon-1 {
     text-align: left;
     flex: 1;
   }
-  #icon-2 {
-    text-align: center;
-    flex: 1;
-  }
   .menu-icon {
     content: "☰";
-    /* Hamburger */
     font-size: 35px;
     display: block;
     color: #fcf7ef;
-    position: fixed;
-    z-index: 2;
+    position: relative !important;
     cursor: pointer;
-    margin-left: -50px;
+    z-index: 2;
   }
   #menu-toggle {
     display: none;
-    z-index: 2;
   }
   .menu-icon:hover,
   .menu-icon:active {
@@ -422,7 +408,7 @@ footer p {
   }
   .sidebar-content {
     margin-top: 50px;
-    height: 70vh;
+    height: 50vh;
   }
   .sidebar a {
     text-decoration: none;
@@ -460,9 +446,12 @@ footer p {
   footer {
     width: 100%;
   }
-  footer p, h3, a {
+  footer p, h3 {
     font-size: 1rem !important;
     width: 100%;
+  }
+  footer a {
+    text-align: center;
   }
   #contact {
     flex-direction: column;
