@@ -38,6 +38,21 @@ button,
 textarea,
 select {
   font: inherit;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #393939;
+  color: white;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input button:hover,
+button button:hover,
+textarea button:hover,
+select button:hover {
+  color: black;
+  background-color: #ffffff;
 }
 
 /* Avoid text overflows */
