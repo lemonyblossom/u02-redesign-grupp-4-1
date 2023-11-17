@@ -1,3 +1,30 @@
+.pay-button button {
+  position: relative;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: #323232;
+  border: 2px solid #000000;
+  color: #fff;
+  font-size: 1.15rem;
+  width: 50%;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+.pay-button:active {
+  border: 2px solid #ffffff;
+}
+
+/* hover */
+.pay-button button:hover {
+  color: black;
+  background-color: #ffffff;
+}
+
 .matpriser-container {
   display: flex;
   align-items: center;
@@ -58,24 +85,8 @@
     padding-left: 0;
     justify-content: flex-start;
   }
-  .matpriser-bild img,
-  .matpriser-bild {
+  .matpriser-container .matpriser .matpriser-bild img,
+  .matpriser-container .matpriser .matpriser-bild {
     border-radius: 5px !important;
   }
-}
-.pay-button button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #393939;
-  color: white;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* hover */
-.pay-button button:hover {
-  color: black;
-  background-color: #ffffff;
 }/*# sourceMappingURL=prislista.css.map */

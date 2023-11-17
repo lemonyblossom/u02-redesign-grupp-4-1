@@ -171,21 +171,23 @@ $button-card-color: #195a94;
       }
 
       .width-button {
-        align-items: center;
-        width: 46%;
-        height: 50px;
-        padding-right: 5%;
-        margin-top: 3%;
+        margin-right: 17px;
       }
 
       .button-card-2 {
-        background-color: $button-card-color;
+        background-color: #195a94;
         font-size: 1rem;
-        width: 110%;
-        height: 80%;
+        width: 110px;
+        padding: 10px;
+        height: 42px;
         border-radius: 11px;
         color: white;
         border-radius: 37.8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
       }
 
         .button-card-2:hover {
