@@ -204,12 +204,13 @@ header {
 }
 
 .headline {
+  font-size: xx-large;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 100px;
   padding-bottom: 10px;
   text-shadow: 2px 2px 1px #012601;
   align-items: center;
