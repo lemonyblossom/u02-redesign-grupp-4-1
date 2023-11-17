@@ -1,5 +1,3 @@
-
-
 #grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -722,7 +720,7 @@
     padding: 7px 40px;
     margin-bottom: 60px;
   }
-  #kontakt1 .kontakt-info {
+  .kontakt-info {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -730,7 +728,7 @@
     padding-left: 60px;
     font-size: 1.4rem;
   }
-  #kontakt1 .kontakt-info p {
+  .kontakt-info p {
     text-align: left;
   }
 }

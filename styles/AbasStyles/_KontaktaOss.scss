@@ -208,20 +208,20 @@
             margin-bottom: 60px;
         }
 
-        .kontakt-info {
-            display: flex;
-            flex-direction: column;
-            align-self: flex-start;
-            padding: 20px;
-            padding-left: 60px;
-            font-size: 1.4rem;
 
-            p {
-                text-align: left;
-            }
+    }
 
+    .kontakt-info {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding: 20px;
+        padding-left: 60px;
+        font-size: 1.4rem;
+
+        p {
+            text-align: left;
         }
-
 
     }
 }

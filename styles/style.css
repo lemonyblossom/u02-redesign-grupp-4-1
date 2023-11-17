@@ -54,7 +54,7 @@ h6 {
 }
 
 a {
-  color: #d0d0d0;
+  color: #000000;
   transition: 300ms;
   font-weight: bolder;
   text-decoration: underline;
@@ -237,6 +237,10 @@ footer {
   background-color: #000000;
   z-index: 1;
   padding: 20px;
+}
+footer a {
+  color: #ffe4e4;
+  text-decoration: none;
 }
 footer h3 {
   width: 100%;
@@ -451,12 +455,17 @@ footer p, h2 {
     padding: 10px 0 20px 0;
   }
   footer {
+    width: 100%;
+  }
+  #contact {
     flex-direction: column;
+    width: 100%;
   }
   .left, .right {
     flex-direction: column;
     padding: 5px;
     margin: 0;
+    width: 100%;
   }
   .row {
     display: flex;
