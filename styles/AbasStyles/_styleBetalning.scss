@@ -15,8 +15,11 @@
     padding-bottom: 30px;
 
     .main4{
-        padding-top: 20px;
-        padding-bottom: 10px;
+    display: flex;
+    padding: 20px 0 10px 10px;
+    justify-content: flex-start;
+    flex-direction: row;
+
         h1{
             font-size: 1.5rem;
             font-weight: 500;
@@ -31,7 +34,7 @@
         p{
             width: fit-content;
             text-align: left;
-            margin-left: 10px;
+            
             font-size: 1.1rem;
         }
 
@@ -73,6 +76,7 @@
                         margin-bottom: -5px;
                     }
                     p{
+                        width:100%;
                         padding-bottom: 5px;
                         text-align: left;
                         font-size: 0.72rem;
@@ -114,6 +118,8 @@
     }
 
     #payment-form{
+        display: flex;
+            flex-direction: column;
         padding: 0;
         border-radius: 10px;
         border: 3px solid $secondary-color;
@@ -218,8 +224,6 @@
             }
     
             p{
-                position: relative;
-                left: 40px;
                 font-size: 1.5rem;
             }
     
@@ -287,88 +291,88 @@
                 }
                 
             }
-            
-        }
+            .payment-container{
 
-        .payment-container{
-
-            p{
-                width: fit-content;
-                position: relative;
-                left: 40px;
-                font-size: 1.5rem;
-            }
-        }
-
-        #payment-form{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-            margin: 5px;
-            
-            .payment-method {
-        
-                label{
-                    height: 100px;
-                    display: flex;
-                    align-items: center;
-                    
-                    img{
-                        width: 180px;
-                    }
+                p{
+                    width: fit-content;
+                    position: relative;
+                    left: 40px;
+                    font-size: 1.5rem;
                 }
+            }
+    
+            #payment-form{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+                margin: 5px;
+                margin-bottom: 70px;
                 
-                input[type="radio"] {
-                    margin-top: 30px;
-                    transform: scale(1.5); 
+                .payment-method {
+            
+                    label{
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        
+                        img{
+                            width: 180px;
+                        }
+                    }
+                    
+                    input[type="radio"] {
+                        margin-top: 30px;
+                        transform: scale(1.5); 
+                      }
+        
+                    .visa-card{
+                        img{
+                            width: 280px;
+                        }
+                    }
+            
                   }
     
-                .visa-card{
-                    img{
-                        width: 280px;
-                    }
+                .desktop-mastercard{
+    
+                    label{
+                            padding-bottom: 0;
+                        }
                 }
-        
-              }
-
-            .desktop-mastercard{
-
-                label{
+                  .desktop-klarna{
+    
+                    label{
                         padding-bottom: 0;
                     }
-            }
-              .desktop-klarna{
-
-                label{
-                    padding-bottom: 0;
                 }
-            }
-            
-            .desktop-googlePay{
-                padding-top: 0;
                 
-                label{
-                    padding-bottom: 0;
-                    padding-right: 20px;
+                .desktop-googlePay{
+                    padding-top: 0;
+                    
+                    label{
+                        padding-bottom: 0;
+                        padding-right: 20px;
+                    }
                 }
+    
             }
-
-        }
-
-        .totalSumma{
-            font-size: 3rem;
-            font-weight: 500;
-            width: fit-content;
-            padding-bottom: 40px;
-        }
     
-        .skicka4{
-            font-size: 1.7rem;
-            width: 310px;
-            margin-bottom: 0;
+            .totalSumma{
+                font-size: 3rem;
+                font-weight: 500;
+                width: fit-content;
+                padding-bottom: 40px;
+            }
+        
+            .skicka4{
+                font-size: 1.7rem;
+                width: 310px;
+                margin-bottom: 0;
+            }
+        
+        
+    
+       
         }
-    
-    
-
