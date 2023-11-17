@@ -1,0 +1,1043 @@
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  margin: 20px;
+  margin-top: 50px;
+}
+#grid-container .grid-item {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7921568627);
+  border-radius: 10px;
+  margin-bottom: 80px;
+  height: 380px;
+  justify-self: center;
+  margin-top: 10px;
+}
+#grid-container .grid-item .profile {
+  display: flex;
+  justify-content: center;
+}
+#grid-container .grid-item .profile img {
+  position: absolute;
+  top: -47px;
+  width: 88px;
+  border-radius: 100%;
+}
+#grid-container .grid-item .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#grid-container .grid-item .name h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  padding-top: 58px;
+  margin-bottom: 4px;
+}
+#grid-container .grid-item .name p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+#grid-container .grid-item .about {
+  text-align: center;
+  line-height: 2;
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 14px 10px;
+}
+#grid-container .grid-item .form-group5 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
+}
+#grid-container .grid-item .form-group5 label {
+  width: 150px;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 1.15rem;
+  color: #F1D058;
+}
+#grid-container .grid-item .form-group5 input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+#grid-container .grid-item .form-group5 .star-container2 {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 0 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+#grid-container .grid-item .form-group5 .star {
+  font-size: 2.1rem;
+}
+#grid-container .grid-item .form-group5 .grey {
+  color: #ccc;
+}
+#grid-container .grid-item .form-group5 .star-container2 input {
+  display: none;
+}
+#grid-container .grid-item .form-group5 .star-container2 label {
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#omdome {
+  background-color: rgb(140, 140, 140);
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding-top: 0;
+}
+#omdome .main1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#omdome .main1 h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#omdome .main1 p {
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+#omdome #myForm1 {
+  color: #000000;
+  padding: 10px;
+}
+#omdome #myForm1 #form-container1 {
+  width: 100%;
+}
+#omdome #myForm1 #form-container1 .form-group1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
+}
+#omdome #myForm1 #form-container1 .form-group1 label {
+  width: 150px;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 1.15rem;
+}
+#omdome #myForm1 #form-container1 .form-group1 input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+#omdome #myForm1 #form-container1 .form-group1 .star-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 0 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#omdome #myForm1 #form-container1 .form-group1 .star {
+  font-size: 1.5rem;
+}
+#omdome #myForm1 #form-container1 .form-group1 .star-container input {
+  display: none;
+}
+#omdome #myForm1 #form-container1 .form-group1 .star-container label {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+  color: #ccc;
+  cursor: pointer;
+}
+#omdome #myForm1 #form-container1 .form-group1 .star-container input:checked ~ label {
+  color: #ffc341;
+}
+#omdome #myForm1 #form-container1 .form-group1 .star-container label:hover,
+#omdome #myForm1 #form-container1 .form-group1 .star-container label:hover ~ label {
+  color: #ffc341;
+}
+#omdome #myForm1 #form-container1 .form-group1 .meddelande {
+  align-self: flex-start;
+}
+#omdome #myForm1 #form-container1 .form-group1 textarea {
+  padding: 6px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  width: 100%;
+  resize: none;
+}
+#omdome #myForm1 #form-container1 .form-group1 #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#omdome #myForm1 #form-container1 .form-group1 #meddelande::placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#omdome #myForm1 #form-container1 .datum {
+  margin-bottom: 15px;
+}
+#omdome .skicka1 {
+  position: relative;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: #59705f;
+  border: 2px solid #bcd1bb;
+  color: #fff;
+  font-size: 1.15rem;
+  width: 50%;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+#omdome .skicka1:active {
+  border: 2px solid #ffffff;
+}
+#omdome input[type=submit].skicka1:hover {
+  color: black;
+  background-color: #bcd1bb;
+  box-shadow: 5px 2px 15px 2px #ffffff;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+@media screen and (min-width: 1280px) {
+  #grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  #grid-container .grid-item {
+    position: relative;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 44px;
+  }
+  #grid-container .grid-item img {
+    top: -44px;
+  }
+  #grid-container .grid-item .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+  #grid-container .grid-item .name h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 40px;
+    margin-bottom: 4px;
+  }
+  #grid-container .grid-item .name p {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  #grid-container .grid-item .about {
+    text-align: center;
+    line-height: 2;
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 14px 10px;
+  }
+  #grid-container .grid-item .card-3 {
+    margin: 39px 14px;
+  }
+  #grid-container .grid-item .form-group5 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 10px;
+  }
+  #grid-container .grid-item .form-group5 label {
+    width: 150px;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 1.15rem;
+    color: #F1D058;
+  }
+  #grid-container .grid-item .form-group5 input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+  }
+  #grid-container .grid-item .form-group5 .star-container2 {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 0 25px;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-self: center;
+  }
+  #grid-container .grid-item .form-group5 .star {
+    font-size: 2.1rem;
+  }
+  #grid-container .grid-item .form-group5 .grey1,
+  #grid-container .grid-item .form-group5 .grey2 {
+    color: #ccc;
+  }
+  #grid-container .grid-item .form-group5 .star-container2 input {
+    display: none;
+  }
+  #grid-container .grid-item .form-group5 .star-container2 label {
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+  }
+  #omdome {
+    padding: 70px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #omdome .main1 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  #omdome .main1 h2 {
+    font-size: 2rem;
+  }
+  #omdome .main1 p {
+    font-size: 1.4rem;
+    max-width: 600px;
+  }
+  #omdome #myForm1 {
+    margin: 0 20px;
+  }
+  #omdome #myForm1 #form-container1 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #omdome #myForm1 #form-container1 .form-group1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  #omdome #myForm1 #form-container1 .form-group1 label {
+    text-align: right;
+    width: 156px;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  #omdome #myForm1 #form-container1 .form-group1 input {
+    width: 610px;
+    font-size: 1.5rem;
+  }
+  #omdome #myForm1 #form-container1 .form-group1 textarea {
+    width: 610px;
+    font-size: 1.4rem;
+  }
+  #omdome #myForm1 #form-container1 .form-group1 #meddelande::-moz-placeholder {
+    font-size: 1.3rem;
+  }
+  #omdome #myForm1 #form-container1 .form-group1 #meddelande::placeholder {
+    font-size: 1.3rem;
+  }
+  #omdome .skicka1 {
+    font-size: 1.6rem;
+    width: 35%;
+    padding: 7px 40px;
+    cursor: pointer;
+  }
+}
+#kontakt3 {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px;
+}
+#kontakt3 .main3 {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+#kontakt3 .main3 h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  color: #59705f;
+  padding-bottom: 10px;
+}
+#kontakt3 .main3 p {
+  color: #000000;
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+#kontakt3 #myForm3 {
+  background-color: #59705f;
+  color: #fff;
+  margin: 0 10px;
+  padding: 9px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+#kontakt3 #myForm3 #form-container3 {
+  width: 100%;
+}
+#kontakt3 #myForm3 #form-container3 .form-group3 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 15px;
+}
+#kontakt3 #myForm3 #form-container3 .form-group3 label {
+  width: 150px;
+  text-align: left;
+  font-size: 1.15rem;
+}
+#kontakt3 #myForm3 #form-container3 .form-group3 input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+#kontakt3 #myForm3 #form-container3 .form-group3 .meddelande {
+  align-self: flex-start;
+}
+#kontakt3 #myForm3 #form-container3 .form-group3 textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+}
+#kontakt3 #myForm3 #form-container3 .form-group3 #meddelande::-moz-placeholder {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+#kontakt3 #myForm3 #form-container3 .form-group3 #meddelande::placeholder {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+#kontakt3 .skicka3 {
+  position: relative;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(142, 177, 151);
+  border: 2px solid #000000;
+  color: #fff;
+  font-size: 1.15rem;
+  width: 50%;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+#kontakt3 .skicka3:active {
+  border: 2px solid #ffffff;
+}
+#kontakt3 input[type=submit].skicka3:hover {
+  background-color: #59705f;
+  box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 800ms;
+}
+
+@media screen and (min-width: 1920px) {
+  #kontakt3 {
+    padding-top: 32px;
+    width: 1200px;
+    padding-bottom: 40px;
+  }
+  #kontakt3 .main3 {
+    padding-top: 0;
+  }
+  #kontakt3 .main3 h1 {
+    font-size: 2.6rem;
+  }
+  #kontakt3 .main3 p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  #kontakt3 #myForm3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 70px;
+    margin-bottom: 32px;
+  }
+  #kontakt3 #myForm3 #form-container3 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #kontakt3 #myForm3 #form-container3 .form-group3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #kontakt3 #myForm3 #form-container3 .form-group3 label {
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    width: 200px;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  #kontakt3 #myForm3 #form-container3 .form-group3 input {
+    width: 450px;
+    font-size: 1.5rem;
+  }
+  #kontakt3 #myForm3 #form-container3 .form-group3 textarea {
+    width: 450px;
+    font-size: 1.4rem;
+    padding: 9px;
+  }
+  #kontakt3 #myForm3 #form-container3 .form-group3 #meddelande::-moz-placeholder {
+    font-size: 1.2rem;
+  }
+  #kontakt3 #myForm3 #form-container3 .form-group3 #meddelande::placeholder {
+    font-size: 1.2rem;
+  }
+  #kontakt3 .skicka3 {
+    font-size: 1.5rem;
+    width: 32%;
+    text-align: center;
+    padding: 7px 40px;
+  }
+}
+#kontakt1 {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 3px auto;
+}
+#kontakt1 .main2 {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+#kontakt1 .main2 h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  color: #59705f;
+  padding-bottom: 20px;
+}
+#kontakt1 .main2 p {
+  color: #000000;
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+#kontakt1 #myForm2 {
+  background-color: #59705f;
+  color: #fff;
+  margin: 0 7px;
+  padding: 9px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+#kontakt1 #myForm2 #form-container2 {
+  width: 100%;
+}
+#kontakt1 #myForm2 #form-container2 .form-group2 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 15px;
+}
+#kontakt1 #myForm2 #form-container2 .form-group2 label {
+  width: 150px;
+  text-align: left;
+  font-size: 1.15rem;
+}
+#kontakt1 #myForm2 #form-container2 .form-group2 input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+#kontakt1 #myForm2 #form-container2 .form-group2 .meddelande {
+  align-self: flex-start;
+}
+#kontakt1 #myForm2 #form-container2 .form-group2 textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+}
+#kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#kontakt1 .skicka2 {
+  position: relative;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: #59705f;
+  border: 2px solid #bcd1bb;
+  color: #fff;
+  font-size: 1.15rem;
+  width: 50%;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+#kontakt1 .skicka2:active {
+  border: 2px solid #ffffff;
+}
+#kontakt1 input[type=submit].skicka2:hover {
+  color: black;
+  border: 2px solid black;
+  background-color: #bcd1bb;
+  box-shadow: 5px 2px 15px 2px rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 300ms;
+}
+#kontakt1 .kontakt-info {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  text-align: left;
+  line-height: 1.5;
+}
+#kontakt1 .kontakt-info a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+  #kontakt1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+  #kontakt1 .main2 {
+    padding-top: 25px;
+  }
+  #kontakt1 .main2 h1 {
+    font-size: 2.6rem;
+  }
+  #kontakt1 .main2 p {
+    font-size: 1.4rem;
+    max-width: 600px;
+  }
+  #kontakt1 #myForm2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding: 70px;
+    padding-left: 0;
+  }
+  #kontakt1 #myForm2 #form-container2 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #kontakt1 #myForm2 #form-container2 .form-group2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #kontakt1 #myForm2 #form-container2 .form-group2 label {
+    text-align: right;
+    padding-bottom: 0;
+    padding-right: 10px;
+    width: 200px;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  #kontakt1 #myForm2 #form-container2 .form-group2 input {
+    width: 450px;
+    font-size: 1.5rem;
+  }
+  #kontakt1 #myForm2 #form-container2 .form-group2 textarea {
+    width: 450px;
+    font-size: 1.4rem;
+  }
+  #kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::-moz-placeholder {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  #kontakt1 #myForm2 #form-container2 .form-group2 #meddelande::placeholder {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  #kontakt1 .skicka2 {
+    font-size: 1.5rem;
+    width: 40%;
+    padding: 7px 40px;
+    margin-bottom: 60px;
+  }
+  .kontakt-info {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 20px;
+    padding-left: 60px;
+    font-size: 1.4rem;
+  }
+  .kontakt-info p {
+    text-align: left;
+  }
+}
+.container-betalning {
+  background-color: rgba(252, 247, 239, 0.8156862745);
+  margin: 0;
+  width: 100%;
+  border-radius: 2px;
+  align-self: center;
+  padding: 0;
+}
+
+#betalning {
+  background-color: rgb(140, 140, 140);
+  color: #000000;
+  border-radius: 10px;
+  margin: 10px;
+  padding-bottom: 30px;
+}
+#betalning .main4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#betalning .main4 h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1.5;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 0px;
+}
+#betalning .main4 p {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+#betalning #myForm4 {
+  margin: 0 10px;
+  border-radius: 10px;
+}
+#betalning #form-container4 {
+  width: 100%;
+}
+#betalning #form-container4 .form-group4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+#betalning #form-container4 .form-group4 label {
+  width: 100%;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 1.15rem;
+}
+#betalning #form-container4 .form-group4 input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+#betalning #form-container4 .form-group4 .betalningsadress-container {
+  display: flex;
+  flex-direction: column;
+}
+#betalning #form-container4 .form-group4 .betalningsadress-container label {
+  padding: 0;
+  margin-bottom: -5px;
+}
+#betalning #form-container4 .form-group4 .betalningsadress-container p {
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 0.72rem;
+}
+#betalning #form-container4 .form-group4 input[type=date] {
+  width: 200px;
+  height: 40px;
+}
+#betalning #form-container4 .form-group4 .meddelande {
+  align-self: flex-start;
+}
+#betalning #form-container4 .form-group4 textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+}
+#betalning #form-container4 .form-group4 #meddelande::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#betalning #form-container4 .form-group4 #meddelande::placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.payment-container {
+  margin-top: 20px;
+}
+.payment-container p {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#payment-form {
+  padding: 0;
+  border-radius: 10px;
+  border: 3px solid #ffc341;
+  margin-bottom: 10px;
+  padding: 16px 0;
+  margin: 10px;
+}
+#payment-form .payment-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+#payment-form .payment-method label {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+#payment-form .payment-method label img {
+  width: 150px;
+}
+#payment-form .payment-method .visa-card {
+  padding-bottom: 0;
+}
+#payment-form .payment-method .visa-card img {
+  width: 250px;
+}
+
+.totalSumma {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.skicka4 {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: #59705f;
+  border: 2px solid #ffffff;
+  color: #fff;
+  font-size: 1.15rem;
+  width: 60%;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+input[type=submit].skicka4:hover {
+  background-color: red;
+}
+
+.skicka4:active {
+  border: 2px solid #000000;
+}
+
+@media screen and (min-width: 1280px) {
+  .container-betalning {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(252, 247, 239, 0.8156862745);
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    margin: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+  }
+  #betalning {
+    padding: 20px 50px 80px;
+    width: 100%;
+    min-width: 1000px;
+    padding: 30px;
+    padding: 10%;
+    text-align: left;
+  }
+  .main4 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+  .main4 p {
+    position: relative;
+    left: 40px;
+    font-size: 1.5rem;
+  }
+  #myForm4 {
+    display: flex;
+    justify-content: center;
+  }
+  #form-container4 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #form-container4 .form-group4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #form-container4 .form-group4 label {
+    text-align: right;
+    width: 200px;
+    font-size: 1.4rem;
+  }
+  #form-container4 .form-group4 input {
+    width: 450px;
+    font-size: 1.5rem;
+  }
+  #form-container4 .form-group4 .betalningsadress-container {
+    align-items: center;
+  }
+  #form-container4 .form-group4 .betalningsadress-container label {
+    text-align: right;
+    padding-right: 10px;
+  }
+  #form-container4 .form-group4 .betalningsadress-container p {
+    text-align: center;
+    font-weight: 600;
+  }
+  #form-container4 .form-group4 textarea {
+    width: 450px;
+    font-size: 1.4rem;
+  }
+  #form-container4 .form-group4 #meddelande::-moz-placeholder {
+    font-size: 1.3rem;
+  }
+  #form-container4 .form-group4 #meddelande::placeholder {
+    font-size: 1.3rem;
+  }
+  #form-container4 #Leveransdatum {
+    margin-bottom: 25px;
+  }
+  #form-container4 #Leveransadress {
+    align-self: flex-start;
+  }
+}
+.payment-container p {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  left: 40px;
+  font-size: 1.5rem;
+}
+
+#payment-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 5px;
+}
+#payment-form .payment-method label {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#payment-form .payment-method label img {
+  width: 180px;
+}
+#payment-form .payment-method input[type=radio] {
+  margin-top: 30px;
+  transform: scale(1.5);
+}
+#payment-form .payment-method .visa-card img {
+  width: 280px;
+}
+#payment-form .desktop-mastercard label {
+  padding-bottom: 0;
+}
+#payment-form .desktop-klarna label {
+  padding-bottom: 0;
+}
+#payment-form .desktop-googlePay {
+  padding-top: 0;
+}
+#payment-form .desktop-googlePay label {
+  padding-bottom: 0;
+  padding-right: 20px;
+}
+
+.totalSumma {
+  font-size: 3rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 40px;
+}
+
+.skicka4 {
+  font-size: 1.7rem;
+  width: 310px;
+  margin-bottom: 0;
+}/*# sourceMappingURL=abasMain.css.map */
