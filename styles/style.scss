@@ -53,8 +53,8 @@ h6 {
   text-align: center;
 
 }
-a{
-  color:#d0d0d0;
+a {
+  color:#000000;
   transition:300ms;
   font-weight: bolder;
   text-decoration: underline;
@@ -136,8 +136,9 @@ article {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 40px;
   font-weight: bolder;
+  height: 60%;
 }
 
 .sidebar a {
@@ -237,18 +238,26 @@ footer {
   background-color: #000000;
   z-index: 1;
   padding:20px;
+
+  a{
+    color:#ffe4e4;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
   
   h3{
     width: 100%;
     text-align: center;
     font-weight: 400;
+    font-size: 1.3rem;
   }
-}
 
-footer p, h2{
-  text-align: left;
-  margin: 5px;
-  padding: 5px;
+  p {
+    font-size: 1.3rem !important;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+  }
 }
 
 .row{
@@ -482,14 +491,25 @@ footer p, h2{
     
   }
   footer{
-    flex-direction: column;
+    width: 100%;
+  }
 
+  footer  p, h3, a {
+    font-size: 1rem !important;
+    width: 100%;
+
+  }
+
+  #contact{
+    flex-direction: column;
+    width:100%;
   }
 
   .left, .right{
     flex-direction: column;
     padding: 5px;
     margin: 0;
+    width: 100%;
   }
   .row{
     display: flex;

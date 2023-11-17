@@ -749,10 +749,8 @@
   padding-bottom: 30px;
 }
 #betalning .main4 {
-  display: flex;
-  padding: 20px 0 10px 10px;
-  justify-content: flex-start;
-  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 #betalning .main4 h1 {
   font-size: 1.5rem;
@@ -769,6 +767,7 @@
   width: -moz-fit-content;
   width: fit-content;
   text-align: left;
+  margin-left: 10px;
   font-size: 1.1rem;
 }
 #betalning #myForm4 {
@@ -805,7 +804,6 @@
   margin-bottom: -5px;
 }
 #betalning #form-container4 .form-group4 .betalningsadress-container p {
-  width: 100%;
   padding-bottom: 5px;
   text-align: left;
   font-size: 0.72rem;
@@ -843,8 +841,6 @@
 }
 
 #payment-form {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   border-radius: 10px;
   border: 3px solid #ffc341;
@@ -932,6 +928,8 @@ input[type=submit].skicka4:hover {
     padding-top: 10px;
   }
   .main4 p {
+    position: relative;
+    left: 40px;
     font-size: 1.5rem;
   }
   #myForm4 {
@@ -984,60 +982,62 @@ input[type=submit].skicka4:hover {
   #form-container4 #Leveransadress {
     align-self: flex-start;
   }
-  .payment-container p {
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-    left: 40px;
-    font-size: 1.5rem;
-  }
-  #payment-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    margin: 5px;
-    margin-bottom: 70px;
-  }
-  #payment-form .payment-method label {
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  #payment-form .payment-method label img {
-    width: 180px;
-  }
-  #payment-form .payment-method input[type=radio] {
-    margin-top: 30px;
-    transform: scale(1.5);
-  }
-  #payment-form .payment-method .visa-card img {
-    width: 280px;
-  }
-  #payment-form .desktop-mastercard label {
-    padding-bottom: 0;
-  }
-  #payment-form .desktop-klarna label {
-    padding-bottom: 0;
-  }
-  #payment-form .desktop-googlePay {
-    padding-top: 0;
-  }
-  #payment-form .desktop-googlePay label {
-    padding-bottom: 0;
-    padding-right: 20px;
-  }
-  .totalSumma {
-    font-size: 3rem;
-    font-weight: 500;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding-bottom: 40px;
-  }
-  .skicka4 {
-    font-size: 1.7rem;
-    width: 310px;
-    margin-bottom: 0;
-  }
+}
+.payment-container p {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  left: 40px;
+  font-size: 1.5rem;
+}
+
+#payment-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 5px;
+}
+#payment-form .payment-method label {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#payment-form .payment-method label img {
+  width: 180px;
+}
+#payment-form .payment-method input[type=radio] {
+  margin-top: 30px;
+  transform: scale(1.5);
+}
+#payment-form .payment-method .visa-card img {
+  width: 280px;
+}
+#payment-form .desktop-mastercard label {
+  padding-bottom: 0;
+}
+#payment-form .desktop-klarna label {
+  padding-bottom: 0;
+}
+#payment-form .desktop-googlePay {
+  padding-top: 0;
+}
+#payment-form .desktop-googlePay label {
+  padding-bottom: 0;
+  padding-right: 20px;
+}
+
+.totalSumma {
+  font-size: 3rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 40px;
+}
+
+.skicka4 {
+  font-size: 1.7rem;
+  width: 310px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=abasMain.css.map */

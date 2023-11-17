@@ -138,9 +138,8 @@ article {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 10px;
   font-weight: bolder;
-  height: 60%;
 }
 
 .sidebar a {
@@ -242,13 +241,13 @@ footer {
 footer a {
   color: #ffe4e4;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem !important;
 }
 footer h3 {
   width: 100%;
   text-align: center;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 footer p {
   font-size: 1.3rem !important;
@@ -462,7 +461,6 @@ footer p {
   }
   footer p, h3, a {
     font-size: 1rem !important;
-    width: 100%;
   }
   #contact {
     flex-direction: column;

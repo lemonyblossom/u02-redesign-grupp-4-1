@@ -9,8 +9,7 @@
   width: 100%;
   height: auto;
   font-size: 50px;
-  margin-top: 38px;
-  margin-bottom: 100px;
+  margin: 32px 0 48px 0;
 }
 
 .container-restaurang-all {
@@ -88,6 +87,11 @@
   border-radius: 37.8px;
   color: white;
 }
+.container-restaurang-all .calender-knapp-flex-card-1 button:hover {
+  transition: 300ms;
+  background-color: #4b84b7;
+  border: 1px solid #195a94;
+}
 .container-restaurang-all .restaurang-container {
   display: flex;
   justify-content: space-between;
@@ -164,6 +168,11 @@
   border-radius: 11px;
   color: white;
   border-radius: 37.8px;
+}
+.container-restaurang-all .restaurang-container .calender-knapp-flex-card-2 .button-card-2:hover {
+  transition: 300ms;
+  background-color: #4b84b7;
+  border: 1px solid #195a94;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------*/

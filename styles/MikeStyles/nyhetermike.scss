@@ -19,8 +19,7 @@ $button-card-color: #195a94;
   width: 100%;
   height: auto;
   font-size: 50px;
-  margin-top: 38px;
-  margin-bottom: 100px;
+  margin: 32px 0 48px 0;
 }
 
 // Card 1
@@ -106,6 +105,12 @@ $button-card-color: #195a94;
       border-radius: 37.8px;
       color: white;
     }
+
+    button:hover {
+      transition: 300ms;
+      background-color:#4b84b7;
+      border:1px solid $button-card-color;
+    }
   }
 
   // Card 2 som innehåller 3 små kort
@@ -182,6 +187,14 @@ $button-card-color: #195a94;
         color: white;
         border-radius: 37.8px;
       }
+
+        .button-card-2:hover {
+          transition: 300ms;
+          background-color:#4b84b7;
+          border:1px solid $button-card-color;
+        }
+      
+     
     }
   }
 }
