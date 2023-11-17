@@ -101,22 +101,6 @@ article {
   justify-content: flex-end;
 }
 
-.nav-icon-desk.fa-user::before {
-  content: "\f007";
-  margin-right: -50px;
-}
-
-.nav-icon-desk.fa-user {
-  color: #fcf7ef;
-  font-size: 50px;
-  cursor: pointer;
-}
-
-.nav-icon-desk.fa-user:hover {
-  color: #efad1f;
-  transition: 800ms;
-}
-
 /* Logo */
 .logo {
   width: 150px;
@@ -188,19 +172,6 @@ header {
   flex-direction: column;
 }
 
-.fa-user {
-  color: #fcf7ef;
-  font-size: 30px;
-  cursor: pointer;
-  transition: 800ms;
-  padding: 10px 15px;
-  border-radius: 25px;
-}
-
-.fa-user:hover {
-  background-color: #000000d8;
-}
-
 .headline {
   font-size:xx-large;
   color: #ffffff;
@@ -215,11 +186,12 @@ header {
   line-height: 1.1;
 }
 
-.headline h1 {
+.headline .title {
   letter-spacing: 5px;
   font-weight: bolder;
   font-size: 2em;
 }
+
 
 .headline p {
   letter-spacing: 15px;
@@ -263,8 +235,9 @@ footer {
   padding:20px;
   
   h3{
-    width:100%;
+    width: 100%;
     text-align: center;
+    font-weight: 400;
   }
 }
 
@@ -421,27 +394,7 @@ footer p, h2{
     text-align: center;
     flex: 1;
   }
-
-  #icon-3 {
-    text-align: right;
-    flex: 1;
-  }
-
-  .fa-user::before {
-    content: "\f007";
-    margin-right: -50px;
-  }
-
-  .fa-user {
-    color: #fcf7ef;
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-  .fa-user:hover {
-    color: #efad1f;
-    transition: 800ms;
-  }
+  
 
   .menu-icon {
     content: "\2630";
@@ -519,7 +472,8 @@ footer p, h2{
   }
 
   section {
-    padding-bottom: 20px;
+    padding: 10px 0 20px 0;
+ 
   }
   footer{
     flex-direction: column;
