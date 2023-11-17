@@ -7,13 +7,17 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  border: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /* Typographic tweaks */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: "Quicksand", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -103,22 +107,6 @@ article {
   justify-content: flex-end;
 }
 
-.nav-icon-desk.fa-user::before {
-  content: "\f007";
-  margin-right: -50px;
-}
-
-.nav-icon-desk.fa-user {
-  color: #fcf7ef;
-  font-size: 50px;
-  cursor: pointer;
-}
-
-.nav-icon-desk.fa-user:hover {
-  color: #efad1f;
-  transition: 800ms;
-}
-
 /* Logo */
 .logo {
   width: 150px;
@@ -190,19 +178,6 @@ header {
   flex-direction: column;
 }
 
-.fa-user {
-  color: #fcf7ef;
-  font-size: 30px;
-  cursor: pointer;
-  transition: 800ms;
-  padding: 10px 15px;
-  border-radius: 25px;
-}
-
-.fa-user:hover {
-  background-color: rgba(0, 0, 0, 0.8470588235);
-}
-
 .headline {
   font-size: xx-large;
   color: #ffffff;
@@ -210,17 +185,17 @@ header {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 10px;
   text-shadow: 2px 2px 1px #012601;
   align-items: center;
   line-height: 1.1;
 }
 
-.headline h1 {
-  letter-spacing: 5px;
+.headline .title {
+  letter-spacing: 10px;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .headline p {
@@ -266,6 +241,7 @@ footer {
 footer h3 {
   width: 100%;
   text-align: center;
+  font-weight: 400;
 }
 
 footer p, h2 {
@@ -406,23 +382,6 @@ footer p, h2 {
     text-align: center;
     flex: 1;
   }
-  #icon-3 {
-    text-align: right;
-    flex: 1;
-  }
-  .fa-user::before {
-    content: "\f007";
-    margin-right: -50px;
-  }
-  .fa-user {
-    color: #fcf7ef;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .fa-user:hover {
-    color: #efad1f;
-    transition: 800ms;
-  }
   .menu-icon {
     content: "☰";
     /* Hamburger */
@@ -489,7 +448,7 @@ footer p, h2 {
     padding-top: 10px;
   }
   section {
-    padding-bottom: 20px;
+    padding: 10px 0 20px 0;
   }
   footer {
     flex-direction: column;
