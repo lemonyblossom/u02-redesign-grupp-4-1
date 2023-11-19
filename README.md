@@ -24,16 +24,13 @@ Vecka 42-46, 2023
 [Intervjufrågor - Google Dokument](https://docs.google.com/document/d/18McfOnZ-miR_SWfe92m8BW8fqFru4JIE0wiK4dYzF_o/edit)
 
 ## User Stories
-[User Stories - Google Dokument](User%20stories%20-%20Google%20Dokument)
-
-## Utvärdering av veckor
-[Utvärdering av veckor - Google Dokument](https://docs.google.com/document/d/18tu-EI2GQsd-jYiNDsc3gfdLXqJfNBLExv-Al8KMNis/edit?usp=sharing)
+- [User Stories - Google Dokument](https://docs.google.com/document/d/13-fH6lN3_21wmmC50KrTdQVGImCV4Xe2Qps6D10NgjY/edit)
 
 ## Grupp & Individuell Utvärdering U02-grupp 4
-[Sammanfattning U02-grupp 4 - Google Dokument](Sammanfattning%20U02-grupp%204%20-%20Google%20Dokument)
+- [Sammanfattning U02-grupp 4 - Google Dokument](https://docs.google.com/document/d/1RjjG3YPCyclqTgt25SDta1casZk4tfzHY32unPhrAjA/edit#heading=h.ndazz1w42tw7)
 
 ## Figma Prototypes
-- [Desktop Figma Prototypes](Figma%20Prototypes/desktop%20%E2%80%93%20Figma)
+- [Desktop Figma Prototypes](https://www.figma.com/file/8YIxVcipRLtQuVwg8PoeCt/desktop?type=design&node-id=0-1&mode=design&t=LiucsXqjzdy05q9h-0)
 
 ## Personas
-[Personas - Google Dokument](Personas%20-%20Google%20Dokument)
+[Personas - Google Dokument](https://docs.google.com/document/d/1kCfKS4wcYt029g9VVKB8KW145c6FK5vIsqCzifKUGK0/edit)
