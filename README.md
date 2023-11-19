@@ -26,7 +26,7 @@ Vecka 42-46, 2023
 ## User Stories
 - [User Stories - Google Dokument](https://docs.google.com/document/d/13-fH6lN3_21wmmC50KrTdQVGImCV4Xe2Qps6D10NgjY/edit)
 
-## Grupp & Individuell Utvärdering U02-grupp 4
+## Grupputvärdering U02-grupp 4
 - [Sammanfattning U02-grupp 4 - Google Dokument](https://docs.google.com/document/d/1RjjG3YPCyclqTgt25SDta1casZk4tfzHY32unPhrAjA/edit#heading=h.ndazz1w42tw7)
 
 ## Figma Prototypes
