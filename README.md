@@ -29,7 +29,7 @@ Vecka 42-46, 2023
 ## Utvärdering av veckor
 [Utvärdering av veckor - Google Dokument](https://docs.google.com/document/d/18tu-EI2GQsd-jYiNDsc3gfdLXqJfNBLExv-Al8KMNis/edit?usp=sharing)
 
-## Grupp & Individuell Utvärdering U02-grupp 4
+## Grupputvärdering U02-grupp 4
 [Sammanfattning U02-grupp 4 - Google Dokument](Sammanfattning%20U02-grupp%204%20-%20Google%20Dokument)
 
 ## Figma Prototypes
